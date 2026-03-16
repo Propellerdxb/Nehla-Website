@@ -43,14 +43,6 @@ const AboutHero = () => (
         animate="visible"
         variants={staggerContainer}
       >
-        <motion.span
-          variants={fadeInUp}
-          custom={0}
-          className="inline-block text-sm font-semibold text-brand-cobalt uppercase tracking-wider mb-4"
-        >
-          About Nehla Strata Hub
-        </motion.span>
-
         <motion.h1
           variants={fadeInUp}
           custom={1}
@@ -433,14 +425,11 @@ const NehlaPromise = () => (
           <span className="gradient-text">Leadership at the front-office.</span>
         </motion.p>
 
-        <motion.div variants={fadeInUp} custom={3} className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/#waitlist" className="btn-mint text-lg gap-2">
+        <motion.div variants={fadeInUp} custom={3} className="mt-10 flex justify-center">
+          <Link to="/#waitlist" className="btn-mint text-lg gap-2">
             Meet Your AI Team
             <ArrowRight className="w-5 h-5" />
-          </a>
-          <a href="/#waitlist" className="btn-secondary !border-white/30 !text-white hover:!bg-white/10 text-lg">
-            Book an AI Workflow Audit
-          </a>
+          </Link>
         </motion.div>
       </motion.div>
     </div>

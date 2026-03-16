@@ -54,7 +54,7 @@ const Hero = () => (
         <motion.div variants={fadeInUp} custom={0} className="mb-8">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-cobalt/10 text-brand-cobalt font-medium text-sm">
             <span className="w-2 h-2 bg-brand-mint rounded-full animate-pulse" />
-            Early Adopter Program — Only 12 Spots
+            Early Adopter Program - Only 12 Spots
           </span>
         </motion.div>
 
@@ -86,7 +86,7 @@ const Hero = () => (
             to join our exclusive Early Adopter program. Secure your spot now to get your
             first{' '}
             <span className="text-brand-cobalt font-bold">6 months FREE</span>{' '}
-            when we pre-launch in April.
+            when we pre-launch in April 2026.
           </p>
         </motion.div>
 
@@ -121,25 +121,21 @@ const WhatIsNehla = () => (
         variants={staggerContainer}
       >
         <div className="max-w-3xl">
-          <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4">
-            What is NEHLA | Strata Hub?
-          </motion.p>
           <motion.h2
             variants={fadeInUp}
-            custom={1}
             className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
           >
-            The AI-Powered Operations Team for the Modern Strata Manager.
+            The AI-Powered Operations Team<br />for the Modern Strata Manager.
           </motion.h2>
-          <motion.div variants={fadeInUp} custom={2} className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
+          <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
           <motion.p variants={fadeInUp} custom={3} className="text-lg text-brand-body leading-relaxed mb-6">
             Strata management is drowning in admin. Managers spend more time on data entry,
             email and compliance checklists than building relationships with their communities.
           </motion.p>
           <motion.p variants={fadeInUp} custom={4} className="text-lg text-brand-body leading-relaxed">
-            NEHLA changes that. We've built a digital workforce that handles the back-end —
+            NEHLA changes that. We've built a digital workforce that handles the back-end by
             automating data entry, tracking compliance in real time, and processing documents
-            with AI precision — so strata professionals can focus on what matters: leading
+            with AI precision, so strata professionals can focus on what matters: leading
             their communities.
           </motion.p>
         </div>
@@ -158,7 +154,7 @@ const foundations = [
   {
     icon: FileText,
     title: 'Uploaded Documents',
-    desc: 'Invoices, insurance certs, legal notices, meeting minutes — any document type.',
+    desc: 'Invoices, insurance certs, legal notices, meeting minutes - any document type.',
   },
   {
     icon: Mail,
@@ -177,19 +173,15 @@ const Foundation = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-4">
-          The Foundation
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
-          custom={1}
           className="text-3xl md:text-4xl font-semibold text-white tracking-tight"
         >
-          Built as a Task-Driven System
+          Task-Driven as the Core
         </motion.h2>
         <motion.p variants={fadeInUp} custom={2} className="mt-4 text-lg text-gray-400 leading-relaxed">
           Every piece of data that enters NEHLA flows through an automated pipeline.
-          The system doesn't just store information — it understands it, processes it, and takes action.
+          The system doesn't just store information - it understands it, processes it, and takes action.
         </motion.p>
       </motion.div>
 
@@ -221,10 +213,10 @@ const Foundation = () => (
 
 /* ──────────────────── TASK MANAGER ────────────────────── */
 const taskFeatures = [
-  { icon: Brain, text: 'AI-generated summaries for every task' },
-  { icon: CheckCircle, text: 'Suggested actions ranked by priority' },
-  { icon: Mail, text: 'Full trail linked to each task' },
-  { icon: Layers, text: 'Board, table, calendar & timeline views' },
+  { icon: Cpu, text: 'AI-generated summaries for every task', color: 'text-brand-cobalt', bg: 'bg-brand-cobalt/10' },
+  { icon: CheckCircle, text: 'Suggested actions ranked by priority', color: 'text-brand-mint', bg: 'bg-brand-mint/10' },
+  { icon: Mail, text: 'Full trail linked to each task', color: 'text-brand-cobalt', bg: 'bg-brand-cobalt/10' },
+  { icon: Layers, text: 'Board, table, calendar & timeline views', color: 'text-brand-mint', bg: 'bg-brand-mint/10' },
 ]
 
 const TaskManager = () => (
@@ -239,27 +231,24 @@ const TaskManager = () => (
       >
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4">
-              Task Manager
-            </motion.p>
             <motion.h2
               variants={fadeInUp}
               custom={1}
               className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
             >
-              AI That Works Your Task List for You.
+              AI That Works Your<br />Task List for You.
             </motion.h2>
-            <motion.div variants={fadeInUp} custom={2} className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
+            <motion.div variants={fadeInUp} custom={2} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
             <motion.p variants={fadeInUp} custom={3} className="text-lg text-brand-body leading-relaxed mb-8">
               Every email, document, and compliance event flows into a unified task board.
-              NEHLA's AI reads the context, summarises the issue, and proposes the next steps —
+              NEHLA's AI reads the context, summarises the issue, and proposes the next steps -
               before you even open the task.
             </motion.p>
             <motion.div variants={fadeInUp} custom={4} className="space-y-4">
               {taskFeatures.map((f) => (
                 <div key={f.text} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-brand-cobalt/10 flex items-center justify-center flex-shrink-0">
-                    <f.icon className="w-4 h-4 text-brand-cobalt" />
+                  <div className={`w-8 h-8 rounded-lg ${f.bg} flex items-center justify-center flex-shrink-0`}>
+                    <f.icon className={`w-4 h-4 ${f.color}`} />
                   </div>
                   <span className="text-brand-body">{f.text}</span>
                 </div>
@@ -268,10 +257,10 @@ const TaskManager = () => (
           </div>
 
           <motion.div variants={fadeInUp} custom={3} className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+            <div className="overflow-hidden shadow-2xl border border-gray-200" style={{ borderRadius: '20px' }}>
               <img
                 src="/screenshots/task-manager.png"
-                alt="NEHLA Task Manager — AI-powered Kanban board with task summaries and suggested actions"
+                alt="NEHLA Task Manager - AI-powered Kanban board with task summaries and suggested actions"
                 className="w-full h-auto"
                 loading="lazy"
               />
@@ -285,7 +274,7 @@ const TaskManager = () => (
 
 /* ─────────────── DOCUMENT EXTRACTION ─────────────────── */
 const extractionSteps = [
-  { num: '01', title: 'Identify', desc: 'AI recognises document type automatically — invoice, insurance cert, notice, minutes.' },
+  { num: '01', title: 'Identify', desc: 'AI recognises document type automatically - invoice, insurance cert, notice, minutes.' },
   { num: '02', title: 'Extract', desc: 'Key data pulled from the document: dates, amounts, parties, clauses, deadlines.' },
   { num: '03', title: 'Match', desc: 'Cross-references extracted data against regulatory requirements.' },
   { num: '04', title: 'Act', desc: 'Creates tasks, flags compliance gaps, updates records, and notifies the right people.' },
@@ -301,33 +290,34 @@ const DocumentExtraction = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-4">
-          Intelligent Engine
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
           custom={1}
-          className="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4"
+          className="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4 text-center"
         >
           Advanced Document Extraction
         </motion.h2>
-        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mb-12">
-          NEHLA's AI engine doesn't just scan documents — it understands them. When a document
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto mb-12 text-center">
+          NEHLA's AI engine doesn't just scan documents, it understands them. When a document
           enters the system, the engine automatically identifies what it is, matches it to
           regulatory requirements, and takes the right action.
         </motion.p>
 
-        <motion.div variants={fadeInUp} custom={3} className="space-y-0">
+        <motion.div variants={fadeInUp} custom={3} className="space-y-0 max-w-2xl mx-auto">
           {extractionSteps.map((step, i) => (
             <div key={step.num} className="flex items-start gap-6 relative">
               {/* Vertical connector */}
               {i < extractionSteps.length - 1 && (
-                <div className="absolute left-5 top-12 w-px h-8 bg-gradient-to-b from-brand-cobalt to-brand-mint opacity-40" />
+                <div className="absolute left-6 top-14 w-0.5 h-8 bg-brand-cobalt" />
               )}
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-brand-cobalt to-brand-mint flex items-center justify-center text-white text-sm font-bold">
+              <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold ${
+                i === extractionSteps.length - 1
+                  ? 'bg-brand-mint text-brand-navy'
+                  : 'bg-brand-cobalt text-white'
+              }`}>
                 {step.num}
               </div>
-              <div className="pb-10">
+              <div className="pb-10 pt-1">
                 <h3 className="text-xl font-semibold text-white">{step.title}</h3>
                 <p className="text-gray-400 mt-1">{step.desc}</p>
               </div>
@@ -341,14 +331,14 @@ const DocumentExtraction = () => (
 
 /* ─────────────── EXTRACTION UI SHOWCASE ──────────────── */
 const extractionFeatures = [
-  { icon: FileText, text: 'Automated data extraction from any document' },
-  { icon: Globe, text: 'AI-powered chat for instant document Q&A' },
-  { icon: CheckCircle, text: 'Extracted fields ready to approve or edit' },
-  { icon: Layers, text: 'Auto-tagging and smart file naming' },
+  { icon: FileText, text: 'Automated data extraction from any document', color: 'text-brand-cobalt', bg: 'bg-brand-cobalt/10' },
+  { icon: Cpu, text: 'AI-powered chat for instant document Q&A', color: 'text-brand-cobalt', bg: 'bg-brand-cobalt/10' },
+  { icon: CheckCircle, text: 'Extracted fields ready to approve or edit', color: 'text-brand-mint', bg: 'bg-brand-mint/10' },
+  { icon: Layers, text: 'Auto-tagging and smart file naming', color: 'text-brand-mint', bg: 'bg-brand-mint/10' },
 ]
 
 const ExtractionShowcase = () => (
-  <section className="bg-white">
+  <section id="documents" className="bg-white">
     <div className="section-padding">
       <motion.div
         className="max-w-6xl mx-auto"
@@ -359,32 +349,28 @@ const ExtractionShowcase = () => (
       >
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4">
-              Advanced Extraction
-            </motion.p>
             <motion.h2
               variants={fadeInUp}
-              custom={1}
               className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
             >
-              Read, Extract, and Ask — Instantly.
+              Read, Extract,<br />and Ask - Instantly.
             </motion.h2>
-            <motion.div variants={fadeInUp} custom={2} className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
+            <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
             <motion.p variants={fadeInUp} custom={3} className="text-lg text-brand-body leading-relaxed mb-4">
-              Upload any document and NEHLA's AI engine extracts key data automatically —
+              Upload any document and NEHLA's AI engine extracts key data automatically -
               building details, lot entitlements, dates, parties, and compliance fields.
               No manual data entry required.
             </motion.p>
             <motion.p variants={fadeInUp} custom={4} className="text-lg text-brand-body leading-relaxed mb-8">
-              Need a quick answer? Ask the built-in chat anything about the document —
+              Need a quick answer? Ask the built-in chat anything about the document -
               instead of scrolling through pages, just type your question and get an instant,
               contextual response.
             </motion.p>
             <motion.div variants={fadeInUp} custom={5} className="space-y-4">
               {extractionFeatures.map((f) => (
                 <div key={f.text} className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-brand-cobalt/10 flex items-center justify-center flex-shrink-0">
-                    <f.icon className="w-4 h-4 text-brand-cobalt" />
+                  <div className={`w-8 h-8 rounded-lg ${f.bg} flex items-center justify-center flex-shrink-0`}>
+                    <f.icon className={`w-4 h-4 ${f.color}`} />
                   </div>
                   <span className="text-brand-body">{f.text}</span>
                 </div>
@@ -396,7 +382,7 @@ const ExtractionShowcase = () => (
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               <img
                 src="/screenshots/document-extraction.png"
-                alt="NEHLA Document Extraction — AI-powered document analysis with chat and field extraction"
+                alt="NEHLA Document Extraction - AI-powered document analysis with chat and field extraction"
                 className="w-full h-auto"
                 loading="lazy"
               />
@@ -425,7 +411,7 @@ const emailResults = [
 ]
 
 const EmailIntegration = () => (
-  <section className="gradient-dark">
+  <section id="email" className="gradient-dark">
     <div className="section-padding">
       <motion.div
         className="max-w-6xl mx-auto"
@@ -434,19 +420,15 @@ const EmailIntegration = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-4">
-          Email Intelligence
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
-          custom={1}
           className="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4"
         >
           Your Inbox, Automated.
         </motion.h2>
         <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mb-12">
           Email is the biggest time sink in strata management. NEHLA integrates directly with each
-          building's mailbox, analyses every incoming email and its attachments, and takes action —
+          building's mailbox, analyses every incoming email and its attachments, and takes action -
           before you even open it.
         </motion.p>
 
@@ -454,8 +436,9 @@ const EmailIntegration = () => (
           <motion.div
             variants={fadeInUp}
             custom={3}
-            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 overflow-hidden relative"
           >
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint" />
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-6">How it works</p>
             <div className="space-y-4">
               {emailHowItWorks.map((item) => (
@@ -470,8 +453,9 @@ const EmailIntegration = () => (
           <motion.div
             variants={fadeInUp}
             custom={4}
-            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 overflow-hidden relative"
           >
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint" />
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-6">The result</p>
             <div className="space-y-6">
               {emailResults.map((item) => (
@@ -489,7 +473,7 @@ const EmailIntegration = () => (
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <img
               src="/screenshots/email-integration.png"
-              alt="NEHLA Email Integration — per-building mailbox with AI summaries and suggested actions"
+              alt="NEHLA Email Integration - per-building mailbox with AI summaries and suggested actions"
               className="w-full h-auto"
               loading="lazy"
             />
@@ -523,57 +507,66 @@ const Compliance = () => (
   <section className="bg-white">
     <div className="section-padding">
       <motion.div
-        className="max-w-5xl mx-auto"
+        className="max-w-6xl mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4">
-          Compliance
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
-          custom={1}
           className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
         >
-          Your Digital Guardrail.
+          Your Digital Compliance Guardrail.
         </motion.h2>
-        <motion.div variants={fadeInUp} custom={2} className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-6 rounded-full" />
-        <motion.p variants={fadeInUp} custom={3} className="text-lg text-brand-body leading-relaxed max-w-3xl mb-12">
+        <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-6 rounded-full" />
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-brand-body leading-relaxed max-w-3xl mb-12">
           Australian strata legislation is complex, state-specific, and constantly evolving.
-          NEHLA encodes the rules of NSW, QLD, and VIC compliance into automated workflows —
+          NEHLA encodes the rules of NSW, QLD, and VIC compliance into automated workflows -
           so nothing slips through the cracks.
         </motion.p>
 
-        <motion.div
-          className="grid md:grid-cols-3 gap-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
-          variants={staggerContainer}
-        >
-          {complianceStates.map((s, i) => (
-            <motion.div
-              key={s.state}
-              variants={fadeInUp}
-              custom={i}
-              className="bg-brand-navy rounded-2xl p-8"
-            >
-              <div className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mb-6 rounded-full" />
-              <h3 className="text-2xl font-bold text-white">{s.state}</h3>
-              <p className="text-brand-mint text-sm font-semibold mb-4">{s.law}</p>
-              <div className="space-y-3">
-                {s.items.map((item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-brand-mint flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid lg:grid-cols-3 gap-12 lg:gap-12 items-center">
+          <motion.div
+            className="space-y-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={staggerContainer}
+          >
+            {complianceStates.map((s, i) => (
+              <motion.div
+                key={s.state}
+                variants={fadeInUp}
+                custom={i}
+                className="bg-brand-navy rounded-2xl p-6 pt-8 overflow-hidden relative"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint" />
+                <h3 className="text-2xl font-bold text-white">{s.state}</h3>
+                <p className="text-brand-mint text-sm font-semibold mb-3">{s.law}</p>
+                <div className="space-y-2">
+                  {s.items.map((item) => (
+                    <div key={item} className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-brand-mint flex-shrink-0" />
+                      <span className="text-gray-300 text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div variants={fadeInUp} custom={3} className="relative lg:col-span-2">
+            <div className="overflow-hidden shadow-2xl border border-gray-200" style={{ borderRadius: '20px' }}>
+              <img
+                src="/screenshots/compliance.png"
+                alt="NEHLA Regulations - compliance tracking across NSW, QLD, and VIC"
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   </section>
@@ -598,9 +591,6 @@ const Transformation = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4 text-center">
-          The Transformation
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
           custom={1}
@@ -608,7 +598,7 @@ const Transformation = () => (
         >
           From Manual to Intelligent
         </motion.h2>
-        <motion.div variants={fadeInUp} custom={2} className="w-16 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-12 rounded-full mx-auto" />
+        <motion.div variants={fadeInUp} custom={2} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-12 rounded-full mx-auto" />
 
         {/* Header */}
         <motion.div variants={fadeInUp} custom={3}>
@@ -643,12 +633,12 @@ const Transformation = () => (
 
 /* ──────────────────── SECURITY ────────────────────────── */
 const securityFeatures = [
-  { icon: Lock, title: 'Auth0 Enterprise Login', desc: 'Industry-leading identity platform with multi-factor authentication.' },
-  { icon: Layers, title: 'Data Isolation', desc: 'Complete separation between organisations at every level.' },
-  { icon: Shield, title: 'Encrypted Storage', desc: 'All documents encrypted at rest with server-side encryption.' },
-  { icon: Clock, title: 'Time-Limited Access', desc: 'Download links expire in 300 seconds — no permanent URLs.' },
-  { icon: Users, title: 'Role-Based Access', desc: 'Four-tier permission system controls who sees what.' },
-  { icon: Zap, title: 'AI Privacy', desc: 'Your data is never used to train any AI model.' },
+  { icon: Shield, title: 'Auth0 Enterprise Login', desc: 'Industry-leading identity platform with multi-factor authentication.', color: 'text-brand-cobalt' },
+  { icon: Layers, title: 'Data Isolation', desc: 'Complete separation between organisations at every level.', color: 'text-brand-mint' },
+  { icon: FileText, title: 'Encrypted Storage', desc: 'All documents encrypted at rest with server-side encryption.', color: 'text-brand-cobalt' },
+  { icon: Clock, title: 'Time-Limited Access', desc: 'Download links expire in 300 seconds - no permanent URLs.', color: 'text-brand-mint' },
+  { icon: Users, title: 'Role-Based Access', desc: 'Four-tier permission system controls who sees what.', color: 'text-brand-cobalt' },
+  { icon: Zap, title: 'AI Privacy', desc: 'Your data is never used to train any AI model.', color: 'text-brand-mint' },
 ]
 
 const Security = () => (
@@ -661,9 +651,6 @@ const Security = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-mint mb-4">
-          Security & Trust
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
           custom={1}
@@ -690,8 +677,8 @@ const Security = () => (
               custom={i}
               className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10"
             >
-              <div className="w-10 h-10 rounded-lg bg-brand-cobalt/20 flex items-center justify-center mb-4">
-                <item.icon className="w-5 h-5 text-brand-cobalt" />
+              <div className="mb-4">
+                <item.icon className={`w-8 h-8 ${item.color}`} />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
               <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
@@ -705,10 +692,10 @@ const Security = () => (
 
 /* ──────────────────── WHY NEHLA ──────────────────────── */
 const whyNehla = [
-  { icon: Target, title: 'Category Shift', desc: "We're not selling a tool — we're providing a digital workforce that does the work for you." },
-  { icon: Cpu, title: 'AI-Native Architecture', desc: 'Built from the ground up with AI at the core, not bolted on as an afterthought.' },
-  { icon: Shield, title: 'Compliance First', desc: 'NSW, QLD, and VIC legislation encoded into every workflow — always audit-ready.' },
-  { icon: TrendingUp, title: 'Scale Without Headcount', desc: 'Grow your portfolio without proportionally growing your admin team.' },
+  { icon: Target, title: 'Category Shift', desc: "We're not selling a tool - we're providing a digital workforce that does the work for you.", color: 'text-brand-cobalt' },
+  { icon: Cpu, title: 'AI-Native Architecture', desc: 'Built from the ground up with AI at the core, not bolted on as an afterthought.', color: 'text-brand-cobalt' },
+  { icon: Shield, title: 'Compliance First', desc: 'NSW, QLD, and VIC legislation encoded into every workflow - always audit-ready.', color: 'text-brand-cobalt' },
+  { icon: TrendingUp, title: 'Scale Without Headcount', desc: 'Grow your portfolio without proportionally growing your admin team.', color: 'text-brand-mint' },
 ]
 
 const WhyNehla = () => (
@@ -721,16 +708,14 @@ const WhyNehla = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <motion.p variants={fadeInUp} className="text-sm font-semibold uppercase tracking-widest text-brand-cobalt mb-4">
-          Why NEHLA
-        </motion.p>
         <motion.h2
           variants={fadeInUp}
           custom={1}
-          className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight mb-12"
+          className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight text-center"
         >
           Not Software. An Operations Team.
         </motion.h2>
+        <motion.div variants={fadeInUp} custom={2} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-12 rounded-full mx-auto" />
 
         <div className="space-y-4">
           {whyNehla.map((item, i) => (
@@ -741,7 +726,7 @@ const WhyNehla = () => (
               className="flex items-start gap-6 p-6 rounded-xl bg-brand-offwhite border border-gray-100"
             >
               <div className="w-12 h-12 rounded-xl bg-brand-cobalt/10 flex items-center justify-center flex-shrink-0">
-                <item.icon className="w-6 h-6 text-brand-cobalt" />
+                <item.icon className={`w-6 h-6 ${item.color}`} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-brand-navy">{item.title}</h3>
@@ -790,7 +775,7 @@ const WaitlistCTA = () => (
             Ready to See Your New Operations Team in Action?
           </motion.h2>
           <motion.p variants={fadeInUp} custom={1} className="mt-4 text-lg text-white/80 leading-relaxed">
-            We'd love to show you how NEHLA is helping strata agencies reclaim their time
+            We'd love to show you how NEHLA will help strata agencies reclaim their time
             and lead their communities.
           </motion.p>
 
@@ -798,18 +783,13 @@ const WaitlistCTA = () => (
             variants={fadeInUp}
             custom={2}
             className="mt-10 max-w-xl mx-auto"
-            onSubmit={(e) => {
-              e.preventDefault()
-              const formData = new FormData(e.target)
-              const name = formData.get('name')
-              const email = formData.get('email')
-              const company = formData.get('company')
-              if (name && email && company) {
-                alert('Thank you for pre-registering! We will be in touch shortly.')
-                e.target.reset()
-              }
-            }}
+            action="https://formsubmit.co/dan@nehla.com.au"
+            method="POST"
           >
+            <input type="hidden" name="_subject" value="New Early Adopter Registration - NEHLA" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://nehla.com.au/?thanks=true" />
+            <input type="hidden" name="_template" value="table" />
             <div className="space-y-4">
               <input
                 type="text"
@@ -873,8 +853,8 @@ const WaitlistCTA = () => (
 const LandingPage = () => (
   <>
     <SEO
-      title="NEHLA Strata Hub — The Intuitive Engine for the Next Era of Strata"
-      description="The AI-powered operations team for modern strata managers. Automated compliance, document extraction, email intelligence, and task management. Join our Early Adopter program — only 12 spots, 6 months free."
+      title="NEHLA Strata Hub - The Intuitive Engine for the Next Era of Strata"
+      description="The AI-powered operations team for modern strata managers. Automated compliance, document extraction, email intelligence, and task management. Join our Early Adopter program - only 12 spots, 6 months free."
       path="/"
     />
     <Helmet>

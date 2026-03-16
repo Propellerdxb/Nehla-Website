@@ -11,31 +11,20 @@ const Footer = () => {
   return (
     <footer className="bg-brand-navy text-gray-400">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <Link to="/" className="inline-block mb-6">
               <img
-                src="/logo.png"
+                src="/logo-white.png"
                 alt="NEHLA Strata Hub"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-14 w-auto"
               />
             </Link>
             <p className="text-gray-500 mb-6 max-w-xs leading-relaxed">
               The AI-Powered Operations Team for the Modern Strata Manager.
               Automating the back-end to elevate the human-end.
             </p>
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-cobalt hover:text-white transition-colors"
-                  aria-label={social.name}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
+            {/* Social links hidden for now */}
           </div>
 
           <div>
@@ -47,12 +36,38 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <a href="/#features" className="text-gray-500 hover:text-white transition-colors text-sm">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="/#documents" className="text-gray-500 hover:text-white transition-colors text-sm">
+                  Documents
+                </a>
+              </li>
+              <li>
+                <a href="/#email" className="text-gray-500 hover:text-white transition-colors text-sm">
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4">More</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="/#security" className="text-gray-500 hover:text-white transition-colors text-sm">
+                  Security
+                </a>
+              </li>
+              <li>
                 <Link to="/about" className="text-gray-500 hover:text-white transition-colors text-sm">
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
-                <a href="#waitlist" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#waitlist" className="text-gray-500 hover:text-white transition-colors text-sm">
                   Secure Your Spot
                 </a>
               </li>
@@ -77,13 +92,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+      <div className="border-t border-white/10" style={{ background: 'linear-gradient(135deg, #2E5BFF 0%, #00FFC2 100%)' }}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-2">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-white text-sm font-medium">
               &copy; {new Date().getFullYear()} Nehla Pty Ltd. All rights reserved.
             </p>
-            <span className="text-gray-500 text-sm">Made in Australia</span>
+            <span className="text-white text-sm font-medium">Made in Australia</span>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [activeHash, setActiveHash] = useState('')
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -12,6 +13,7 @@ const Navbar = () => {
     if (link.to.includes('#')) {
       e.preventDefault()
       const hash = link.to.split('#')[1]
+      setActiveHash(hash)
       if (location.pathname !== '/') {
         navigate('/')
         setTimeout(() => {
@@ -21,12 +23,23 @@ const Navbar = () => {
         document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' })
       }
       setIsOpen(false)
+    } else {
+      setActiveHash('')
     }
   }
 
+  const isActive = (link) => {
+    if (link.to.includes('#')) {
+      const hash = link.to.split('#')[1]
+      return activeHash === hash
+    }
+    return location.pathname === link.to
+  }
+
   const navLinks = [
-    { name: 'Home', to: '/' },
     { name: 'Features', to: '/#features' },
+    { name: 'Documents', to: '/#documents' },
+    { name: 'Email', to: '/#email' },
     { name: 'Security', to: '/#security' },
     { name: 'About', to: '/about' },
   ]
@@ -35,7 +48,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center">
+          <Link to="/" onClick={() => { setActiveHash(''); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className="flex items-center">
             <img
               src="/logo.png"
               alt="NEHLA Strata Hub"
@@ -50,7 +63,7 @@ const Navbar = () => {
                 to={link.to}
                 onClick={(e) => handleNavClick(e, link)}
                 className={`font-medium transition-colors duration-200 ${
-                  location.pathname === link.to.split('#')[0] && !link.to.includes('#')
+                  isActive(link)
                     ? 'text-brand-cobalt'
                     : 'text-brand-body hover:text-brand-cobalt'
                 }`}
@@ -94,7 +107,7 @@ const Navbar = () => {
                   to={link.to}
                   onClick={(e) => { handleNavClick(e, link); setIsOpen(false) }}
                   className={`block font-medium py-2 ${
-                    location.pathname === link.to.split('#')[0] && !link.to.includes('#')
+                    isActive(link)
                       ? 'text-brand-cobalt'
                       : 'text-brand-body hover:text-brand-cobalt'
                   }`}
