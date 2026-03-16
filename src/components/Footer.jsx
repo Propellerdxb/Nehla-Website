@@ -15,9 +15,11 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block mb-6">
               <img
-                src="/logo-white.png"
+                src="/logo-white.webp"
                 alt="NEHLA Strata Hub"
                 className="h-14 w-auto"
+                width={400}
+                height={137}
               />
             </Link>
             <p className="text-gray-500 mb-6 max-w-xs leading-relaxed">

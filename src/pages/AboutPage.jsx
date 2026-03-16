@@ -108,7 +108,7 @@ const OurStory = () => (
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          <div className="bg-gradient-to-br from-brand-cobalt/10 to-brand-mint/10 rounded-3xl p-10 border border-brand-cobalt/10">
+          <div className="bg-gradient-to-br from-brand-cobalt/10 to-brand-mint/10 rounded-3xl p-10 border border-brand-cobalt/10" role="img" aria-label="Key statistics: 40% of work week spent on manual data entry, 15 hours reclaimed weekly with NEHLA's AI team, 100% compliance precision">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-20 h-16 rounded-2xl bg-brand-cobalt/10 flex items-center justify-center shrink-0 px-3 py-2">
@@ -448,17 +448,38 @@ const AboutPage = () => (
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "name": "NEHLA Strata Hub",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "AI-powered digital workforce for strata management. Automates compliance monitoring, invoice processing, and administrative operations for Australian strata agencies.",
-          "offers": {
-            "@type": "Offer",
-            "description": "Early Adopter Program — 6 months free",
-            "priceCurrency": "AUD",
-            "availability": "https://schema.org/PreOrder"
-          }
+          "@graph": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "NEHLA Strata Hub",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "AI-powered digital workforce for strata management. Automates compliance monitoring, invoice processing, and administrative operations for Australian strata agencies.",
+              "offers": {
+                "@type": "Offer",
+                "description": "Early Adopter Program - 6 months free",
+                "priceCurrency": "AUD",
+                "availability": "https://schema.org/PreOrder"
+              }
+            },
+            {
+              "@type": "Organization",
+              "name": "NEHLA",
+              "legalName": "Nehla Pty Ltd",
+              "url": "https://nehla.com.au",
+              "logo": "https://nehla.com.au/logo.png",
+              "description": "AI-powered digital workforce for Australian strata management.",
+              "areaServed": { "@type": "Country", "name": "Australia" },
+              "contactPoint": { "@type": "ContactPoint", "email": "hello@nehla.ai", "contactType": "sales" }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nehla.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "About", "item": "https://nehla.com.au/about" }
+              ]
+            }
+          ]
         })}
       </script>
     </Helmet>

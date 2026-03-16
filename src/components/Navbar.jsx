@@ -53,6 +53,8 @@ const Navbar = () => {
               src="/logo.png"
               alt="NEHLA Strata Hub"
               className="h-12 w-auto"
+              width={800}
+              height={274}
             />
           </Link>
 

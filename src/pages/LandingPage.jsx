@@ -179,7 +179,7 @@ const Foundation = () => (
         >
           Task-Driven as the Core
         </motion.h2>
-        <motion.p variants={fadeInUp} custom={2} className="mt-4 text-lg text-gray-400 leading-relaxed">
+        <motion.p variants={fadeInUp} custom={2} className="mt-4 text-lg text-gray-300 leading-relaxed">
           Every piece of data that enters NEHLA flows through an automated pipeline.
           The system doesn't just store information - it understands it, processes it, and takes action.
         </motion.p>
@@ -203,7 +203,7 @@ const Foundation = () => (
               <item.icon className="w-6 h-6 text-brand-cobalt" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
-            <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+            <p className="text-gray-300 leading-relaxed">{item.desc}</p>
           </motion.div>
         ))}
       </motion.div>
@@ -259,9 +259,11 @@ const TaskManager = () => (
           <motion.div variants={fadeInUp} custom={3} className="relative">
             <div className="overflow-hidden shadow-2xl border border-gray-200" style={{ borderRadius: '20px' }}>
               <img
-                src="/screenshots/task-manager.png"
+                src="/screenshots/task-manager.webp"
                 alt="NEHLA Task Manager - AI-powered Kanban board with task summaries and suggested actions"
                 className="w-full h-auto"
+                width={1523}
+                height={1143}
                 loading="lazy"
               />
             </div>
@@ -297,7 +299,7 @@ const DocumentExtraction = () => (
         >
           Advanced Document Extraction
         </motion.h2>
-        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto mb-12 text-center">
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-12 text-center">
           NEHLA's AI engine doesn't just scan documents, it understands them. When a document
           enters the system, the engine automatically identifies what it is, matches it to
           regulatory requirements, and takes the right action.
@@ -319,7 +321,7 @@ const DocumentExtraction = () => (
               </div>
               <div className="pb-10 pt-1">
                 <h3 className="text-xl font-semibold text-white">{step.title}</h3>
-                <p className="text-gray-400 mt-1">{step.desc}</p>
+                <p className="text-gray-300 mt-1">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -381,9 +383,11 @@ const ExtractionShowcase = () => (
           <motion.div variants={fadeInUp} custom={3} className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
               <img
-                src="/screenshots/document-extraction.png"
+                src="/screenshots/document-extraction.webp"
                 alt="NEHLA Document Extraction - AI-powered document analysis with chat and field extraction"
                 className="w-full h-auto"
+                width={1550}
+                height={1143}
                 loading="lazy"
               />
             </div>
@@ -426,7 +430,7 @@ const EmailIntegration = () => (
         >
           Your Inbox, Automated.
         </motion.h2>
-        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mb-12">
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-12">
           Email is the biggest time sink in strata management. NEHLA integrates directly with each
           building's mailbox, analyses every incoming email and its attachments, and takes action -
           before you even open it.
@@ -472,9 +476,11 @@ const EmailIntegration = () => (
         <motion.div variants={fadeInUp} custom={5} className="mt-12">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
             <img
-              src="/screenshots/email-integration.png"
+              src="/screenshots/email-integration.webp"
               alt="NEHLA Email Integration - per-building mailbox with AI summaries and suggested actions"
               className="w-full h-auto"
+              width={1523}
+              height={1143}
               loading="lazy"
             />
           </div>
@@ -559,9 +565,11 @@ const Compliance = () => (
           <motion.div variants={fadeInUp} custom={3} className="relative lg:col-span-2">
             <div className="overflow-hidden shadow-2xl border border-gray-200" style={{ borderRadius: '20px' }}>
               <img
-                src="/screenshots/compliance.png"
+                src="/screenshots/compliance.webp"
                 alt="NEHLA Regulations - compliance tracking across NSW, QLD, and VIC"
                 className="w-full h-auto"
+                width={1523}
+                height={1143}
                 loading="lazy"
               />
             </div>
@@ -658,7 +666,7 @@ const Security = () => (
         >
           Enterprise-Grade Protection.
         </motion.h2>
-        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-400 leading-relaxed max-w-3xl mb-12">
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-12">
           Your data is the foundation of your strata business. We protect it with the same
           security infrastructure trusted by banks and government agencies.
         </motion.p>
@@ -681,7 +689,7 @@ const Security = () => (
                 <item.icon className={`w-8 h-8 ${item.color}`} />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -877,6 +885,62 @@ const LandingPage = () => (
               "name": "NEHLA Strata Hub",
               "url": "https://nehla.com.au",
               "description": "The first AI digital workforce for strata management in Australia."
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nehla.com.au/" }
+              ]
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "NEHLA Strata Hub",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "AI-powered digital workforce for strata management. Automates compliance, document extraction, email processing, and task management.",
+              "offers": {
+                "@type": "Offer",
+                "name": "Early Adopter Program",
+                "description": "6 months free for the first 12 strata agencies",
+                "price": "0",
+                "priceCurrency": "AUD",
+                "availability": "https://schema.org/PreOrder"
+              },
+              "provider": {
+                "@type": "Organization",
+                "name": "Nehla Pty Ltd",
+                "url": "https://nehla.com.au"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How does NEHLA handle data entry?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA uses AI to provide instant processing of documents, invoices, and forms - eliminating hours of manual typing." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does NEHLA manage compliance?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA encodes NSW, QLD, and VIC strata legislation into automated workflows, keeping your agency compliant on autopilot." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does NEHLA handle emails?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA integrates with each building's mailbox, reads and classifies every incoming email, and creates tasks with AI-generated summaries and suggested actions." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does NEHLA handle documents?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA's AI engine automatically identifies document types, extracts key data, cross-references against regulatory requirements, and takes action - auto-classifying and making everything searchable." }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is my data secure with NEHLA?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Yes. NEHLA uses Auth0 enterprise login, complete data isolation between organisations, encrypted storage, time-limited download links, role-based access control, and never uses your data to train AI models." }
+                }
+              ]
             }
           ]
         })}

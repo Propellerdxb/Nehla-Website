@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 import SEO from '../components/SEO'
 
 const fadeInUp = {
@@ -23,6 +24,18 @@ const PrivacyPolicyPage = () => (
       description="Nehla Strata Hub privacy policy. Learn how we protect your strata management data with Australian-first data sovereignty, AI inference-only processing, and our no-training guarantee."
       path="/privacy"
     />
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nehla.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://nehla.com.au/privacy" }
+          ]
+        })}
+      </script>
+    </Helmet>
     {/* Hero */}
     <section className="relative pt-32 pb-16 lg:pt-44 lg:pb-24 gradient-hero overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
