@@ -228,7 +228,7 @@ const taskFeatures = [
 ]
 
 const TaskManager = () => (
-  <section className="bg-white">
+  <section id="features" className="bg-white">
     <div className="section-padding">
       <motion.div
         className="max-w-6xl mx-auto"
@@ -652,7 +652,7 @@ const securityFeatures = [
 ]
 
 const Security = () => (
-  <section className="gradient-dark">
+  <section id="security" className="gradient-dark">
     <div className="section-padding">
       <motion.div
         className="max-w-5xl mx-auto"

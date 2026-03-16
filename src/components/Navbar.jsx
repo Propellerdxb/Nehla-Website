@@ -1,14 +1,33 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleNavClick = (e, link) => {
+    if (link.to.includes('#')) {
+      e.preventDefault()
+      const hash = link.to.split('#')[1]
+      if (location.pathname !== '/') {
+        navigate('/')
+        setTimeout(() => {
+          document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+      } else {
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' })
+      }
+      setIsOpen(false)
+    }
+  }
 
   const navLinks = [
     { name: 'Home', to: '/' },
+    { name: 'Features', to: '/#features' },
+    { name: 'Security', to: '/#security' },
     { name: 'About', to: '/about' },
   ]
 
@@ -29,8 +48,9 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.to}
+                onClick={(e) => handleNavClick(e, link)}
                 className={`font-medium transition-colors duration-200 ${
-                  location.pathname === link.to
+                  location.pathname === link.to.split('#')[0] && !link.to.includes('#')
                     ? 'text-brand-cobalt'
                     : 'text-brand-body hover:text-brand-cobalt'
                 }`}
@@ -72,9 +92,9 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   to={link.to}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => { handleNavClick(e, link); setIsOpen(false) }}
                   className={`block font-medium py-2 ${
-                    location.pathname === link.to
+                    location.pathname === link.to.split('#')[0] && !link.to.includes('#')
                       ? 'text-brand-cobalt'
                       : 'text-brand-body hover:text-brand-cobalt'
                   }`}
