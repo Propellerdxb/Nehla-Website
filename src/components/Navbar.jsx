@@ -77,7 +77,18 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center">
             <a
-              href="#waitlist"
+              href="/#waitlist"
+              onClick={(e) => {
+                e.preventDefault()
+                if (location.pathname !== '/') {
+                  navigate('/')
+                  setTimeout(() => {
+                    document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+                  }, 100)
+                } else {
+                  document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
               className="px-6 py-2.5 bg-brand-cobalt text-white font-semibold rounded-lg hover:bg-[#1A3FCC] transition-all duration-200 shadow-lg shadow-brand-cobalt/25 hover:shadow-xl"
             >
               Secure Your Spot
@@ -119,7 +130,19 @@ const Navbar = () => {
               ))}
               <div className="pt-4 border-t border-gray-100">
                 <a
-                  href="#waitlist"
+                  href="/#waitlist"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsOpen(false)
+                    if (location.pathname !== '/') {
+                      navigate('/')
+                      setTimeout(() => {
+                        document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+                      }, 100)
+                    } else {
+                      document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
                   className="block text-center px-6 py-3 bg-brand-cobalt text-white font-semibold rounded-lg"
                 >
                   Secure Your Spot

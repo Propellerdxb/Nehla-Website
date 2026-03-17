@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
@@ -765,97 +766,134 @@ const WhyNehla = () => (
 )
 
 /* ──────────────────── WAITLIST CTA ────────────────────── */
-const WaitlistCTA = () => (
-  <section id="waitlist" className="relative overflow-hidden">
-    <div className="gradient-cta">
-      <div className="section-padding">
-        <motion.div
-          className="max-w-3xl mx-auto text-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-80px' }}
-          variants={staggerContainer}
-        >
-          <motion.h2
-            variants={fadeInUp}
-            className="text-3xl md:text-4xl font-semibold text-white tracking-tight"
-          >
-            Ready to See Your New Operations Team in Action?
-          </motion.h2>
-          <motion.p variants={fadeInUp} custom={1} className="mt-4 text-lg text-white/80 leading-relaxed">
-            We'd love to show you how NEHLA will help strata agencies reclaim their time
-            and lead their communities.
-          </motion.p>
+const WaitlistCTA = () => {
+  const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
 
-          <motion.form
-            variants={fadeInUp}
-            custom={2}
-            className="mt-10 max-w-xl mx-auto"
-            action="https://formsubmit.co/dan@nehla.com.au"
-            method="POST"
-          >
-            <input type="hidden" name="_subject" value="New Early Adopter Registration - NEHLA" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://nehla.com.au/?thanks=true" />
-            <input type="hidden" name="_template" value="table" />
-            <div className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Full Name"
-                aria-label="Your full name"
-                required
-                className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Work Email Address"
-                aria-label="Work email address"
-                required
-                className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
-              />
-              <input
-                type="text"
-                name="company"
-                placeholder="Agency / Company Name"
-                aria-label="Agency or company name"
-                required
-                className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
-              />
-              <button
-                type="submit"
-                className="w-full btn-mint text-lg gap-2"
-              >
-                Request Early Access
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
-          </motion.form>
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setSubmitting(true)
+    const formData = new FormData(e.target)
+    try {
+      await fetch('https://formsubmit.co/ajax/dan@nehla.com.au', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData,
+      })
+      setSubmitted(true)
+    } catch {
+      setSubmitted(true)
+    } finally {
+      setSubmitting(false)
+    }
+  }
 
+  return (
+    <section id="waitlist" className="relative overflow-hidden">
+      <div className="gradient-cta">
+        <div className="section-padding">
           <motion.div
-            variants={fadeInUp}
-            custom={3}
-            className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white/60"
+            className="max-w-3xl mx-auto text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={staggerContainer}
           >
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4" />
-              No payment required
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4" />
-              6 months free on launch
-            </span>
-            <span className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4" />
-              Priority onboarding
-            </span>
+            <motion.h2
+              variants={fadeInUp}
+              className="text-3xl md:text-4xl font-semibold text-white tracking-tight"
+            >
+              Ready to See Your New Operations Team in Action?
+            </motion.h2>
+            <motion.p variants={fadeInUp} custom={1} className="mt-4 text-lg text-white/80 leading-relaxed">
+              We'd love to show you how NEHLA will help strata agencies reclaim their time
+              and lead their communities.
+            </motion.p>
+
+            {submitted ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mt-10 max-w-xl mx-auto p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20"
+              >
+                <CheckCircle className="w-16 h-16 text-brand-mint mx-auto mb-4" />
+                <h3 className="text-2xl font-semibold text-white mb-2">Thank you for registering!</h3>
+                <p className="text-white/80 text-lg">
+                  We've received your details and will be in touch with you soon to discuss the next steps.
+                </p>
+              </motion.div>
+            ) : (
+              <motion.form
+                variants={fadeInUp}
+                custom={2}
+                className="mt-10 max-w-xl mx-auto"
+                onSubmit={handleSubmit}
+              >
+                <input type="hidden" name="_subject" value="New Early Adopter Registration - NEHLA" />
+                <input type="hidden" name="_template" value="table" />
+                <div className="space-y-4">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Full Name"
+                    aria-label="Your full name"
+                    required
+                    className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Work Email Address"
+                    aria-label="Work email address"
+                    required
+                    className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
+                  />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Agency / Company Name"
+                    aria-label="Agency or company name"
+                    required
+                    className="w-full px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 text-lg"
+                  />
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="w-full btn-mint text-lg gap-2 disabled:opacity-70"
+                  >
+                    {submitting ? 'Submitting...' : 'Request Early Access'}
+                    {!submitting && <ArrowRight className="w-5 h-5" />}
+                  </button>
+                </div>
+              </motion.form>
+            )}
+
+            {!submitted && (
+              <motion.div
+                variants={fadeInUp}
+                custom={3}
+                className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white/60"
+              >
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  No payment required
+                </span>
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  6 months free on launch
+                </span>
+                <span className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  Priority onboarding
+                </span>
+              </motion.div>
+            )}
           </motion.div>
-        </motion.div>
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 /* ──────────────────── LANDING PAGE ────────────────────── */
 const LandingPage = () => (
