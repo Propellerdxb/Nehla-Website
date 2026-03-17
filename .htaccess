@@ -5,12 +5,20 @@ RewriteBase /
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Serve sitemap and robots directly
+RewriteRule ^sitemap\.xml$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+
 # If the requested file or directory exists, serve it
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Otherwise, serve index.html (SPA fallback)
 RewriteRule ^ /index.html [L]
+
+# Correct MIME types
+AddType application/xml .xml
+AddType text/plain .txt
 
 # Cache static assets - long cache for hashed assets
 <IfModule mod_expires.c>
