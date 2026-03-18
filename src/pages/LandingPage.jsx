@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import SEO from '../components/SEO'
+import blogPosts from '../blogData'
 import {
   ArrowRight,
   Shield,
@@ -110,36 +111,63 @@ const Hero = () => (
   </section>
 )
 
-/* ───────────────────── WHAT IS NEHLA ────────────────────── */
-const WhatIsNehla = () => (
+/* ───────────────────── PAIN POINT ────────────────────── */
+const PainPoint = () => (
   <section className="bg-white">
     <div className="section-padding">
       <motion.div
-        className="max-w-6xl mx-auto"
+        className="max-w-3xl mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-80px' }}
         variants={staggerContainer}
       >
-        <div className="max-w-3xl">
-          <motion.h2
-            variants={fadeInUp}
-            className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
-          >
-            The AI-Powered Operations Team<br />for the Modern Strata Manager.
-          </motion.h2>
-          <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
-          <motion.p variants={fadeInUp} custom={3} className="text-lg text-brand-body leading-relaxed mb-6">
-            Strata management is drowning in admin. Managers spend more time on data entry,
-            email and compliance checklists than building relationships with their communities.
-          </motion.p>
-          <motion.p variants={fadeInUp} custom={4} className="text-lg text-brand-body leading-relaxed">
-            NEHLA changes that. We've built a digital workforce that handles the back-end by
-            automating data entry, tracking compliance in real time, and processing documents
-            with AI precision, so strata professionals can focus on what matters: leading
-            their communities.
-          </motion.p>
-        </div>
+        <motion.h2
+          variants={fadeInUp}
+          className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
+        >
+          Running a Strata Agency Shouldn't Mean Drowning in Admin
+        </motion.h2>
+        <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full mx-auto" />
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-brand-body leading-relaxed">
+          Your strata managers spend up to 70-80% of their day on repetitive back-office
+          tasks - chasing compliance deadlines, manually processing levy notices, copying data
+          from emails into spreadsheets, and filing documents one by one. Meanwhile, the work
+          that actually grows your agency - building owner relationships, winning new buildings,
+          and providing strategic advice - gets pushed to the margins.
+        </motion.p>
+        <motion.p variants={fadeInUp} custom={3} className="mt-6 text-xl font-semibold text-brand-navy">
+          NEHLA changes that equation.
+        </motion.p>
+      </motion.div>
+    </div>
+  </section>
+)
+
+/* ───────────────────── WHAT IS NEHLA ────────────────────── */
+const WhatIsNehla = () => (
+  <section className="bg-brand-offwhite">
+    <div className="section-padding">
+      <motion.div
+        className="max-w-3xl mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-80px' }}
+        variants={staggerContainer}
+      >
+        <motion.h2
+          variants={fadeInUp}
+          className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight"
+        >
+          Your Agency's AI-Powered Digital Workforce.
+        </motion.h2>
+        <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-8 rounded-full" />
+        <motion.p variants={fadeInUp} custom={2} className="text-lg text-brand-body leading-relaxed">
+          NEHLA is your agency's AI-powered digital workforce. It handles the repetitive
+          operational work - compliance tracking, document processing, email triage, and
+          task management - so your strata managers can focus on what matters: your buildings
+          and their owners. Built by a strata agency founder who lived these problems every day.
+        </motion.p>
       </motion.div>
     </div>
   </section>
@@ -178,7 +206,7 @@ const Foundation = () => (
           variants={fadeInUp}
           className="text-3xl md:text-4xl font-semibold text-white tracking-tight"
         >
-          Task-Driven as the Core
+          Task-Driven at the Core
         </motion.h2>
         <motion.p variants={fadeInUp} custom={2} className="mt-4 text-lg text-gray-300 leading-relaxed">
           Every piece of data that enters NEHLA flows through an automated pipeline.
@@ -765,6 +793,151 @@ const WhyNehla = () => (
   </section>
 )
 
+/* ──────────────────── THE STRATA EDIT ─────────────────── */
+const formatDate = (dateStr) => {
+  const d = new Date(dateStr + 'T00:00:00')
+  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
+}
+
+const allInsightCards = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date))
+
+const InsightCard = ({ post, i }) => (
+  <motion.article
+    key={post.slug}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4, delay: i * 0.1 }}
+    className="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover flex flex-col"
+  >
+    <Link to={`/insights/${post.slug}`} className="block">
+      {post.image ? (
+        <img src={post.image} alt={post.title} className="w-full h-40 object-cover" />
+      ) : (
+        <div className="w-full h-40 bg-gradient-to-br from-brand-cobalt/10 to-brand-mint/10 flex items-center justify-center">
+          <span className="text-brand-cobalt/20 text-3xl font-bold">NEHLA</span>
+        </div>
+      )}
+    </Link>
+    <div className="p-5 flex flex-col flex-1">
+      <div className="flex items-center gap-3 text-xs text-brand-slate mb-2">
+        <span>{formatDate(post.date)}</span>
+        <span>{post.readTime}</span>
+      </div>
+      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-brand-cobalt/10 text-brand-cobalt text-xs font-medium w-fit mb-2">
+        {post.category}
+      </span>
+      <Link to={`/insights/${post.slug}`} className="block flex-1">
+        <h3 className="text-base font-semibold text-brand-navy mb-1.5 hover:text-brand-cobalt transition-colors leading-snug">
+          {post.title}
+        </h3>
+        <p className="text-brand-body text-sm leading-relaxed line-clamp-3">
+          {post.excerpt}
+        </p>
+      </Link>
+      <Link
+        to={`/insights/${post.slug}`}
+        className="inline-flex items-center gap-1.5 text-brand-cobalt font-semibold text-sm mt-3 hover:underline"
+      >
+        Read more
+        <ArrowRight className="w-4 h-4" />
+      </Link>
+    </div>
+  </motion.article>
+)
+
+const StrataEdit = () => {
+  const [carouselPage, setCarouselPage] = useState(0)
+  const firstThree = allInsightCards.slice(0, 3)
+  const remaining = allInsightCards.slice(3)
+  const carouselPages = []
+  for (let i = 0; i < remaining.length; i += 3) {
+    carouselPages.push(remaining.slice(i, i + 3))
+  }
+  const totalDots = 1 + carouselPages.length // first page + carousel pages
+  const showingFirst = carouselPage === 0
+  const currentCards = showingFirst ? firstThree : carouselPages[carouselPage - 1] || []
+
+  return (
+    <section className="bg-brand-offwhite">
+      <div className="section-padding">
+        <motion.div
+          className="max-w-5xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
+          variants={staggerContainer}
+        >
+          <motion.h2
+            variants={fadeInUp}
+            className="text-3xl md:text-4xl font-semibold text-brand-navy tracking-tight text-center"
+          >
+            The Strata Edit
+          </motion.h2>
+          <motion.div variants={fadeInUp} custom={1} className="w-48 h-1 bg-gradient-to-r from-brand-cobalt to-brand-mint mt-6 mb-4 rounded-full mx-auto" />
+          <motion.p variants={fadeInUp} custom={2} className="text-lg text-brand-body text-center mb-12">
+            Industry insights for modern strata management in Australia.
+          </motion.p>
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={carouselPage}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.3 }}
+            >
+              {currentCards.map((post, i) => (
+                <InsightCard key={post.slug} post={post} i={i} />
+              ))}
+
+              {/* More Insights tile on last carousel page or if few posts */}
+              {(carouselPage === totalDots - 1 || currentCards.length < 3) && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: currentCards.length * 0.1 }}
+                >
+                  <Link
+                    to="/insights"
+                    className="bg-gradient-to-br from-brand-cobalt to-brand-mint rounded-2xl h-full min-h-[280px] flex flex-col items-center justify-center p-8 text-center card-hover"
+                  >
+                    <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4">
+                      <ArrowRight className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-white mb-2">More Insights</h3>
+                    <p className="text-white/80 text-sm">
+                      Explore all articles from The Strata Edit
+                    </p>
+                  </Link>
+                </motion.div>
+              )}
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Navigation dots */}
+          {totalDots > 1 && (
+            <div className="flex justify-center gap-2 mt-8">
+              {Array.from({ length: totalDots }, (_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCarouselPage(i)}
+                  className={`h-3 rounded-full transition-all duration-300 ${
+                    carouselPage === i
+                      ? 'bg-brand-cobalt w-8'
+                      : 'bg-gray-300 hover:bg-brand-cobalt/50 w-3'
+                  }`}
+                  aria-label={`Page ${i + 1}`}
+                />
+              ))}
+            </div>
+          )}
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
 /* ──────────────────── WAITLIST CTA ────────────────────── */
 const WaitlistCTA = () => {
   const [submitted, setSubmitted] = useState(false)
@@ -985,6 +1158,7 @@ const LandingPage = () => (
       </script>
     </Helmet>
     <Hero />
+    <PainPoint />
     <WhatIsNehla />
     <Foundation />
     <TaskManager />
@@ -995,6 +1169,7 @@ const LandingPage = () => (
     <Transformation />
     <Security />
     <WhyNehla />
+    <StrataEdit />
     <WaitlistCTA />
   </>
 )

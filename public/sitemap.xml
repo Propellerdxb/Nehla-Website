@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://nehla.com.au/</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -24,8 +24,54 @@
     </image:image>
   </url>
   <url>
+    <loc>https://nehla.com.au/insights</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nehla.com.au/insights/strata-compliance-nsw-vic-qld-2026</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://nehla.com.au/blog/strata-compliance-2026.svg</image:loc>
+      <image:title>Strata Compliance in 2026 - NSW, VIC, and QLD</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nehla.com.au/insights/why-strata-managers-are-leaving</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://nehla.com.au/blog/managers-leaving.svg</image:loc>
+      <image:title>Why strata managers are leaving the industry</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nehla.com.au/insights/strata-manager-inbox-problem</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://nehla.com.au/blog/inbox-problem.svg</image:loc>
+      <image:title>The strata manager inbox problem</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nehla.com.au/insights/nsw-insurance-commission-ban-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://nehla.com.au/blog/nsw-insurance-commission-ban.svg</image:loc>
+      <image:title>NSW insurance commission ban 2026</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://nehla.com.au/about</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

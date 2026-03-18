@@ -6,6 +6,8 @@ import LandingPage from './pages/LandingPage'
 import ScrollToTop from './components/ScrollToTop'
 
 const AboutPage = lazy(() => import('./pages/AboutPage'))
+const BlogPage = lazy(() => import('./pages/BlogPage'))
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'))
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
 
@@ -19,6 +21,8 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/insights" element={<BlogPage />} />
+            <Route path="/insights/:slug" element={<BlogPostPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsPage />} />
           </Routes>

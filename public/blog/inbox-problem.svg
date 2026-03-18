@@ -1,0 +1,335 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark sky — mirrors the centered insurance ban dark palette -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020d1f"/>
+      <stop offset="40%" stop-color="#042C53"/>
+      <stop offset="75%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#185FA5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#021626"/>
+      <stop offset="100%" stop-color="#010a14"/>
+    </linearGradient>
+    <!-- Buildings dark -->
+    <linearGradient id="bldA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#020d1f"/>
+    </linearGradient>
+    <linearGradient id="bldB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#042C53"/>
+    </linearGradient>
+    <linearGradient id="bldC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#052e5c"/>
+      <stop offset="100%" stop-color="#020d1f"/>
+    </linearGradient>
+    <!-- Accents -->
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFC2"/>
+      <stop offset="100%" stop-color="#00FFC2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="timelineG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <!-- Inbox panel gradient -->
+    <linearGradient id="panelG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C447C" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#042C53" stop-opacity="0.8"/>
+    </linearGradient>
+    <!-- Bar chart gradient -->
+    <linearGradient id="barOwner" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#378ADD"/>
+    </linearGradient>
+    <linearGradient id="barMint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFC2"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <clipPath id="mainClip"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+
+  <!-- Dark sky -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- Grid -->
+  <g stroke="#2E5BFF" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Glow -->
+  <ellipse cx="600" cy="200" rx="500" ry="300" fill="#2E5BFF" opacity="0.07"/>
+
+  <!-- Ground -->
+  <rect x="0" y="580" width="1200" height="50" fill="url(#ground)"/>
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="#2E5BFF" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Distant buildings -->
+  <rect x="700" y="400" width="28" height="180" fill="#042C53" opacity="0.55"/>
+  <rect x="742" y="375" width="36" height="205" fill="#042C53" opacity="0.5"/>
+  <rect x="792" y="355" width="42" height="225" fill="#052e5c" opacity="0.55"/>
+
+  <!-- Main tall building -->
+  <rect x="850" y="68" width="165" height="512" fill="url(#bldA)" rx="2"/>
+  <rect x="850" y="68" width="165" height="512" fill="none" stroke="#378ADD" stroke-width="0.7" opacity="0.2"/>
+  <line x1="893" y1="68" x2="893" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/>
+  <line x1="936" y1="68" x2="936" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/>
+  <line x1="979" y1="68" x2="979" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/>
+  <g stroke="#378ADD" stroke-width="0.4" opacity="0.12">
+    <line x1="850" y1="106" x2="1015" y2="106"/><line x1="850" y1="144" x2="1015" y2="144"/>
+    <line x1="850" y1="182" x2="1015" y2="182"/><line x1="850" y1="220" x2="1015" y2="220"/>
+    <line x1="850" y1="258" x2="1015" y2="258"/><line x1="850" y1="296" x2="1015" y2="296"/>
+    <line x1="850" y1="334" x2="1015" y2="334"/><line x1="850" y1="372" x2="1015" y2="372"/>
+    <line x1="850" y1="410" x2="1015" y2="410"/><line x1="850" y1="448" x2="1015" y2="448"/>
+    <line x1="850" y1="486" x2="1015" y2="486"/><line x1="850" y1="524" x2="1015" y2="524"/>
+    <line x1="850" y1="562" x2="1015" y2="562"/>
+  </g>
+  <g opacity="0.38">
+    <rect x="856" y="76" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="898" y="76" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.15"/>
+    <rect x="941" y="76" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="982" y="76" width="25" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="856" y="114" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="898" y="114" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="941" y="114" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="982" y="114" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="856" y="152" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="898" y="152" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="941" y="152" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="982" y="152" width="25" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="856" y="190" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="898" y="190" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="941" y="190" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="982" y="190" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="856" y="228" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="898" y="228" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="941" y="228" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="982" y="228" width="25" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="856" y="266" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="898" y="266" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="941" y="266" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="982" y="266" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="856" y="304" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="898" y="304" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="941" y="304" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="982" y="304" width="25" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="856" y="342" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="898" y="342" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="941" y="342" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="982" y="342" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="856" y="380" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="898" y="380" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="941" y="380" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="982" y="380" width="25" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="856" y="418" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="898" y="418" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="941" y="418" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="982" y="418" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="856" y="456" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="898" y="456" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="941" y="456" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="982" y="456" width="25" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="856" y="494" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="898" y="494" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="941" y="494" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+    <rect x="982" y="494" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="856" y="532" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="898" y="532" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="941" y="532" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="982" y="532" width="25" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/>
+  </g>
+
+  <!-- Secondary right building -->
+  <rect x="1030" y="160" width="105" height="420" fill="url(#bldB)" rx="2"/>
+  <rect x="1030" y="160" width="105" height="420" fill="none" stroke="#378ADD" stroke-width="0.6" opacity="0.18"/>
+  <line x1="1063" y1="160" x2="1063" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.15"/>
+  <line x1="1100" y1="160" x2="1100" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.15"/>
+  <g stroke="#378ADD" stroke-width="0.3" opacity="0.1">
+    <line x1="1030" y1="196" x2="1135" y2="196"/><line x1="1030" y1="232" x2="1135" y2="232"/>
+    <line x1="1030" y1="268" x2="1135" y2="268"/><line x1="1030" y1="304" x2="1135" y2="304"/>
+    <line x1="1030" y1="340" x2="1135" y2="340"/><line x1="1030" y1="376" x2="1135" y2="376"/>
+    <line x1="1030" y1="412" x2="1135" y2="412"/><line x1="1030" y1="448" x2="1135" y2="448"/>
+    <line x1="1030" y1="484" x2="1135" y2="484"/><line x1="1030" y1="520" x2="1135" y2="520"/>
+  </g>
+  <g opacity="0.3">
+    <rect x="1036" y="170" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="1068" y="170" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.15"/>
+    <rect x="1106" y="170" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="1036" y="202" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="1068" y="202" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.22"/>
+    <rect x="1106" y="202" width="20" height="16" rx="1" fill="#B5D4F4" opacity="0.15"/>
+    <rect x="1036" y="234" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="1068" y="234" width="20" height="16" rx="1" fill="#B5D4F4" opacity="0.12"/>
+    <rect x="1106" y="234" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="1036" y="266" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="1068" y="266" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/>
+    <rect x="1106" y="266" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1036" y="298" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="1068" y="298" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="1106" y="298" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/>
+  </g>
+
+  <!-- Far right building -->
+  <rect x="1148" y="225" width="75" height="355" fill="url(#bldC)" rx="2"/>
+  <rect x="1148" y="225" width="75" height="355" fill="none" stroke="#378ADD" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- ═══════════════════════════════════════════════
+       ILLUSTRATION: INBOX PANEL
+       Replaces the clipboard from capital works
+       ═══════════════════════════════════════════════ -->
+
+  <!-- Inbox panel — dark glass card -->
+  <rect x="652" y="100" width="186" height="272" rx="8" fill="url(#panelG)"/>
+  <rect x="652" y="100" width="186" height="272" rx="8" fill="none" stroke="#2E5BFF" stroke-width="1" opacity="0.4"/>
+  <!-- Header bar -->
+  <rect x="652" y="100" width="186" height="32" rx="8" fill="#0C447C" opacity="0.9"/>
+  <rect x="652" y="120" width="186" height="12" fill="#0C447C" opacity="0.9"/>
+  <text x="745" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#85B7EB" letter-spacing="1.5">INBOX</text>
+  <!-- Unread badge -->
+  <circle cx="820" cy="114" r="10" fill="#2E5BFF"/>
+  <text x="820" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="white">23</text>
+
+  <!-- Email rows — 6 stacked messages -->
+  <!-- Row 1 — urgent/red dot -->
+  <rect x="660" y="140" width="172" height="30" rx="3" fill="#185FA5" fill-opacity="0.35"/>
+  <circle cx="672" cy="155" r="4" fill="#00FFC2"/>
+  <rect x="684" y="148" width="80" height="4" rx="2" fill="#B5D4F4" opacity="0.8"/>
+  <rect x="684" y="157" width="110" height="3" rx="1.5" fill="#378ADD" opacity="0.4"/>
+
+  <!-- Row 2 -->
+  <rect x="660" y="176" width="172" height="30" rx="3" fill="#0C447C" fill-opacity="0.4"/>
+  <circle cx="672" cy="191" r="4" fill="#2E5BFF"/>
+  <rect x="684" y="184" width="70" height="4" rx="2" fill="#B5D4F4" opacity="0.7"/>
+  <rect x="684" y="193" width="120" height="3" rx="1.5" fill="#378ADD" opacity="0.35"/>
+
+  <!-- Row 3 -->
+  <rect x="660" y="212" width="172" height="30" rx="3" fill="#0C447C" fill-opacity="0.3"/>
+  <circle cx="672" cy="227" r="4" fill="#2E5BFF" opacity="0.6"/>
+  <rect x="684" y="220" width="90" height="4" rx="2" fill="#B5D4F4" opacity="0.6"/>
+  <rect x="684" y="229" width="100" height="3" rx="1.5" fill="#378ADD" opacity="0.3"/>
+
+  <!-- Row 4 — read, dimmer -->
+  <rect x="660" y="248" width="172" height="28" rx="3" fill="#042C53" fill-opacity="0.4"/>
+  <circle cx="672" cy="262" r="4" fill="#378ADD" opacity="0.4"/>
+  <rect x="684" y="255" width="75" height="3" rx="1.5" fill="#64748B" opacity="0.6"/>
+  <rect x="684" y="263" width="115" height="3" rx="1.5" fill="#64748B" opacity="0.35"/>
+
+  <!-- Row 5 — read -->
+  <rect x="660" y="282" width="172" height="28" rx="3" fill="#042C53" fill-opacity="0.3"/>
+  <circle cx="672" cy="296" r="4" fill="#378ADD" opacity="0.35"/>
+  <rect x="684" y="289" width="95" height="3" rx="1.5" fill="#64748B" opacity="0.55"/>
+  <rect x="684" y="297" width="85" height="3" rx="1.5" fill="#64748B" opacity="0.3"/>
+
+  <!-- Row 6 — read -->
+  <rect x="660" y="316" width="172" height="28" rx="3" fill="#042C53" fill-opacity="0.25"/>
+  <circle cx="672" cy="330" r="4" fill="#378ADD" opacity="0.3"/>
+  <rect x="684" y="323" width="65" height="3" rx="1.5" fill="#64748B" opacity="0.45"/>
+  <rect x="684" y="331" width="105" height="3" rx="1.5" fill="#64748B" opacity="0.25"/>
+
+  <!-- "80 more..." fade indicator -->
+  <rect x="652" y="356" width="186" height="16" rx="0" fill="url(#panelG)" opacity="0.95"/>
+  <text x="745" y="368" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B" letter-spacing="0.5">+ 57 more unread</text>
+
+  <!-- FEE-FOR-SERVICE / ACTION badge — reuse pattern from capital works -->
+  <rect x="652" y="382" width="186" height="30" rx="6" fill="#2E5BFF"/>
+  <text x="745" y="402" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="white" letter-spacing="1">3–4 HRS LOST DAILY</text>
+
+  <!-- ═══════════════════════════════════════════════
+       CLOCK BADGE — replaces QS circle
+       ═══════════════════════════════════════════════ -->
+  <circle cx="615" cy="298" r="48" fill="#042C53" opacity="0.9"/>
+  <circle cx="615" cy="298" r="48" fill="none" stroke="url(#accentV)" stroke-width="2.5"/>
+  <circle cx="615" cy="298" r="40" fill="none" stroke="rgba(46,91,255,0.18)" stroke-width="1"/>
+  <!-- Clock face -->
+  <circle cx="615" cy="298" r="28" fill="none" stroke="#2E5BFF" stroke-width="1.5" opacity="0.5"/>
+  <!-- Clock hands — showing ~3:45 (time wasted) -->
+  <line x1="615" y1="298" x2="615" y2="276" stroke="#E6F1FB" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="615" y1="298" x2="637" y2="306" stroke="#00FFC2" stroke-width="2" stroke-linecap="round"/>
+  <!-- Clock tick marks -->
+  <line x1="615" y1="272" x2="615" y2="276" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="641" y1="298" x2="637" y2="298" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="615" y1="324" x2="615" y2="320" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="589" y1="298" x2="593" y2="298" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <text x="615" y="343" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#00FFC2" letter-spacing="1.5">50% OF YOUR DAY</text>
+
+  <!-- ═══════════════════════════════════════════════
+       STAT CARDS — bottom right (same pattern)
+       ═══════════════════════════════════════════════ -->
+  <!-- Card 1 -->
+  <rect x="830" y="420" width="170" height="62" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#2E5BFF" stroke-width="0.8" stroke-opacity="0.35"/>
+  <rect x="830" y="420" width="3" height="62" fill="#2E5BFF"/>
+  <text x="848" y="445" font-family="Inter,sans-serif" font-size="22" font-weight="600" fill="#E6F1FB">60&#x2013;80</text>
+  <text x="848" y="461" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#85B7EB">emails per day</text>
+  <text x="848" y="474" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#64748B">per strata manager</text>
+  <!-- Card 2 -->
+  <rect x="1010" y="420" width="152" height="62" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#00FFC2" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="1010" y="420" width="3" height="62" fill="#00FFC2"/>
+  <text x="1028" y="445" font-family="Inter,sans-serif" font-size="22" font-weight="600" fill="#E6F1FB">23 <tspan font-size="13" font-weight="300" fill="#85B7EB">min</tspan></text>
+  <text x="1028" y="461" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#85B7EB">refocus time after</text>
+  <text x="1028" y="474" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#64748B">each interruption</text>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#accentV)"/>
+
+  <!-- Eyebrow -->
+  <text x="72" y="58" font-family="Inter,sans-serif" font-size="13" font-weight="400" fill="rgba(133,183,235,0.75)" letter-spacing="2.5">THE STRATA EDIT  &#xB7;  OPERATIONAL EFFICIENCY</text>
+  <rect x="72" y="70" width="280" height="1" fill="url(#accentH)" opacity="0.5"/>
+
+  <!-- Headline — light text on dark -->
+  <text font-family="Inter,sans-serif" fill="#E6F1FB">
+    <tspan x="72" y="148" font-size="58" font-weight="300" letter-spacing="-1">The Strata</tspan>
+    <tspan x="72" dy="68" font-size="58" font-weight="300" letter-spacing="-1">Manager&#x2019;s</tspan>
+    <tspan x="72" dy="68" font-size="58" font-weight="300" letter-spacing="-1">Inbox</tspan>
+    <tspan x="72" dy="68" font-size="58" font-weight="700" letter-spacing="-1" fill="#00FFC2">Problem.</tspan>
+  </text>
+  <circle cx="272" cy="352" r="7" fill="#2E5BFF"/>
+
+  <!-- Divider -->
+  <rect x="72" y="375" width="320" height="1.5" fill="url(#accentH)" opacity="0.7"/>
+
+  <!-- Subhead -->
+  <text x="72" y="404" font-family="Inter,sans-serif" font-size="16" font-weight="300" fill="rgba(181,212,244,0.85)" letter-spacing="0.2">Why email is eating your day &#x2014;</text>
+  <text x="72" y="424" font-family="Inter,sans-serif" font-size="16" font-weight="300" fill="rgba(181,212,244,0.85)" letter-spacing="0.2">and what to do about it.</text>
+
+  <!-- Stat pills -->
+  <rect x="72" y="452" width="192" height="30" rx="15" fill="rgba(46,91,255,0.18)" stroke="rgba(46,91,255,0.6)" stroke-width="1"/>
+  <text x="168" y="472" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#85B7EB">50%+ of your day</text>
+  <rect x="274" y="452" width="172" height="30" rx="15" fill="rgba(0,255,194,0.1)" stroke="rgba(0,255,194,0.5)" stroke-width="1"/>
+  <text x="360" y="472" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#00FFC2">Reduce by 30&#x2013;40%</text>
+  <rect x="72" y="494" width="168" height="30" rx="15" fill="rgba(46,91,255,0.15)" stroke="rgba(46,91,255,0.5)" stroke-width="1"/>
+  <text x="156" y="514" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#85B7EB">5 practical fixes</text>
+
+  <!-- Slim timeline bar -->
+  <line x1="0" y1="544" x2="1200" y2="544" stroke="#0C447C" stroke-width="1" opacity="0.6"/>
+  <rect x="72" y="558" width="1076" height="3" rx="1.5" fill="#0C447C" opacity="0.8"/>
+  <rect x="72" y="558" width="1076" height="3" rx="1.5" fill="url(#timelineG)" opacity="0.65"/>
+  <!-- 8am -->
+  <circle cx="72" cy="559" r="6" fill="#2E5BFF"/>
+  <text x="84" y="555" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">8:00 AM</text>
+  <text x="84" y="570" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Email check begins</text>
+  <!-- 10am -->
+  <circle cx="370" cy="559" r="6" fill="#185FA5"/>
+  <text x="382" y="555" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">10:00 AM</text>
+  <text x="382" y="570" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">2hrs gone, inbox still full</text>
+  <!-- Noon -->
+  <circle cx="700" cy="559" r="8" fill="url(#accentV)"/>
+  <text x="714" y="555" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#2E5BFF">12:00 PM &#x2014; 4hrs lost</text>
+  <text x="714" y="570" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Half day consumed by email</text>
+  <!-- 5pm -->
+  <circle cx="1148" cy="559" r="6" fill="#00FFC2"/>
+  <text x="1136" y="555" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">5:00 PM</text>
+  <text x="1136" y="570" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">80 emails processed</text>
+
+  </g>
+</svg>
