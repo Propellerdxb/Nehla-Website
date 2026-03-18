@@ -942,7 +942,6 @@ const StrataEdit = () => {
 const WaitlistCTA = () => {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     setSubmitting(true)

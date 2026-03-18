@@ -31,9 +31,16 @@ const BlogPage = () => {
   const [activeFilter, setActiveFilter] = useState('All')
   const [subscribed, setSubscribed] = useState(false)
   const [subscribing, setSubscribing] = useState(false)
+  const [optIn, setOptIn] = useState(false)
+  const [optInError, setOptInError] = useState(false)
 
   const handleSubscribe = async (e) => {
     e.preventDefault()
+    if (!optIn) {
+      setOptInError(true)
+      return
+    }
+    setOptInError(false)
     setSubscribing(true)
     const formData = new FormData(e.target)
     try {
@@ -224,25 +231,41 @@ const BlogPage = () => {
                 </p>
                 <form
                   onSubmit={handleSubscribe}
-                  className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto"
+                  className="max-w-lg mx-auto"
                 >
                   <input type="hidden" name="_subject" value="New Strata Edit Subscriber" />
                   <input type="hidden" name="_template" value="table" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your work email"
-                    aria-label="Email address"
-                    required
-                    className="flex-1 px-5 py-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                  <button
-                    type="submit"
-                    disabled={subscribing}
-                    className="px-6 py-3 rounded-xl bg-brand-mint text-brand-navy font-semibold hover:bg-[#00E6AF] transition-all disabled:opacity-70"
-                  >
-                    {subscribing ? 'Subscribing...' : 'Subscribe'}
-                  </button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your work email"
+                      aria-label="Email address"
+                      required
+                      className="flex-1 px-5 py-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40"
+                    />
+                    <button
+                      type="submit"
+                      disabled={subscribing}
+                      className="px-6 py-3 rounded-xl bg-brand-mint text-brand-navy font-semibold hover:bg-[#00E6AF] transition-all disabled:opacity-70"
+                    >
+                      {subscribing ? 'Subscribing...' : 'Subscribe'}
+                    </button>
+                  </div>
+                  <label className="flex items-start gap-3 cursor-pointer select-none mt-4 justify-center">
+                    <input
+                      type="checkbox"
+                      checked={optIn}
+                      onChange={(e) => { setOptIn(e.target.checked); if (e.target.checked) setOptInError(false) }}
+                      className={`mt-0.5 w-5 h-5 rounded border-2 flex-shrink-0 appearance-none cursor-pointer checked:bg-brand-mint checked:border-brand-mint ${
+                        optInError ? 'border-red-500' : 'border-white/40'
+                      }`}
+                      style={optIn ? { backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 16 16\' fill=\'%23121C2D\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z\'/%3E%3C/svg%3E")', backgroundSize: '100%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' } : {}}
+                    />
+                    <span className={`text-sm ${optInError ? 'text-red-400' : 'text-white/70'}`}>
+                      Opt in to receive news and updates.
+                    </span>
+                  </label>
                 </form>
               </>
             )}
