@@ -20,7 +20,7 @@ export async function prerender(data) {
     html,
     head: {
       lang: 'en-AU',
-      title: helmet?.title?.toString() || '',
+      title: (helmet?.title?.toString() || '').replace(/<\/?title[^>]*>/g, ''),
       elements: new Set([
         ...(helmet?.meta?.toString() ? [{ type: 'raw', value: helmet.meta.toString() }] : []),
         ...(helmet?.link?.toString() ? [{ type: 'raw', value: helmet.link.toString() }] : []),
