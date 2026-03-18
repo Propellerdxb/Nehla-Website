@@ -838,7 +838,7 @@ const InsightCard = ({ post, i }) => (
         to={`/insights/${post.slug}`}
         className="inline-flex items-center gap-1.5 text-brand-cobalt font-semibold text-sm mt-3 hover:underline"
       >
-        Read more
+        Read more<span className="sr-only">: {post.title}</span>
         <ArrowRight className="w-4 h-4" />
       </Link>
     </div>
@@ -900,6 +900,7 @@ const StrataEdit = () => {
                 >
                   <Link
                     to="/insights"
+                    aria-label="View all articles from The Strata Edit"
                     className="bg-gradient-to-br from-brand-cobalt to-brand-mint rounded-2xl h-full min-h-[280px] flex flex-col items-center justify-center p-8 text-center card-hover"
                   >
                     <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4">
@@ -1044,7 +1045,7 @@ const WaitlistCTA = () => {
               <motion.div
                 variants={fadeInUp}
                 custom={3}
-                className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white/60"
+                className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white/80"
               >
                 <span className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4" />

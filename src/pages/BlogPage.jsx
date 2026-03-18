@@ -189,7 +189,7 @@ const BlogPage = () => {
                           to={`/insights/${post.slug}`}
                           className="inline-flex items-center gap-1.5 text-brand-cobalt font-semibold text-sm mt-4 hover:underline"
                         >
-                          Read more
+                          Read more<span className="sr-only">: {post.title}</span>
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>

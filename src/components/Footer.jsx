@@ -22,7 +22,7 @@ const Footer = () => {
                 height={137}
               />
             </Link>
-            <p className="text-gray-500 mb-6 max-w-xs leading-relaxed">
+            <p className="text-gray-400 mb-6 max-w-xs leading-relaxed">
               The AI-Powered Operations Team for the Modern Strata Manager.
               Automating the back-end to elevate the human-end.
             </p>
@@ -41,22 +41,22 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Navigation</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Home
                 </Link>
               </li>
               <li>
-                <a href="/#features" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#features" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Features
                 </a>
               </li>
               <li>
-                <a href="/#documents" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#documents" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Documents
                 </a>
               </li>
               <li>
-                <a href="/#email" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#email" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Email
                 </a>
               </li>
@@ -67,22 +67,22 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">More</h4>
             <ul className="space-y-3">
               <li>
-                <a href="/#security" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#security" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Security
                 </a>
               </li>
               <li>
-                <Link to="/insights" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <Link to="/insights" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Insights
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">
                   About
                 </Link>
               </li>
               <li>
-                <a href="/#waitlist" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <a href="/#waitlist" aria-label="Secure your spot - request early access" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Secure Your Spot
                 </a>
               </li>
@@ -93,12 +93,12 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/privacy" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-gray-500 hover:text-white transition-colors text-sm">
+                <Link to="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Terms of Service
                 </Link>
               </li>
