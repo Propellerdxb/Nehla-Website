@@ -26,7 +26,15 @@ const Footer = () => {
               The AI-Powered Operations Team for the Modern Strata Manager.
               Automating the back-end to elevate the human-end.
             </p>
-            {/* Social links hidden for now */}
+            <a
+              href="https://www.linkedin.com/company/nehla-strata-hub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg bg-gray-700/50 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
           </div>
 
           <div>
