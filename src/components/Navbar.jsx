@@ -51,11 +51,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" onClick={() => { setActiveHash(''); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className="flex items-center">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="NEHLA Strata Hub"
               className="h-12 w-auto"
-              width={800}
-              height={274}
+              width={280}
+              height={96}
               fetchpriority="high"
             />
           </Link>
