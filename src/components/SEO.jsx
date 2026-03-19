@@ -14,7 +14,7 @@ const SEO = ({
 }) => {
   const fullTitle = title.includes('NEHLA')
     ? title
-    : `${title} | NEHLA Strata Hub`
+    : `${title} | NEHLA | Strata Hub`
   const canonicalUrl = `${SITE_URL}${path}`
   const defaultKeywords = 'strata management, AI, compliance, NSW, QLD, VIC, document extraction, email automation, property management, strata manager, digital workforce, Australia'
 
@@ -34,7 +34,7 @@ const SEO = ({
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="NEHLA Strata Hub" />
+      <meta property="og:site_name" content="NEHLA | Strata Hub" />
       <meta property="og:locale" content="en_AU" />
 
       <meta name="twitter:card" content="summary_large_image" />
