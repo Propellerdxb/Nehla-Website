@@ -29,68 +29,11 @@
     {
       "@context": "https://schema.org",
       "@graph": [
-        {
-          "@type": "Organization",
-          "name": "NEHLA",
-          "legalName": "Nehla Pty Ltd",
-          "url": "https://nehla.com.au",
-          "logo": "https://nehla.com.au/logo.png",
-          "description": "AI-powered digital workforce for Australian strata management.",
-          "areaServed": { "@type": "Country", "name": "Australia" },
-          "contactPoint": { "@type": "ContactPoint", "email": "hello@nehla.ai", "contactType": "sales" }
-        },
-        {
-          "@type": "WebSite",
-          "name": "NEHLA Strata Hub",
-          "url": "https://nehla.com.au",
-          "description": "The first AI digital workforce for strata management in Australia."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nehla.com.au/" }
-          ]
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "NEHLA Strata Hub",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "AI-powered digital workforce for strata management. Automates compliance, document extraction, email processing, and task management.",
-          "offers": {
-            "@type": "Offer",
-            "name": "Early Adopter Program",
-            "description": "6 months free for the first 12 strata agencies",
-            "price": "0",
-            "priceCurrency": "AUD",
-            "availability": "https://schema.org/PreOrder"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How does NEHLA handle data entry?",
-              "acceptedAnswer": { "@type": "Answer", "text": "NEHLA uses AI to provide instant processing of documents, invoices, and forms - eliminating hours of manual typing." }
-            },
-            {
-              "@type": "Question",
-              "name": "How does NEHLA manage compliance?",
-              "acceptedAnswer": { "@type": "Answer", "text": "NEHLA encodes NSW, QLD, and VIC strata legislation into automated workflows, keeping your agency compliant on autopilot." }
-            },
-            {
-              "@type": "Question",
-              "name": "How does NEHLA handle emails?",
-              "acceptedAnswer": { "@type": "Answer", "text": "NEHLA integrates with each building's mailbox, reads and classifies every incoming email, and creates tasks with AI-generated summaries and suggested actions." }
-            },
-            {
-              "@type": "Question",
-              "name": "Is my data secure with NEHLA?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes. NEHLA uses Auth0 enterprise login, complete data isolation, encrypted storage, time-limited download links, role-based access control, and never uses your data to train AI models." }
-            }
-          ]
-        }
+        {"@type":"Organization","name":"NEHLA","legalName":"Nehla Pty Ltd","url":"https://nehla.com.au","logo":"https://nehla.com.au/logo.png","description":"AI-powered digital workforce for Australian strata management.","areaServed":{"@type":"Country","name":"Australia"},"contactPoint":{"@type":"ContactPoint","email":"hello@nehla.ai","contactType":"sales"}},
+        {"@type":"WebSite","name":"NEHLA Strata Hub","url":"https://nehla.com.au","description":"The first AI digital workforce for strata management in Australia."},
+        {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nehla.com.au/"}]},
+        {"@type":"SoftwareApplication","name":"NEHLA Strata Hub","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"AI-powered digital workforce for strata management.","offers":{"@type":"Offer","name":"Early Adopter Program","description":"6 months free for the first 12 strata agencies","price":"0","priceCurrency":"AUD","availability":"https://schema.org/PreOrder"}},
+        {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does NEHLA handle data entry?","acceptedAnswer":{"@type":"Answer","text":"NEHLA uses AI to provide instant processing of documents, invoices, and forms."}},{"@type":"Question","name":"How does NEHLA manage compliance?","acceptedAnswer":{"@type":"Answer","text":"NEHLA encodes NSW, QLD, and VIC strata legislation into automated workflows."}},{"@type":"Question","name":"How does NEHLA handle emails?","acceptedAnswer":{"@type":"Answer","text":"NEHLA integrates with each building's mailbox, reads and classifies every incoming email."}},{"@type":"Question","name":"Is my data secure with NEHLA?","acceptedAnswer":{"@type":"Answer","text":"Yes. NEHLA uses Auth0 enterprise login, complete data isolation, encrypted storage, and never uses your data to train AI models."}}]}
       ]
     }
     </script>
@@ -98,6 +41,7 @@
       body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:#F8FAFC;color:#334155}
       .min-h-screen{min-height:100vh}
       nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid #f1f5f9}
+      #root:not(.hydrated) [style*="opacity:0"]{opacity:1!important;transform:none!important}
     </style>
     <link rel="preload" href="/logo.webp" as="image" type="image/webp" >
     <link rel="preconnect" href="https://fonts.googleapis.com" >
@@ -112,7 +56,7 @@
       gtag('js', new Date());
       gtag('config', 'G-2NFT1C42LE');
     </script>
-    <script type="module" crossorigin src="/assets/index-w6rZ7RKY.js"></script>
+    <script type="module" crossorigin src="/assets/index-BpY7iOsa.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/react-vendor-e4h1-vLG.js">
     <link rel="modulepreload" crossorigin href="/assets/framer-D9fbVBJk.js">
     <link rel="modulepreload" crossorigin href="/assets/App-DAekH6It.js">
