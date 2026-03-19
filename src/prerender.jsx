@@ -16,16 +16,17 @@ export async function prerender(data) {
 
   const { helmet } = helmetContext
 
+  // Extract clean title text without HTML tags or attributes
+  const titleText = (helmet?.title?.toString() || '')
+    .replace(/<title[^>]*>/g, '')
+    .replace(/<\/title>/g, '')
+    .trim()
+
   return {
     html,
     head: {
       lang: 'en-AU',
-      title: (helmet?.title?.toString() || '').replace(/<\/?title[^>]*>/g, ''),
-      elements: new Set([
-        ...(helmet?.meta?.toString() ? [{ type: 'raw', value: helmet.meta.toString() }] : []),
-        ...(helmet?.link?.toString() ? [{ type: 'raw', value: helmet.link.toString() }] : []),
-        ...(helmet?.script?.toString() ? [{ type: 'raw', value: helmet.script.toString() }] : []),
-      ]),
+      title: titleText,
     },
     links: new Set(['/about', '/privacy', '/terms']),
   }
