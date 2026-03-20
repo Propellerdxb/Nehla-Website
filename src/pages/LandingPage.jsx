@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
 import SEO from '../components/SEO'
 import blogPosts from '../blogData'
 import {
@@ -1071,87 +1070,6 @@ const LandingPage = () => (
       description="The AI-powered operations team for modern strata managers. Automated compliance, document extraction, email intelligence, and task management. Join our Early Adopter program - only 12 spots, 6 months free."
       path="/"
     />
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "name": "NEHLA",
-              "legalName": "Nehla Pty Ltd",
-              "url": "https://nehla.com.au",
-              "logo": "https://nehla.com.au/logo.png",
-              "description": "AI-powered digital workforce for Australian strata management. Automated compliance, data entry, and operations.",
-              "areaServed": { "@type": "Country", "name": "Australia" },
-              "contactPoint": { "@type": "ContactPoint", "email": "hello@nehla.ai", "contactType": "sales" }
-            },
-            {
-              "@type": "WebSite",
-              "name": "NEHLA Strata Hub",
-              "url": "https://nehla.com.au",
-              "description": "The first AI digital workforce for strata management in Australia."
-            },
-            {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nehla.com.au/" }
-              ]
-            },
-            {
-              "@type": "SoftwareApplication",
-              "name": "NEHLA Strata Hub",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "Web",
-              "description": "AI-powered digital workforce for strata management. Automates compliance, document extraction, email processing, and task management.",
-              "offers": {
-                "@type": "Offer",
-                "name": "Early Adopter Program",
-                "description": "6 months free for the first 12 strata agencies",
-                "price": "0",
-                "priceCurrency": "AUD",
-                "availability": "https://schema.org/PreOrder"
-              },
-              "provider": {
-                "@type": "Organization",
-                "name": "Nehla Pty Ltd",
-                "url": "https://nehla.com.au"
-              }
-            },
-            {
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "How does NEHLA handle data entry?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA uses AI to provide instant processing of documents, invoices, and forms - eliminating hours of manual typing." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How does NEHLA manage compliance?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA encodes NSW, QLD, and VIC strata legislation into automated workflows, keeping your agency compliant on autopilot." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How does NEHLA handle emails?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA integrates with each building's mailbox, reads and classifies every incoming email, and creates tasks with AI-generated summaries and suggested actions." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How does NEHLA handle documents?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "NEHLA's AI engine automatically identifies document types, extracts key data, cross-references against regulatory requirements, and takes action - auto-classifying and making everything searchable." }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is my data secure with NEHLA?",
-                  "acceptedAnswer": { "@type": "Answer", "text": "Yes. NEHLA uses Auth0 enterprise login, complete data isolation between organisations, encrypted storage, time-limited download links, role-based access control, and never uses your data to train AI models." }
-                }
-              ]
-            }
-          ]
-        })}
-      </script>
-    </Helmet>
     <Hero />
     <PainPoint />
     <WhatIsNehla />
