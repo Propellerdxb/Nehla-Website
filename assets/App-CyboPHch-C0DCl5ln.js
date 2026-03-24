@@ -1,142 +1,5 @@
-const blogPosts = [
-  {
-    slug: 'capital-works-fund-reforms-april-2026',
-    title: 'The April 2026 Capital Works Fund Reforms: Are Your 10-Year Plans Ready?',
-    excerpt: 'NSW capital works fund plans must use new standard forms from April 1, 2026. Here\'s what you need to know and do now.',
-    date: '2026-03-24',
-    readTime: '6 min read',
-    category: 'Compliance & Regulation',
-    image: null,
-    content: `## Key Takeaways
-
-- From April 1, 2026, all new and reviewed 10-year capital works fund plans must use the prescribed standard form under the Strata Schemes Management Regulation 2016
-- Multi-storey developments (3+ storeys) require independent surveyor certification of planned maintenance costs
-- Developers of new strata schemes must lodge initial maintenance schedules in standard form at registration
-- Common pitfalls: underestimating costs, failing to update plans when required, and not understanding surveyor certification requirements for high-rise buildings
-
----
-
-## Introduction
-
-If you haven't already marked your calendar, you should: **April 1, 2026** is the deadline that will fundamentally change how strata schemes in New South Wales develop, manage, and approve their capital works funding.
-
-The Office of Local Government has finalised reforms to the capital works fund planning process, and the practical implications are significant. This isn't a minor administrative tweak - it's a structural overhaul that affects everything from how you gather owner input, to which buildings need external validation, to how you lodge plans with authorities.
-
-For strata managers, this creates both an immediate compliance task and a broader opportunity to strengthen how your schemes approach long-term asset management. Let's walk through what's changing, why it matters, and where the real risks lie.
-
-## What's Actually Changing (and When)
-
-The reforms introduce a prescribed standard form for 10-year capital works fund plans. Here's the timeline and scope:
-
-**From April 1, 2026:**
-- Any 10-year capital works fund plan that is **new or under review** must use the prescribed standard form
-- Existing plans that were lodged before April 1 and haven't been amended remain valid in their current format - but only until the next scheduled review
-- Once you trigger a review (whether through a scheduled update or a change to the scheme), you must convert to the standard form
-
-**For new strata schemes:**
-- Developers must lodge an initial maintenance schedule in the prescribed standard form at the time of registration
-- This replaces the previous ad-hoc approach where initial schedules were sometimes incomplete or informal
-
-**For multi-storey buildings (3+ storeys):**
-- Independent surveyor certification is now mandatory for capital works cost estimates
-- This is the most costly change for high-rise and mid-rise schemes
-
-The standard form itself is designed to improve consistency across the state and make it easier for the NCAT (Strata Schemes Division) to assess disputes about levy contributions. It includes prescribed sections for common property assets, cost estimates, staging schedules, and contingency provisions.
-
-## The Independent Surveyor Requirement: Who, When, and Why
-
-This is where many managers are initially confused - and where costly delays happen.
-
-**Which buildings are affected?**
-Only buildings with **3 or more storeys** require independent surveyor certification. A single townhouse (even if it's two storeys) doesn't trigger this requirement. A 3-storey apartment building does.
-
-**What does the surveyor actually do?**
-The independent surveyor - typically a quantity surveyor or building surveyor with relevant qualifications - reviews:
-- The quantity and condition of common property assets
-- Cost estimates for planned maintenance and replacement
-- The reasonableness of the 10-year timing and staging schedule
-- The adequacy of any proposed contingency allowance
-
-They're not auditing your committee's decisions. They're independently verifying that the cost data and asset assessment are realistic and defensible.
-
-**Why this matters:**
-The surveyor's certification serves two purposes. First, it protects the scheme against wildly inaccurate levy proposals (which can trigger disputes at NCAT). Second, it provides evidence that the scheme took a rigorous, professional approach to fund planning - which is relevant if disputes do arise later.
-
-**The cost reality:**
-Surveyor certification typically costs \$2,500-\$8,000 depending on the building size and complexity. For a 30-lot townhouse scheme, this might be \$3,500. For a 200-lot apartment complex, it could be \$6,000-\$8,000. This cost can be recovered from the capital works fund or treated as an administrative expense, but it's a line item you need to budget for.
-
-## The Standard Form: What You Need to Include
-
-The prescribed form has a specific structure. While you can request the current form from the Office of Local Government or your regulatory body, here's what you'll be working with:
-
-1. **Building and scheme details** - straightforward identification information
-2. **Asset schedule** - a detailed list of all common property assets, their age, condition rating, and estimated remaining useful life
-3. **Cost estimates section** - broken down by asset type (roof, building envelope, plumbing, electrical, common areas, etc.)
-4. **Staging schedule** - which works are planned for years 1-3, 4-6, 7-10
-5. **Contingency allowance** - expressed as a percentage and justified
-6. **Annual contribution calculation** - how the total fund translates to per-lot levies
-7. **Review triggers** - when the plan will be reviewed (scheduled date and/or circumstantial triggers)
-
-The form is explicit about required detail level. You can't submit a plan that says "roof replacement - \$150,000." It asks for specifics: slate tiles, 450m2, condition assessment, priority staging, separate labour and materials cost line items.
-
-## Common Pitfalls to Avoid Now
-
-**1. Treating the transition as a simple form swap**
-Many committees assume they can take their existing 10-year plan and plug the numbers into the new form. In reality, the new form often reveals gaps in the old data. You may need to commission a building condition assessment to fill in missing information.
-
-**2. Waiting until March 2026 to start**
-If your scheme's 10-year plan is due for review or amendment anytime in early 2026, you need to begin the process now. Surveyor availability can be tight in Q1, and rushing a capital works plan usually means missed details or poor owner communication.
-
-**3. Underestimating costs to keep levies low**
-The independent surveyor check creates accountability. A surveyor won't certify a plan with obviously low cost estimates. This is actually a protection - it prevents schemes from underfunding and facing shocking special levies later - but it means costs will be more realistic and sometimes higher than committees initially hoped.
-
-**4. Not involving the committee or owner community early**
-The new standard form process is more rigorous, and that requires buy-in. If owners feel levies are being imposed without explanation, you'll face resistance. Start communicating the "why" now - ageing buildings need proper maintenance, the surveyor is an independent check, and the new form improves transparency.
-
-**5. Confusing the developer's schedule with the scheme's plan**
-If you manage a scheme still within a few years of registration, the developer may have lodged an initial maintenance schedule. That schedule is NOT the same as the 10-year capital works plan the scheme must have. The committee still needs to develop and lodge its own plan - and it must now use the standard form.
-
-## Getting Ready: A Practical Timeline
-
-**Now (March 2026 and earlier):**
-- Review when your scheme's current 10-year plan is due for review
-- If due before April 1, start the process immediately - you may still use the old form, but moving to the new form shows diligence
-- If due after April 1, you'll be using the new form; start gathering asset condition data now
-- For multi-storey buildings, identify and contact potential surveyors; confirm their availability and fees
-
-**January-March 2026:**
-- Commission a building condition assessment if you don't have current data
-- Prepare a detailed asset schedule for each building system
-- Brief the committee on the new requirements and expected costs
-- For multi-storey buildings, engage the surveyor and provide them with initial data
-
-**April onwards:**
-- All new or reviewed plans must be in standard form
-- Plans lodged after this date without the standard form will likely be rejected
-
-## The Broader Picture: Why This Matters Beyond Compliance
-
-These reforms exist because the capital works fund system has real gaps. Schemes with inadequate plans end up hitting owners with unexpected special levies or deferring critical maintenance. The standard form and surveyor certification are structural improvements designed to fix that.
-
-For managers, this is an opportunity to reframe capital works planning - not as a regulatory box-tick, but as genuine asset stewardship. When you present a capital works fund plan to owners that's been professionally assessed and uses a clear, standardised format, it's much easier to explain why levies are what they are. That reduces resistance and builds owner confidence in the scheme's governance.
-
-Multi-storey buildings especially benefit from the surveyor requirement, even though it adds cost. A certified plan is defensible. It's evidence you did your due diligence.
-
-## Conclusion
-
-The April 2026 reforms are a structural change to capital works fund planning in NSW. They're not optional, and there's no grace period for schemes that haven't prepared. If your scheme's 10-year plan is due for review or update in the coming months, start now. Engage a surveyor if you manage multi-storey buildings. Begin gathering the detailed asset data the new form requires. Brief your committee on what's changing and why.
-
-The good news: schemes that embrace these reforms early will have more robust, defensible, and transparent capital works plans. That's a win for owners, for the scheme, and for your professional standing as a manager.`,
-  },
-  {
-    slug: 'nsw-insurance-commission-ban-2026',
-    title: 'The NSW Insurance Commission Ban: What Every Strata Manager Needs to Know Before 2026 Ends',
-    excerpt: 'The NSW strata insurance commission ban took effect Jan 1, 2026. Here\'s what changed, how it affects your agency\'s revenue, and what smart managers are doing next.',
-    date: '2026-02-25',
-    readTime: '8 min read',
-    category: 'Compliance & Regulation',
-    image: '/blog/nsw-insurance-commission-ban.svg',
-    content: `## Key takeaways
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/AboutPage-CLm9OdZ1-D0cfOC1M.js","assets/index-vn6Hyo6P.js","assets/preload-helper-DpIcAoSi.js","assets/index-A0vJ_DpW.css","assets/BlogPage-CSrSj6sx-BGvzZBtE.js","assets/tag-BlPtWsdu-HvtWv5P5.js","assets/BlogPostPage-Dnqk5qTF-Dwmphwk_.js","assets/PrivacyPolicyPage-CmouRRED-DVft03W8.js","assets/TermsPage-Axl1hKx2-2J8QqMr7.js"])))=>i.map(i=>d[i]);
+import{_ as E}from"./preload-helper-DpIcAoSi.js";import{Y as h,c as g,j as v,i as H}from"./index-vn6Hyo6P.js";const x=(e,t=x,a=t.f||(t.f=["assets/AboutPage-CLm9OdZ1.js","assets/framer-D9fbVBJk.js","assets/react-vendor-e4h1-vLG.js","assets/BlogPage-CSrSj6sx.js","assets/tag-BlPtWsdu.js","assets/BlogPostPage-Dnqk5qTF.js","assets/PrivacyPolicyPage-CmouRRED.js","assets/TermsPage-Axl1hKx2.js"]))=>e.map(n=>a[n]);var q,U;function he(){if(U)return q;U=1;var e=typeof Element<"u",t=typeof Map=="function",a=typeof Set=="function",n=typeof ArrayBuffer=="function"&&!!ArrayBuffer.isView;function o(r,s){if(r===s)return!0;if(r&&s&&typeof r=="object"&&typeof s=="object"){if(r.constructor!==s.constructor)return!1;var l,i,c;if(Array.isArray(r)){if(l=r.length,l!=s.length)return!1;for(i=l;i--!==0;)if(!o(r[i],s[i]))return!1;return!0}var u;if(t&&r instanceof Map&&s instanceof Map){if(r.size!==s.size)return!1;for(u=r.entries();!(i=u.next()).done;)if(!s.has(i.value[0]))return!1;for(u=r.entries();!(i=u.next()).done;)if(!o(i.value[1],s.get(i.value[0])))return!1;return!0}if(a&&r instanceof Set&&s instanceof Set){if(r.size!==s.size)return!1;for(u=r.entries();!(i=u.next()).done;)if(!s.has(i.value[0]))return!1;return!0}if(n&&ArrayBuffer.isView(r)&&ArrayBuffer.isView(s)){if(l=r.length,l!=s.length)return!1;for(i=l;i--!==0;)if(r[i]!==s[i])return!1;return!0}if(r.constructor===RegExp)return r.source===s.source&&r.flags===s.flags;if(r.valueOf!==Object.prototype.valueOf&&typeof r.valueOf=="function"&&typeof s.valueOf=="function")return r.valueOf()===s.valueOf();if(r.toString!==Object.prototype.toString&&typeof r.toString=="function"&&typeof s.toString=="function")return r.toString()===s.toString();if(c=Object.keys(r),l=c.length,l!==Object.keys(s).length)return!1;for(i=l;i--!==0;)if(!Object.prototype.hasOwnProperty.call(s,c[i]))return!1;if(e&&r instanceof Element)return!1;for(i=l;i--!==0;)if(!((c[i]==="_owner"||c[i]==="__v"||c[i]==="__o")&&r.$$typeof)&&!o(r[c[i]],s[c[i]]))return!1;return!0}return r!==r&&s!==s}return q=function(r,s){try{return o(r,s)}catch(l){if((l.message||"").match(/stack|recursion/i))return console.warn("react-fast-compare cannot handle circular refs"),!1;throw l}},q}var de=he();const pe=H(de);var L,V;function ge(){if(V)return L;V=1;var e=function(t,a,n,o,r,s,l,i){if(!t){var c;if(a===void 0)c=new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var u=[n,o,r,s,l,i],m=0;c=new Error(a.replace(/%s/g,function(){return u[m++]})),c.name="Invariant Violation"}throw c.framesToPop=1,c}};return L=e,L}var ye=ge();const Q=H(ye);var Y,G;function fe(){return G||(G=1,Y=function(e,t,a,n){var o=a?a.call(n,e,t):void 0;if(o!==void 0)return!!o;if(e===t)return!0;if(typeof e!="object"||!e||typeof t!="object"||!t)return!1;var r=Object.keys(e),s=Object.keys(t);if(r.length!==s.length)return!1;for(var l=Object.prototype.hasOwnProperty.bind(t),i=0;i<r.length;i++){var c=r[i];if(!l(c))return!1;var u=e[c],m=t[c];if(o=a?a.call(n,u,m,c):void 0,o===!1||o===void 0&&u!==m)return!1}return!0}),Y}var we=fe();const ve=H(we);var ae=(e=>(e.BASE="base",e.BODY="body",e.HEAD="head",e.HTML="html",e.LINK="link",e.META="meta",e.NOSCRIPT="noscript",e.SCRIPT="script",e.STYLE="style",e.TITLE="title",e.FRAGMENT="Symbol(react.fragment)",e))(ae||{}),P={link:{rel:["amphtml","canonical","alternate"]},script:{type:["application/ld+json"]},meta:{charset:"",name:["generator","robots","description"],property:["og:type","og:title","og:url","og:image","og:image:alt","og:description","twitter:url","twitter:title","twitter:description","twitter:image","twitter:image:alt","twitter:card","twitter:site"]}},J=Object.values(ae),F={accesskey:"accessKey",charset:"charSet",class:"className",contenteditable:"contentEditable",contextmenu:"contextMenu","http-equiv":"httpEquiv",itemprop:"itemProp",tabindex:"tabIndex"},be=Object.entries(F).reduce((e,[t,a])=>(e[a]=t,e),{}),f="data-rh",T={DEFAULT_TITLE:"defaultTitle",DEFER:"defer",ENCODE_SPECIAL_CHARACTERS:"encodeSpecialCharacters",ON_CHANGE_CLIENT_STATE:"onChangeClientState",TITLE_TEMPLATE:"titleTemplate",PRIORITIZE_SEO_TAGS:"prioritizeSeoTags"},A=(e,t)=>{for(let a=e.length-1;a>=0;a-=1){const n=e[a];if(Object.prototype.hasOwnProperty.call(n,t))return n[t]}return null},ke=e=>{let t=A(e,"title");const a=A(e,T.TITLE_TEMPLATE);if(Array.isArray(t)&&(t=t.join("")),a&&t)return a.replace(/%s/g,()=>t);const n=A(e,T.DEFAULT_TITLE);return t||n||void 0},Te=e=>A(e,T.ON_CHANGE_CLIENT_STATE)||(()=>{}),_=(e,t)=>t.filter(a=>typeof a[e]<"u").map(a=>a[e]).reduce((a,n)=>({...a,...n}),{}),Ae=(e,t)=>t.filter(a=>typeof a.base<"u").map(a=>a.base).reverse().reduce((a,n)=>{if(!a.length){const o=Object.keys(n);for(let r=0;r<o.length;r+=1){const s=o[r].toLowerCase();if(e.indexOf(s)!==-1&&n[s])return a.concat(n)}}return a},[]),xe=e=>console&&typeof console.warn=="function"&&console.warn(e),C=(e,t,a)=>{const n={};return a.filter(o=>Array.isArray(o[e])?!0:(typeof o[e]<"u"&&xe(`Helmet: ${e} should be of type "Array". Instead found type "${typeof o[e]}"`),!1)).map(o=>o[e]).reverse().reduce((o,r)=>{const s={};r.filter(i=>{let c;const u=Object.keys(i);for(let w=0;w<u.length;w+=1){const d=u[w],b=d.toLowerCase();t.indexOf(b)!==-1&&!(c==="rel"&&i[c].toLowerCase()==="canonical")&&!(b==="rel"&&i[b].toLowerCase()==="stylesheet")&&(c=b),t.indexOf(d)!==-1&&(d==="innerHTML"||d==="cssText"||d==="itemprop")&&(c=d)}if(!c||!i[c])return!1;const m=i[c].toLowerCase();return n[c]||(n[c]={}),s[c]||(s[c]={}),n[c][m]?!1:(s[c][m]=!0,!0)}).reverse().forEach(i=>o.push(i));const l=Object.keys(s);for(let i=0;i<l.length;i+=1){const c=l[i],u={...n[c],...s[c]};n[c]=u}return o},[]).reverse()},Ce=(e,t)=>{if(Array.isArray(e)&&e.length){for(let a=0;a<e.length;a+=1)if(e[a][t])return!0}return!1},Se=e=>({baseTag:Ae(["href"],e),bodyAttributes:_("bodyAttributes",e),defer:A(e,T.DEFER),encode:A(e,T.ENCODE_SPECIAL_CHARACTERS),htmlAttributes:_("htmlAttributes",e),linkTags:C("link",["rel","href"],e),metaTags:C("meta",["name","charset","http-equiv","property","itemprop"],e),noscriptTags:C("noscript",["innerHTML"],e),onChangeClientState:Te(e),scriptTags:C("script",["src","innerHTML"],e),styleTags:C("style",["cssText"],e),title:ke(e),titleAttributes:_("titleAttributes",e),prioritizeSeoTags:Ce(e,T.PRIORITIZE_SEO_TAGS)}),ne=e=>Array.isArray(e)?e.join(""):e,Ee=(e,t)=>{const a=Object.keys(e);for(let n=0;n<a.length;n+=1)if(t[a[n]]&&t[a[n]].includes(e[a[n]]))return!0;return!1},N=(e,t)=>Array.isArray(e)?e.reduce((a,n)=>(Ee(n,t)?a.priority.push(n):a.default.push(n),a),{priority:[],default:[]}):{default:e,priority:[]},K=(e,t)=>({...e,[t]:void 0}),Me=["noscript","script","style"],D=(e,t=!0)=>t===!1?String(e):String(e).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#x27;"),re=e=>Object.keys(e).reduce((t,a)=>{const n=typeof e[a]<"u"?`${a}="${e[a]}"`:`${a}`;return t?`${t} ${n}`:n},""),je=(e,t,a,n)=>{const o=re(a),r=ne(t);return o?`<${e} ${f}="true" ${o}>${D(r,n)}</${e}>`:`<${e} ${f}="true">${D(r,n)}</${e}>`},Ie=(e,t,a=!0)=>t.reduce((n,o)=>{const r=o,s=Object.keys(r).filter(c=>!(c==="innerHTML"||c==="cssText")).reduce((c,u)=>{const m=typeof r[u]>"u"?u:`${u}="${D(r[u],a)}"`;return c?`${c} ${m}`:m},""),l=r.innerHTML||r.cssText||"",i=Me.indexOf(e)===-1;return`${n}<${e} ${f}="true" ${s}${i?"/>":`>${l}</${e}>`}`},""),ie=(e,t={})=>Object.keys(e).reduce((a,n)=>{const o=F[n];return a[o||n]=e[n],a},t),Oe=(e,t,a)=>{const n={key:t,[f]:!0},o=ie(a,n);return[v.createElement("title",o,t)]},O=(e,t)=>t.map((a,n)=>{const o={key:n,[f]:!0};return Object.keys(a).forEach(r=>{const s=F[r]||r;if(s==="innerHTML"||s==="cssText"){const l=a.innerHTML||a.cssText;o.dangerouslySetInnerHTML={__html:l}}else o[s]=a[r]}),v.createElement(e,o)}),y=(e,t,a=!0)=>{switch(e){case"title":return{toComponent:()=>Oe(e,t.title,t.titleAttributes),toString:()=>je(e,t.title,t.titleAttributes,a)};case"bodyAttributes":case"htmlAttributes":return{toComponent:()=>ie(t),toString:()=>re(t)};default:return{toComponent:()=>O(e,t),toString:()=>Ie(e,t,a)}}},qe=({metaTags:e,linkTags:t,scriptTags:a,encode:n})=>{const o=N(e,P.meta),r=N(t,P.link),s=N(a,P.script);return{priorityMethods:{toComponent:()=>[...O("meta",o.priority),...O("link",r.priority),...O("script",s.priority)],toString:()=>`${y("meta",o.priority,n)} ${y("link",r.priority,n)} ${y("script",s.priority,n)}`},metaTags:o.default,linkTags:r.default,scriptTags:s.default}},Le=e=>{const{baseTag:t,bodyAttributes:a,encode:n=!0,htmlAttributes:o,noscriptTags:r,styleTags:s,title:l="",titleAttributes:i,prioritizeSeoTags:c}=e;let{linkTags:u,metaTags:m,scriptTags:w}=e,d={toComponent:()=>{},toString:()=>""};return c&&({priorityMethods:d,linkTags:u,metaTags:m,scriptTags:w}=qe(e)),{priority:d,base:y("base",t,n),bodyAttributes:y("bodyAttributes",a,n),htmlAttributes:y("htmlAttributes",o,n),link:y("link",u,n),meta:y("meta",m,n),noscript:y("noscript",r,n),script:y("script",w,n),style:y("style",s,n),title:y("title",{title:l,titleAttributes:i},n)}},W=Le,I=[],se=!!(typeof window<"u"&&window.document&&window.document.createElement),$=class{instances=[];canUseDOM=se;context;value={setHelmet:e=>{this.context.helmet=e},helmetInstances:{get:()=>this.canUseDOM?I:this.instances,add:e=>{(this.canUseDOM?I:this.instances).push(e)},remove:e=>{const t=(this.canUseDOM?I:this.instances).indexOf(e);(this.canUseDOM?I:this.instances).splice(t,1)}}};constructor(e,t){this.context=e,this.canUseDOM=t||!1,t||(e.helmet=W({baseTag:[],bodyAttributes:{},htmlAttributes:{},linkTags:[],metaTags:[],noscriptTags:[],scriptTags:[],styleTags:[],title:"",titleAttributes:{}}))}},Pe={},oe=v.createContext(Pe),_e=class ce extends g.Component{static canUseDOM=se;helmetData;constructor(t){super(t),this.helmetData=new $(this.props.context||{},ce.canUseDOM)}render(){return v.createElement(oe.Provider,{value:this.helmetData.value},this.props.children)}},k=(e,t)=>{const a=document.head||document.querySelector("head"),n=a.querySelectorAll(`${e}[${f}]`),o=[].slice.call(n),r=[];let s;return t&&t.length&&t.forEach(l=>{const i=document.createElement(e);for(const c in l)if(Object.prototype.hasOwnProperty.call(l,c))if(c==="innerHTML")i.innerHTML=l.innerHTML;else if(c==="cssText")i.styleSheet?i.styleSheet.cssText=l.cssText:i.appendChild(document.createTextNode(l.cssText));else{const u=c,m=typeof l[u]>"u"?"":l[u];i.setAttribute(c,m)}i.setAttribute(f,"true"),o.some((c,u)=>(s=u,i.isEqualNode(c)))?o.splice(s,1):r.push(i)}),o.forEach(l=>l.parentNode?.removeChild(l)),r.forEach(l=>a.appendChild(l)),{oldTags:o,newTags:r}},R=(e,t)=>{const a=document.getElementsByTagName(e)[0];if(!a)return;const n=a.getAttribute(f),o=n?n.split(","):[],r=[...o],s=Object.keys(t);for(const l of s){const i=t[l]||"";a.getAttribute(l)!==i&&a.setAttribute(l,i),o.indexOf(l)===-1&&o.push(l);const c=r.indexOf(l);c!==-1&&r.splice(c,1)}for(let l=r.length-1;l>=0;l-=1)a.removeAttribute(r[l]);o.length===r.length?a.removeAttribute(f):a.getAttribute(f)!==s.join(",")&&a.setAttribute(f,s.join(","))},Ne=(e,t)=>{typeof e<"u"&&document.title!==e&&(document.title=ne(e)),R("title",t)},Z=(e,t)=>{const{baseTag:a,bodyAttributes:n,htmlAttributes:o,linkTags:r,metaTags:s,noscriptTags:l,onChangeClientState:i,scriptTags:c,styleTags:u,title:m,titleAttributes:w}=e;R("body",n),R("html",o),Ne(m,w);const d={baseTag:k("base",a),linkTags:k("link",r),metaTags:k("meta",s),noscriptTags:k("noscript",l),scriptTags:k("script",c),styleTags:k("style",u)},b={},z={};Object.keys(d).forEach(j=>{const{newTags:B,oldTags:me}=d[j];B.length&&(b[j]=B),me.length&&(z[j]=d[j].oldTags)}),t&&t(),i(e,b,z)},S=null,De=e=>{S&&cancelAnimationFrame(S),e.defer?S=requestAnimationFrame(()=>{Z(e,()=>{S=null})}):(Z(e),S=null)},We=De,X=class extends g.Component{rendered=!1;shouldComponentUpdate(e){return!ve(e,this.props)}componentDidUpdate(){this.emitChange()}componentWillUnmount(){const{helmetInstances:e}=this.props.context;e.remove(this),this.emitChange()}emitChange(){const{helmetInstances:e,setHelmet:t}=this.props.context;let a=null;const n=Se(e.get().map(o=>{const r={...o.props};return delete r.context,r}));_e.canUseDOM?We(n):W&&(a=W(n)),t(a)}init(){if(this.rendered)return;this.rendered=!0;const{helmetInstances:e}=this.props.context;e.add(this),this.emitChange()}render(){return this.init(),null}},$e=class extends g.Component{static defaultProps={defer:!0,encodeSpecialCharacters:!0,prioritizeSeoTags:!1};shouldComponentUpdate(e){return!pe(K(this.props,"helmetData"),K(e,"helmetData"))}mapNestedChildrenToProps(e,t){if(!t)return null;switch(e.type){case"script":case"noscript":return{innerHTML:t};case"style":return{cssText:t};default:throw new Error(`<${e.type} /> elements are self-closing and can not contain children. Refer to our API for more information.`)}}flattenArrayTypeChildren(e,t,a,n){return{...t,[e.type]:[...t[e.type]||[],{...a,...this.mapNestedChildrenToProps(e,n)}]}}mapObjectTypeChildren(e,t,a,n){switch(e.type){case"title":return{...t,[e.type]:n,titleAttributes:{...a}};case"body":return{...t,bodyAttributes:{...a}};case"html":return{...t,htmlAttributes:{...a}};default:return{...t,[e.type]:{...a}}}}mapArrayTypeChildrenToProps(e,t){let a={...t};return Object.keys(e).forEach(n=>{a={...a,[n]:e[n]}}),a}warnOnInvalidChildren(e,t){return Q(J.some(a=>e.type===a),typeof e.type=="function"?"You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information.":`Only elements types ${J.join(", ")} are allowed. Helmet does not support rendering <${e.type}> elements. Refer to our API for more information.`),Q(!t||typeof t=="string"||Array.isArray(t)&&!t.some(a=>typeof a!="string"),`Helmet expects a string as a child of <${e.type}>. Did you forget to wrap your children in braces? ( <${e.type}>{\`\`}</${e.type}> ) Refer to our API for more information.`),!0}mapChildrenToProps(e,t){let a={};return v.Children.forEach(e,n=>{if(!n||!n.props)return;const{children:o,...r}=n.props,s=Object.keys(r).reduce((i,c)=>(i[be[c]||c]=r[c],i),{});let{type:l}=n;switch(typeof l=="symbol"?l=l.toString():this.warnOnInvalidChildren(n,o),l){case"Symbol(react.fragment)":t=this.mapChildrenToProps(o,t);break;case"link":case"meta":case"noscript":case"script":case"style":a=this.flattenArrayTypeChildren(n,a,s,o);break;default:t=this.mapObjectTypeChildren(n,t,s,o);break}}),this.mapArrayTypeChildrenToProps(a,t)}render(){const{children:e,...t}=this.props;let a={...t},{helmetData:n}=t;if(e&&(a=this.mapChildrenToProps(e,a)),n&&!(n instanceof $)){const o=n;n=new $(o.context,!0),delete a.helmetData}return n?v.createElement(X,{...a,context:n.value}):v.createElement(oe.Consumer,null,o=>v.createElement(X,{...a,context:o}))}};const Re="modulepreload",He=function(e){return"/"+e},ee={},M=function(e,t,a){let n=Promise.resolve();if(t&&t.length>0&&typeof window<"u"){let r=function(i){return Promise.all(i.map(c=>Promise.resolve(c).then(u=>({status:"fulfilled",value:u}),u=>({status:"rejected",reason:u}))))};document.getElementsByTagName("link");const s=document.querySelector("meta[property=csp-nonce]"),l=s?.nonce||s?.getAttribute("nonce");n=r(t.map(i=>{if(i=He(i),i in ee)return;ee[i]=!0;const c=i.endsWith(".css"),u=c?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${i}"]${u}`))return;const m=document.createElement("link");if(m.rel=c?"stylesheet":Re,c||(m.as="script"),m.crossOrigin="",m.href=i,l&&m.setAttribute("nonce",l),document.head.appendChild(m),c)return new Promise((w,d)=>{m.addEventListener("load",w),m.addEventListener("error",()=>d(new Error(`Unable to preload CSS for ${i}`)))})}))}function o(r){const s=new Event("vite:preloadError",{cancelable:!0});if(s.payload=r,window.dispatchEvent(s),!s.defaultPrevented)throw r}return n.then(r=>{for(const s of r||[])s.status==="rejected"&&o(s.reason);return e().catch(o)})},le=(...e)=>e.filter((t,a,n)=>!!t&&t.trim()!==""&&n.indexOf(t)===a).join(" ").trim(),Fe=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),ze=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(t,a,n)=>n?n.toUpperCase():a.toLowerCase()),te=e=>{const t=ze(e);return t.charAt(0).toUpperCase()+t.slice(1)};var Be={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};const Ue=e=>{for(const t in e)if(t.startsWith("aria-")||t==="role"||t==="title")return!0;return!1},Ve=g.forwardRef(({color:e="currentColor",size:t=24,strokeWidth:a=2,absoluteStrokeWidth:n,className:o="",children:r,iconNode:s,...l},i)=>g.createElement("svg",{ref:i,...Be,width:t,height:t,stroke:e,strokeWidth:n?Number(a)*24/Number(t):a,className:le("lucide",o),...!r&&!Ue(l)&&{"aria-hidden":"true"},...l},[...s.map(([c,u])=>g.createElement(c,u)),...Array.isArray(r)?r:[r]])),p=(e,t)=>{const a=g.forwardRef(({className:n,...o},r)=>g.createElement(Ve,{ref:r,iconNode:t,className:le(`lucide-${Fe(te(e))}`,`lucide-${e}`,n),...o}));return a.displayName=te(e),a},Qe=[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]],ht=p("arrow-right",Qe),Ye=[["path",{d:"M21.801 10A10 10 0 1 1 17 3.335",key:"yps3ct"}],["path",{d:"m9 11 3 3L22 4",key:"1pflzl"}]],dt=p("circle-check-big",Ye),Ge=[["path",{d:"M12 6v6l4 2",key:"mmk7yg"}],["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}]],pt=p("clock",Ge),Je=[["path",{d:"M12 20v2",key:"1lh1kg"}],["path",{d:"M12 2v2",key:"tus03m"}],["path",{d:"M17 20v2",key:"1rnc9c"}],["path",{d:"M17 2v2",key:"11trls"}],["path",{d:"M2 12h2",key:"1t8f8n"}],["path",{d:"M2 17h2",key:"7oei6x"}],["path",{d:"M2 7h2",key:"asdhe0"}],["path",{d:"M20 12h2",key:"1q8mjw"}],["path",{d:"M20 17h2",key:"1fpfkl"}],["path",{d:"M20 7h2",key:"1o8tra"}],["path",{d:"M7 20v2",key:"4gnj0m"}],["path",{d:"M7 2v2",key:"1i4yhu"}],["rect",{x:"4",y:"4",width:"16",height:"16",rx:"2",key:"1vbyd7"}],["rect",{x:"8",y:"8",width:"8",height:"8",rx:"1",key:"z9xiuo"}]];p("cpu",Je);const Ke=[["path",{d:"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z",key:"1oefj6"}],["path",{d:"M14 2v5a1 1 0 0 0 1 1h5",key:"wfsgrz"}],["path",{d:"M10 9H8",key:"b1mrlr"}],["path",{d:"M16 13H8",key:"t4e002"}],["path",{d:"M16 17H8",key:"z1uh3a"}]];p("file-text",Ke);const Ze=[["path",{d:"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z",key:"zw3jo"}],["path",{d:"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12",key:"1wduqc"}],["path",{d:"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17",key:"kqbvx6"}]];p("layers",Ze);const Xe=[["path",{d:"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z",key:"c2jq9f"}],["rect",{width:"4",height:"12",x:"2",y:"9",key:"mk3on5"}],["circle",{cx:"4",cy:"4",r:"2",key:"bt5ra8"}]];p("linkedin",Xe);const et=[["path",{d:"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7",key:"132q7q"}],["rect",{x:"2",y:"4",width:"20",height:"16",rx:"2",key:"izxlao"}]],gt=p("mail",et),tt=[["path",{d:"M4 5h16",key:"1tepv9"}],["path",{d:"M4 12h16",key:"1lakjw"}],["path",{d:"M4 19h16",key:"1djgab"}]];p("menu",tt);const at=[["path",{d:"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",key:"oel41y"}]],yt=p("shield",at),nt=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"6",key:"1vlfrh"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]],ft=p("target",nt),rt=[["path",{d:"M16 7h6v6",key:"box55l"}],["path",{d:"m22 7-8.5 8.5-5-5L2 17",key:"1t1m79"}]],wt=p("trending-up",rt),it=[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["path",{d:"M16 3.128a4 4 0 0 1 0 7.744",key:"16gr8j"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}]],vt=p("users",it),st=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]];p("x",st);const ot=[["path",{d:"M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",key:"1xq2db"}]];p("zap",ot);const ue="https://nehla.com.au",ct=`${ue}/og-image.png`,bt=({title:e,description:t,path:a="/",ogType:n="website",ogImage:o=ct,keywords:r,children:s})=>{const l=e.includes("NEHLA")?e:`${e} | NEHLA | Strata Hub`,i=`${ue}${a}`;return h.jsxs($e,{children:[h.jsx("title",{children:l}),h.jsx("meta",{name:"description",content:t}),h.jsx("meta",{name:"keywords",content:r||"strata management, AI, compliance, NSW, QLD, VIC, document extraction, email automation, property management, strata manager, digital workforce, Australia"}),h.jsx("meta",{name:"robots",content:"index, follow"}),h.jsx("link",{rel:"canonical",href:i}),h.jsx("link",{rel:"alternate",hrefLang:"en-AU",href:i}),h.jsx("meta",{property:"og:type",content:n}),h.jsx("meta",{property:"og:title",content:l}),h.jsx("meta",{property:"og:description",content:t}),h.jsx("meta",{property:"og:url",content:i}),h.jsx("meta",{property:"og:image",content:o}),h.jsx("meta",{property:"og:image:width",content:"1200"}),h.jsx("meta",{property:"og:image:height",content:"630"}),h.jsx("meta",{property:"og:site_name",content:"NEHLA | Strata Hub"}),h.jsx("meta",{property:"og:locale",content:"en_AU"}),h.jsx("meta",{name:"twitter:card",content:"summary_large_image"}),h.jsx("meta",{name:"twitter:title",content:l}),h.jsx("meta",{name:"twitter:description",content:t}),h.jsx("meta",{name:"twitter:image",content:o}),s]})},lt=[{slug:"nsw-insurance-commission-ban-2026",title:"The NSW Insurance Commission Ban: What Every Strata Manager Needs to Know Before 2026 Ends",excerpt:"The NSW strata insurance commission ban took effect Jan 1, 2026. Here's what changed, how it affects your agency's revenue, and what smart managers are doing next.",date:"2026-02-25",readTime:"8 min read",category:"Compliance & Regulation",image:"/blog/nsw-insurance-commission-ban.svg",content:`## Key takeaways
 
 - From January 1, 2026, SCA (NSW) has phased out the acceptance of insurance commissions by strata managing agents in new contracts.
 - Agencies that relied on commission income now face a structural revenue gap of 20-30% of margin.
@@ -219,17 +82,7 @@ The insurance commission ban is the most visible change in NSW strata management
 
 For agencies willing to embrace that shift, the commission ban isn't the end of a revenue stream. It's the beginning of a more honest, more sustainable, and ultimately more profitable relationship with clients.
 
-The managers who come out ahead won't be the ones who found the cleverest way to replace lost income. They'll be the ones who used this moment to fundamentally rethink how they deliver and communicate value - and in doing so, built the kind of agency that clients choose to stay with, not because it's the cheapest option, but because it's clearly the best one.`,
-  },
-  {
-    slug: 'strata-manager-inbox-problem',
-    title: 'The Strata Manager\'s Inbox Problem: Why Email Is Eating Your Day (and What to Do About It)',
-    excerpt: 'Strata managers spend 50%+ of their day on email triage. Here are practical strategies to reclaim your time.',
-    date: '2026-03-04',
-    readTime: '12 min read',
-    category: 'Operational Efficiency',
-    image: '/blog/inbox-problem.svg',
-    content: `## Key Takeaways
+The managers who come out ahead won't be the ones who found the cleverest way to replace lost income. They'll be the ones who used this moment to fundamentally rethink how they deliver and communicate value - and in doing so, built the kind of agency that clients choose to stay with, not because it's the cheapest option, but because it's clearly the best one.`},{slug:"strata-manager-inbox-problem",title:"The Strata Manager's Inbox Problem: Why Email Is Eating Your Day (and What to Do About It)",excerpt:"Strata managers spend 50%+ of their day on email triage. Here are practical strategies to reclaim your time.",date:"2026-03-04",readTime:"12 min read",category:"Operational Efficiency",image:"/blog/inbox-problem.svg",content:`## Key Takeaways
 
 - The average strata manager spends 3-4 hours per day (50%+ of their working time) on email triage, not strategic work
 - Context-switching between 50+ concurrent email threads costs approximately 23 minutes of refocus time per switch
@@ -354,17 +207,7 @@ If you can reduce daily email work from 3-4 hours to 1.5-2 hours, you regain 7.5
 
 Start with one change this week: create three response templates for your most-repeated queries. Next week, set up folder categories. The week after, establish escalation rules. Small changes, compounded, reclaim your day.
 
-Your owners are paying you to manage their buildings. Start acting like it.`,
-  },
-  {
-    slug: 'why-strata-managers-are-leaving',
-    title: 'Why Your Best Strata Managers Are Leaving (and What Admin Overload Has to Do With It)',
-    excerpt: 'Strata industry turnover is at a 10-year high. Here\'s why experienced managers are exiting and what agencies can do differently.',
-    date: '2026-03-11',
-    readTime: '11 min read',
-    category: 'Operational Efficiency',
-    image: '/blog/managers-leaving.svg',
-    content: `## Key Takeaways
+Your owners are paying you to manage their buildings. Start acting like it.`},{slug:"why-strata-managers-are-leaving",title:"Why Your Best Strata Managers Are Leaving (and What Admin Overload Has to Do With It)",excerpt:"Strata industry turnover is at a 10-year high. Here's why experienced managers are exiting and what agencies can do differently.",date:"2026-03-11",readTime:"11 min read",category:"Operational Efficiency",image:"/blog/managers-leaving.svg",content:`## Key Takeaways
 
 - Strata management industry turnover has reached 18-22% annually (compared to 12% in corporate administration and professional services)
 - Admin overload - email triage, data entry, and compliance documentation - is the primary driver of burnout, cited by 74% of departing managers
@@ -470,17 +313,7 @@ The strata industry is at a crossroads. Agencies can either address the admin ov
 
 If you're managing an agency and you're watching your best people leave, the solution is clear: invest in people, reduce admin burden, and create a career worth staying for.
 
-Your best manager is already talking to a recruiter. What are you going to do to keep them?`,
-  },
-  {
-    slug: 'strata-compliance-nsw-vic-qld-2026',
-    title: 'Strata Compliance in 2026: What\'s Changed in NSW, VIC, and QLD',
-    excerpt: 'A side-by-side guide to the 2026 strata compliance changes in NSW, VIC, and QLD - capital works reforms, fire safety, maintenance standards, and disclosure rules.',
-    date: '2026-03-18',
-    readTime: '10 min read',
-    category: 'Compliance & Regulation',
-    image: '/blog/strata-compliance-2026.svg',
-    content: `## Key takeaways
+Your best manager is already talking to a recruiter. What are you going to do to keep them?`},{slug:"strata-compliance-nsw-vic-qld-2026",title:"Strata Compliance in 2026: What's Changed in NSW, VIC, and QLD",excerpt:"A side-by-side guide to the 2026 strata compliance changes in NSW, VIC, and QLD - capital works reforms, fire safety, maintenance standards, and disclosure rules.",date:"2026-03-18",readTime:"10 min read",category:"Compliance & Regulation",image:"/blog/strata-compliance-2026.svg",content:`## Key takeaways
 
 - NSW is rolling out capital works fund reforms, fire safety overhauls, and mandatory committee training across 2026.
 - Victoria is tightening 10-year maintenance plan standards and introducing new energy efficiency requirements for owners corporations.
@@ -583,8 +416,4 @@ The three-state compliance landscape in 2026 is complex, but the themes are cons
 
 The agencies that handle this well tend to build compliance tracking into their operational systems rather than relying on individual manager knowledge.
 
-The direction is clear. The era of minimal compliance - doing just enough to avoid penalties - is ending. The regulatory environment in all three states is moving toward a standard where proactive, well-documented, transparent management isn't just best practice. It's the baseline expectation.`,
-  },
-]
-
-export default blogPosts
+The direction is clear. The era of minimal compliance - doing just enough to avoid penalties - is ending. The regulatory environment in all three states is moving toward a standard where proactive, well-documented, transparent management isn't just best practice. It's the baseline expectation.`}];[...lt].sort((e,t)=>new Date(t.date)-new Date(e.date));g.lazy(()=>M(()=>E(()=>import("./AboutPage-CLm9OdZ1-D0cfOC1M.js"),__vite__mapDeps([0,1,2,3])),x([0,1,2])));g.lazy(()=>M(()=>E(()=>import("./BlogPage-CSrSj6sx-BGvzZBtE.js"),__vite__mapDeps([4,1,2,3,5])),x([3,1,2,4])));g.lazy(()=>M(()=>E(()=>import("./BlogPostPage-Dnqk5qTF-Dwmphwk_.js"),__vite__mapDeps([6,1,2,3,5])),x([5,1,2,4])));g.lazy(()=>M(()=>E(()=>import("./PrivacyPolicyPage-CmouRRED-DVft03W8.js"),__vite__mapDeps([7,1,2,3])),x([6,1,2])));g.lazy(()=>M(()=>E(()=>import("./TermsPage-Axl1hKx2-2J8QqMr7.js"),__vite__mapDeps([8,1,2,3])),x([7,1,2])));export{vt as E,ft as N,ht as O,lt as P,wt as T,yt as X,bt as _,gt as a,p as b,pt as h,dt as k,$e as t};

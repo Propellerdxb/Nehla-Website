@@ -12,14 +12,13 @@ export default defineConfig({
     vitePrerenderPlugin({
       renderTarget: '#root',
       prerenderScript: resolve(__dirname, 'src/prerender.jsx'),
-      additionalPrerenderRoutes: ['/about', '/insights', '/insights/nsw-insurance-commission-ban-2026', '/insights/strata-manager-inbox-problem', '/insights/why-strata-managers-are-leaving', '/insights/strata-compliance-nsw-vic-qld-2026', '/privacy', '/terms'],
+      additionalPrerenderRoutes: ['/about', '/insights', '/insights/capital-works-fund-reforms-april-2026', '/insights/nsw-insurance-commission-ban-2026', '/insights/strata-manager-inbox-problem', '/insights/why-strata-managers-are-leaving', '/insights/strata-compliance-nsw-vic-qld-2026', '/privacy', '/terms'],
     }),
   ],
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          'framer': ['framer-motion'],
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
         },
       },
