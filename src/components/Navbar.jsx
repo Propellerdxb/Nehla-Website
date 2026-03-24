@@ -56,7 +56,7 @@ const Navbar = () => {
               className="h-12 w-auto"
               width={280}
               height={96}
-              fetchpriority="high"
+              fetchPriority="high"
             />
           </Link>
 

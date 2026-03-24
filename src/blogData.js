@@ -6,7 +6,7 @@ const blogPosts = [
     date: '2026-03-24',
     readTime: '6 min read',
     category: 'Compliance & Regulation',
-    image: null,
+    image: '/blog/capital-works-fund-reforms.svg',
     content: `## Key Takeaways
 
 - From April 1, 2026, all new and reviewed 10-year capital works fund plans must use the prescribed standard form under the Strata Schemes Management Regulation 2016
