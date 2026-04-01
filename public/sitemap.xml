@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://nehla.com.au/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -25,9 +25,19 @@
   </url>
   <url>
     <loc>https://nehla.com.au/insights</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nehla.com.au/insights/fire-safety-compliance-feb-2026-reforms</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://nehla.com.au/blog/fire-safety-compliance.svg</image:loc>
+      <image:title>Fire safety compliance for strata schemes - February 2026 reforms</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://nehla.com.au/insights/capital-works-fund-reforms-april-2026</loc>

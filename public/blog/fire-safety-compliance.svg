@@ -1,0 +1,333 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020d1f"/>
+      <stop offset="40%" stop-color="#042C53"/>
+      <stop offset="75%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#185FA5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#021626"/>
+      <stop offset="100%" stop-color="#010a14"/>
+    </linearGradient>
+    <linearGradient id="bldA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#020d1f"/>
+    </linearGradient>
+    <linearGradient id="bldB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#185FA5"/>
+      <stop offset="100%" stop-color="#042C53"/>
+    </linearGradient>
+    <linearGradient id="bldC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#052e5c"/>
+      <stop offset="100%" stop-color="#020d1f"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFC2"/>
+      <stop offset="100%" stop-color="#00FFC2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="timelineG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <linearGradient id="panelG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C447C" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#042C53" stop-opacity="0.85"/>
+    </linearGradient>
+    <!-- Tier severity gradients -->
+    <linearGradient id="tier1G" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF4D4D"/>
+      <stop offset="100%" stop-color="#FF7A7A"/>
+    </linearGradient>
+    <linearGradient id="tier2G" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF9500"/>
+      <stop offset="100%" stop-color="#FFB340"/>
+    </linearGradient>
+    <linearGradient id="tier3G" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#378ADD"/>
+    </linearGradient>
+    <linearGradient id="tier4G" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FFC2"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <!-- Building cross-section -->
+    <linearGradient id="buildingG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0C447C"/>
+      <stop offset="100%" stop-color="#020d1f"/>
+    </linearGradient>
+    <clipPath id="mainClip"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- Grid -->
+  <g stroke="#2E5BFF" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <ellipse cx="600" cy="200" rx="500" ry="300" fill="#2E5BFF" opacity="0.07"/>
+
+  <!-- Ground -->
+  <rect x="0" y="580" width="1200" height="50" fill="url(#ground)"/>
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="#2E5BFF" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- ═══════════════════════════════════════════════
+       BUILDING CROSS-SECTION — right side centrepiece
+       A stylised cut-through apartment block with
+       colour-coded floor compliance status
+  ═══════════════════════════════════════════════ -->
+
+  <!-- Building shell — tall block right of centre -->
+  <rect x="860" y="60" width="190" height="520" fill="url(#buildingG)" rx="4"/>
+  <rect x="860" y="60" width="190" height="520" fill="none" stroke="#378ADD" stroke-width="1.2" opacity="0.3"/>
+
+  <!-- Floor divisions — 8 visible floors -->
+  <g stroke="#185FA5" stroke-width="0.6" opacity="0.4">
+    <line x1="860" y1="125" x2="1050" y2="125"/>
+    <line x1="860" y1="190" x2="1050" y2="190"/>
+    <line x1="860" y1="255" x2="1050" y2="255"/>
+    <line x1="860" y1="320" x2="1050" y2="320"/>
+    <line x1="860" y1="385" x2="1050" y2="385"/>
+    <line x1="860" y1="450" x2="1050" y2="450"/>
+    <line x1="860" y1="515" x2="1050" y2="515"/>
+  </g>
+
+  <!-- Floor 8 (top) — COMPLIANT, mint -->
+  <rect x="866" y="66" width="178" height="53" rx="2" fill="#00FFC2" fill-opacity="0.08"/>
+  <rect x="866" y="66" width="4" height="53" fill="#00FFC2" opacity="0.7"/>
+  <text x="880" y="89" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#00FFC2">Floor 8</text>
+  <text x="880" y="102" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Compliant &#x2713;</text>
+  <!-- Window dots -->
+  <rect x="942" y="74" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.15"/>
+  <rect x="972" y="74" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.12"/>
+  <rect x="1002" y="74" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+  <rect x="942" y="95" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+  <rect x="972" y="95" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.12"/>
+  <rect x="1002" y="95" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.08"/>
+
+  <!-- Floor 7 — COMPLIANT -->
+  <rect x="866" y="131" width="178" height="53" rx="2" fill="#00FFC2" fill-opacity="0.06"/>
+  <rect x="866" y="131" width="4" height="53" fill="#00FFC2" opacity="0.5"/>
+  <text x="880" y="154" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#00FFC2">Floor 7</text>
+  <text x="880" y="167" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Compliant &#x2713;</text>
+  <rect x="942" y="139" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+  <rect x="972" y="139" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.12"/>
+  <rect x="1002" y="139" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.08"/>
+  <rect x="942" y="160" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.08"/>
+  <rect x="972" y="160" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+  <rect x="1002" y="160" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.08"/>
+
+  <!-- Floor 6 — PENDING REVIEW, cobalt -->
+  <rect x="866" y="196" width="178" height="53" rx="2" fill="#2E5BFF" fill-opacity="0.1"/>
+  <rect x="866" y="196" width="4" height="53" fill="#2E5BFF" opacity="0.7"/>
+  <text x="880" y="219" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#85B7EB">Floor 6</text>
+  <text x="880" y="232" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Audit scheduled</text>
+  <rect x="942" y="204" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.2"/>
+  <rect x="972" y="204" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+  <rect x="1002" y="204" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.18"/>
+  <rect x="942" y="225" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.12"/>
+  <rect x="972" y="225" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.18"/>
+  <rect x="1002" y="225" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+
+  <!-- Floor 5 — PENDING REVIEW -->
+  <rect x="866" y="261" width="178" height="53" rx="2" fill="#2E5BFF" fill-opacity="0.07"/>
+  <rect x="866" y="261" width="4" height="53" fill="#2E5BFF" opacity="0.5"/>
+  <text x="880" y="284" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#85B7EB">Floor 5</text>
+  <text x="880" y="297" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Audit scheduled</text>
+  <rect x="942" y="269" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+  <rect x="972" y="269" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.2"/>
+  <rect x="1002" y="269" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.12"/>
+  <rect x="942" y="290" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.18"/>
+  <rect x="972" y="290" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.12"/>
+  <rect x="1002" y="290" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+
+  <!-- Floor 4 — ACTION REQUIRED, orange -->
+  <rect x="866" y="326" width="178" height="53" rx="2" fill="#FF9500" fill-opacity="0.12"/>
+  <rect x="866" y="326" width="4" height="53" fill="#FF9500" opacity="0.8"/>
+  <text x="880" y="349" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#FFB340">Floor 4</text>
+  <text x="880" y="362" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Action required &#x26; alarm upgrade</text>
+  <rect x="942" y="334" width="22" height="14" rx="1" fill="#FF9500" opacity="0.2"/>
+  <rect x="972" y="334" width="22" height="14" rx="1" fill="#FF9500" opacity="0.15"/>
+  <rect x="1002" y="334" width="22" height="14" rx="1" fill="#FF9500" opacity="0.18"/>
+  <rect x="942" y="355" width="22" height="14" rx="1" fill="#FF9500" opacity="0.12"/>
+  <rect x="972" y="355" width="22" height="14" rx="1" fill="#FF9500" opacity="0.18"/>
+  <rect x="1002" y="355" width="22" height="14" rx="1" fill="#FF9500" opacity="0.15"/>
+
+  <!-- Floor 3 — NON-COMPLIANT, red -->
+  <rect x="866" y="391" width="178" height="53" rx="2" fill="#FF4D4D" fill-opacity="0.14"/>
+  <rect x="866" y="391" width="4" height="53" fill="#FF4D4D" opacity="0.9"/>
+  <text x="880" y="414" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#FF7A7A">Floor 3</text>
+  <text x="880" y="427" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Non-compliant &#x2717; fire doors</text>
+  <rect x="942" y="399" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.2"/>
+  <rect x="972" y="399" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.15"/>
+  <rect x="1002" y="399" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.18"/>
+  <rect x="942" y="420" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.12"/>
+  <rect x="972" y="420" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.2"/>
+  <rect x="1002" y="420" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.15"/>
+
+  <!-- Floor 2 — NON-COMPLIANT -->
+  <rect x="866" y="456" width="178" height="53" rx="2" fill="#FF4D4D" fill-opacity="0.1"/>
+  <rect x="866" y="456" width="4" height="53" fill="#FF4D4D" opacity="0.7"/>
+  <text x="880" y="479" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#FF7A7A">Floor 2</text>
+  <text x="880" y="492" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Non-compliant &#x2717; no alarm system</text>
+  <rect x="942" y="464" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.15"/>
+  <rect x="972" y="464" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.2"/>
+  <rect x="1002" y="464" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.12"/>
+  <rect x="942" y="485" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.18"/>
+  <rect x="972" y="485" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.12"/>
+  <rect x="1002" y="485" width="22" height="14" rx="1" fill="#FF4D4D" opacity="0.15"/>
+
+  <!-- Floor 1 — NON-COMPLIANT -->
+  <rect x="866" y="521" width="178" height="53" rx="2" fill="#FF4D4D" fill-opacity="0.08"/>
+  <rect x="866" y="521" width="4" height="53" fill="#FF4D4D" opacity="0.5"/>
+  <text x="880" y="544" font-family="Inter,sans-serif" font-size="8" font-weight="600" fill="#FF7A7A">Floor 1</text>
+  <text x="880" y="557" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#64748B">Non-compliant &#x2717; no evacuation plan</text>
+
+  <!-- Building label -->
+  <text x="950" y="595" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="400" fill="#64748B" letter-spacing="0.8">PRE-2000 BUILDING · AS 1851-2012</text>
+
+  <!-- ═══════════════════════════════════════════════
+       TIER PRIORITY PANEL — left of building, replaces clipboard
+  ═══════════════════════════════════════════════ -->
+  <rect x="652" y="95" width="192" height="316" rx="8" fill="url(#panelG)"/>
+  <rect x="652" y="95" width="192" height="316" rx="8" fill="none" stroke="#2E5BFF" stroke-width="1" opacity="0.4"/>
+  <!-- Header -->
+  <rect x="652" y="95" width="192" height="32" rx="8" fill="#0C447C" opacity="0.95"/>
+  <rect x="652" y="113" width="192" height="14" fill="#0C447C" opacity="0.95"/>
+  <text x="748" y="115" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#85B7EB" letter-spacing="1.5">REMEDIATION TIERS</text>
+
+  <!-- Tier 1 — IMMEDIATE, red -->
+  <rect x="662" y="137" width="172" height="60" rx="5" fill="#FF4D4D" fill-opacity="0.1" stroke="#FF4D4D" stroke-width="0.8" stroke-opacity="0.5"/>
+  <rect x="662" y="137" width="3" height="60" fill="#FF4D4D"/>
+  <text x="675" y="154" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FF7A7A" letter-spacing="0.5">TIER 1 — IMMEDIATE</text>
+  <text x="675" y="167" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Fire door remediation</text>
+  <text x="675" y="178" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Alarm repair/replacement</text>
+  <text x="675" y="189" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Evacuation signage &amp; wardens</text>
+
+  <!-- Tier 2 — HIGH PRIORITY, orange -->
+  <rect x="662" y="205" width="172" height="56" rx="5" fill="#FF9500" fill-opacity="0.08" stroke="#FF9500" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="662" y="205" width="3" height="56" fill="#FF9500"/>
+  <text x="675" y="221" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FFB340" letter-spacing="0.5">TIER 2 — 12 MONTHS</text>
+  <text x="675" y="234" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Sprinkler installation/upgrade</text>
+  <text x="675" y="245" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Enhanced fire detection</text>
+  <text x="675" y="256" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Compartmentation works</text>
+
+  <!-- Tier 3 — MEDIUM, cobalt -->
+  <rect x="662" y="269" width="172" height="46" rx="5" fill="#2E5BFF" fill-opacity="0.1" stroke="#2E5BFF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="662" y="269" width="3" height="46" fill="#2E5BFF"/>
+  <text x="675" y="285" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#85B7EB" letter-spacing="0.5">TIER 3 — 24 MONTHS</text>
+  <text x="675" y="298" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">System refurbishments</text>
+  <text x="675" y="309" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Building-wide fire audits</text>
+
+  <!-- Tier 4 — ONGOING, mint -->
+  <rect x="662" y="323" width="172" height="46" rx="5" fill="#00FFC2" fill-opacity="0.07" stroke="#00FFC2" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="662" y="323" width="3" height="46" fill="#00FFC2"/>
+  <text x="675" y="339" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#00FFC2" letter-spacing="0.5">TIER 4 — ONGOING</text>
+  <text x="675" y="352" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">AS 1851 testing schedules</text>
+  <text x="675" y="363" font-family="Inter,sans-serif" font-size="7.5" font-weight="300" fill="#85B7EB">Annual warden training &amp; drills</text>
+
+  <!-- Action badge -->
+  <rect x="652" y="418" width="192" height="30" rx="6" fill="#2E5BFF"/>
+  <text x="748" y="438" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="white" letter-spacing="1">AS 1851-2012 MANDATORY</text>
+
+  <!-- ═══════════════════════════════════════════════
+       COST SEVERITY BADGE — replaces QS/clock circle
+       Shows $80K–$150K cost range for pre-2000 buildings
+  ═══════════════════════════════════════════════ -->
+  <circle cx="615" cy="285" r="48" fill="#042C53" opacity="0.9"/>
+  <circle cx="615" cy="285" r="48" fill="none" stroke="url(#accentV)" stroke-width="2.5"/>
+  <circle cx="615" cy="285" r="40" fill="none" stroke="rgba(46,91,255,0.18)" stroke-width="1"/>
+  <!-- Cost range display -->
+  <text x="615" y="267" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="400" fill="#85B7EB" letter-spacing="1.5">PRE-2000 COST</text>
+  <text x="615" y="286" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="white">$80K</text>
+  <text x="615" y="300" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">to $150K+</text>
+  <!-- Small flame icon — 3 curved paths -->
+  <path d="M610 312 Q609 305 615 302 Q614 308 618 306 Q620 300 617 295 Q622 300 621 308 Q624 305 622 312 Q619 317 615 317 Q611 317 610 312 Z" fill="#FF4D4D" opacity="0.7"/>
+  <path d="M613 312 Q612 308 615 306 Q614 309 617 308 Q618 305 616 302 Q619 306 618 310 Q619 308 618 312 Q616 315 614 314 Q612 314 613 312 Z" fill="#FF7A7A" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════════
+       STAT CARDS — bottom right
+  ═══════════════════════════════════════════════ -->
+  <rect x="840" y="420" width="160" height="62" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#FF4D4D" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="840" y="420" width="3" height="62" fill="#FF4D4D"/>
+  <text x="858" y="445" font-family="Inter,sans-serif" font-size="22" font-weight="600" fill="#E6F1FB">Feb 13</text>
+  <text x="858" y="461" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#85B7EB">2026 — reforms live.</text>
+  <text x="858" y="474" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#64748B">No grace period.</text>
+
+  <rect x="1012" y="420" width="152" height="62" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#00FFC2" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="1012" y="420" width="3" height="62" fill="#00FFC2"/>
+  <text x="1030" y="445" font-family="Inter,sans-serif" font-size="22" font-weight="600" fill="#E6F1FB">25+</text>
+  <text x="1030" y="461" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#85B7EB">residents requires</text>
+  <text x="1030" y="474" font-family="Inter,sans-serif" font-size="10" font-weight="300" fill="#64748B">trained fire wardens</text>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#accentV)"/>
+
+  <!-- Eyebrow -->
+  <text x="72" y="58" font-family="Inter,sans-serif" font-size="13" font-weight="400" fill="rgba(133,183,235,0.75)" letter-spacing="2.5">THE STRATA EDIT  &#xB7;  COMPLIANCE &amp; REGULATION</text>
+  <rect x="72" y="70" width="280" height="1" fill="url(#accentH)" opacity="0.5"/>
+
+  <!-- Headline -->
+  <text font-family="Inter,sans-serif" fill="#E6F1FB">
+    <tspan x="72" y="148" font-size="56" font-weight="300" letter-spacing="-1">Fire Safety</tspan>
+    <tspan x="72" dy="66" font-size="56" font-weight="300" letter-spacing="-1">Compliance.</tspan>
+    <tspan x="72" dy="66" font-size="56" font-weight="700" letter-spacing="-1" fill="#00FFC2">Feb 2026</tspan>
+    <tspan x="72" dy="66" font-size="56" font-weight="700" letter-spacing="-1" fill="#00FFC2">Reforms.</tspan>
+  </text>
+  <circle cx="338" cy="344" r="7" fill="#2E5BFF"/>
+
+  <!-- Divider -->
+  <rect x="72" y="366" width="320" height="1.5" fill="url(#accentH)" opacity="0.7"/>
+
+  <!-- Subhead -->
+  <text x="72" y="394" font-family="Inter,sans-serif" font-size="15" font-weight="300" fill="rgba(181,212,244,0.85)">What the AS 1851-2012 overhaul means</text>
+  <text x="72" y="413" font-family="Inter,sans-serif" font-size="15" font-weight="300" fill="rgba(181,212,244,0.85)">for your buildings.</text>
+
+  <!-- Stat pills -->
+  <rect x="72" y="438" width="175" height="28" rx="14" fill="rgba(255,77,77,0.15)" stroke="rgba(255,77,77,0.5)" stroke-width="1"/>
+  <text x="159" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#FF7A7A">Feb 13, 2026 live</text>
+
+  <rect x="257" y="438" width="175" height="28" rx="14" fill="rgba(0,255,194,0.1)" stroke="rgba(0,255,194,0.5)" stroke-width="1"/>
+  <text x="344" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#00FFC2">AS 1851-2012 mandatory</text>
+
+  <rect x="72" y="476" width="200" height="28" rx="14" fill="rgba(255,149,0,0.1)" stroke="rgba(255,149,0,0.45)" stroke-width="1"/>
+  <text x="172" y="495" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#FFB340">Pre-2000: $80K–$150K cost</text>
+
+  <!-- Slim timeline bar -->
+  <line x1="0" y1="528" x2="1200" y2="528" stroke="#0C447C" stroke-width="1" opacity="0.6"/>
+  <rect x="72" y="542" width="1076" height="3" rx="1.5" fill="#0C447C" opacity="0.8"/>
+  <rect x="72" y="542" width="1076" height="3" rx="1.5" fill="url(#timelineG)" opacity="0.65"/>
+
+  <!-- Audit now -->
+  <circle cx="72" cy="543" r="6" fill="#FF4D4D"/>
+  <text x="84" y="539" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">Now</text>
+  <text x="84" y="554" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Commission fire safety audit</text>
+
+  <!-- Feb 13 -->
+  <circle cx="330" cy="543" r="6" fill="#FF4D4D" opacity="0.8"/>
+  <text x="342" y="539" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#FF7A7A">Feb 13, 2026</text>
+  <text x="342" y="554" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Reforms effective — you&#x2019;re on the clock</text>
+
+  <!-- Tier 1 done -->
+  <circle cx="660" cy="543" r="8" fill="url(#accentV)"/>
+  <text x="674" y="539" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#2E5BFF">12 months &#x2014; Tier 1 &amp; 2 complete</text>
+  <text x="674" y="554" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Fire doors · alarms · wardens · sprinklers</text>
+
+  <!-- Ongoing -->
+  <circle cx="1010" cy="543" r="6" fill="#00FFC2"/>
+  <text x="1000" y="539" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">Ongoing</text>
+  <text x="1000" y="554" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">AS 1851 testing &amp; register</text>
+
+  </g>
+</svg>

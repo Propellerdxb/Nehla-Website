@@ -1,5 +1,213 @@
 const blogPosts = [
   {
+    slug: 'fire-safety-compliance-feb-2026-reforms',
+    title: 'Fire Safety Compliance for Strata Schemes: What the February 2026 Reforms Mean for Your Buildings',
+    excerpt: 'NSW fire safety regulations were overhauled Feb 13, 2026. Here\'s what strata managers need to do now to ensure compliance.',
+    date: '2026-04-01',
+    readTime: '10 min read',
+    category: 'Compliance & Regulation',
+    image: '/blog/fire-safety-compliance.svg',
+    content: `## Key Takeaways
+
+- Fire safety regulations for strata buildings were significantly reformed effective February 13, 2026 (originally scheduled for early 2025)
+- Compliance with AS 1851-2012 (Maintenance of fire safety systems) is now mandatory, with specific inspection and testing schedules for fire exits, alarms, sprinklers, and smoke detectors
+- Older buildings (pre-2000) face higher compliance costs and may require structural upgrades; prioritisation strategy is essential
+- Documentation and record-keeping are now more rigorous; managers must maintain a compliance register and evidence of all maintenance, testing, and remedial actions
+- Regular audits and fire warden training are now compulsory for most residential strata schemes
+
+---
+
+## Introduction
+
+When the fire safety regulation overhaul was first announced in 2024, industry experts debated whether the deadline would hold. It did. On February 13, 2026, the new fire safety compliance framework for NSW strata buildings came into full effect.
+
+For strata managers, this is one of the most significant regulatory shifts in a decade. It's not just new rules - it's a fundamental rethink of how strata schemes manage fire risk, how they document compliance, and what level of professional oversight they need.
+
+The reforms align NSW requirements more closely with interstate standards and best practice, but they also create immediate challenges: cost, complexity, prioritisation across portfolios, and the need for genuine expertise rather than box-ticking compliance.
+
+This article walks you through what changed, what it means for your buildings (especially older stock), and the practical steps to get compliant and stay compliant.
+
+## The Core Changes: What February 13, 2026 Brought
+
+**AS 1851-2012 is now mandatory.**
+Previously, compliance with AS 1851-2012 (Maintenance of fire safety systems in buildings) was recommended practice. It's now a legal requirement. This standard sets out prescribed inspection and testing regimes for:
+- Fire doors and fire separations
+- Fire exit signage and emergency lighting
+- Fire alarm systems (manual and automatic)
+- Sprinkler systems (where installed)
+- Smoke detectors and detection systems
+- Fire extinguishers
+- Emergency evacuation plans and procedures
+
+**Frequency schedules are non-negotiable.**
+The standard specifies testing intervals. Fire door seals: annually. Alarm systems: biannually (or quarterly for certain system types). Sprinklers: if installed, annual major service plus quarterly inspection. Smoke detectors: annual testing minimum. These aren't guidelines; they're compliance baselines.
+
+**Documentation is now auditable.**
+You must maintain a Fire Safety Register that records:
+- Every inspection and test (date, findings, remedial actions)
+- Who performed the work (qualifications matter)
+- What issues were identified and how they were resolved
+- Timelines for resolution
+- Evidence (photos, reports, certificates)
+
+Regulators and NCAT can now demand to see this register. If the register is incomplete or shows gaps in testing, your scheme is non-compliant - even if work was actually done.
+
+**Fire wardens are now compulsory.**
+Strata buildings with more than 25 residents must appoint and train designated fire wardens. Wardens need to complete accredited training and participate in regular drills. This isn't optional.
+
+**Non-compliance carries real penalties.**
+The Strata Schemes Management Act 2015 now includes prescribed penalties for breaches. A strata scheme found to be non-compliant can face fines (which may be recovered from the sinking fund or special levy), and in serious cases, the scheme can be placed under management orders by the Strata Schemes Commissioner.
+
+## The Age Question: Why Pre-2000 Buildings Face the Biggest Challenge
+
+Fire safety compliance sounds uniform, but it isn't. Buildings built before 2000 face disproportionate costs.
+
+**What changed in building codes post-2000:**
+Modern building standards (BCA 2022 onwards) require better compartmentation, higher-grade fire doors, integrated fire detection systems, and in many cases, sprinkler systems or advanced smoke detection. Older buildings often don't have these baseline features.
+
+**The compliance reality for pre-2000 buildings:**
+An apartment block built in 1995 might have:
+- Original timber doors that don't meet fire-rating standards
+- No interlocked fire detection system; isolated detectors instead
+- No sprinkler system
+- Unclear fire separation design (walls may not perform as expected)
+- Inadequate emergency lighting or exit signage
+
+Bringing this building into full AS 1851 compliance isn't about maintenance - it's about structural and systems upgrades. The costs are substantial.
+
+**Examples of actual costs:**
+- Replacing fire doors in a 30-lot scheme: \$15,000-\$25,000
+- Installing or upgrading a fire alarm system: \$8,000-\$40,000 (depending on system type and building size)
+- Adding emergency lighting or exit signage: \$3,000-\$8,000
+- Sprinkler system retrofit (if required): \$30,000-\$100,000+
+
+For a single pre-2000 building, aggregate compliance costs can easily hit \$80,000-\$150,000. That's a special levy most owners weren't expecting.
+
+## Prioritisation Strategy: You Can't Fix Everything at Once
+
+The February 2026 deadline means schemes must be compliant now. But if you manage multiple buildings or a large portfolio, you can't upgrade everything simultaneously. Here's how to think about prioritisation:
+
+**Tier 1: Non-negotiable (must be done immediately)**
+- Fire door remediation (doors that don't meet rating standards)
+- Fire alarm system repair or replacement (if the current system is faulty or non-compliant)
+- Emergency evacuation signage and lighting
+- Fire warden appointment and training
+
+These address immediate life safety. Any delays here are indefensible.
+
+**Tier 2: High priority (next 12 months)**
+- Sprinkler system installation or upgrades (if the building is over a certain height or occupancy)
+- Enhanced fire detection systems
+- Compartmentation improvements
+
+**Tier 3: Medium priority (within 24 months)**
+- Refurbishment of existing compliant systems (not replacement, but upgrade)
+- Building-wide fire safety audits and documentation
+
+**Tier 4: Ongoing maintenance**
+- Regular testing schedules per AS 1851
+- Annual fire warden training updates
+- Quarterly inspections and minor remedial work
+
+To set this up, commission a professional fire safety audit (not a simple inspection - a full audit). A qualified fire engineer will assess your building against AS 1851 and provide a prioritised remediation schedule. This costs \$2,000-\$5,000 per building, but it's money well spent because it gives you a defensible roadmap.
+
+## Building Your Compliance Register: The Documentation Framework
+
+This is where many schemes slip up. They complete work but fail to document it properly.
+
+A Fire Safety Register should contain:
+
+**1. Asset inventory**
+- Complete list of all fire safety systems (alarm panels, detectors, sprinklers, doors, signage, extinguishers)
+- Location, age, and maintenance history for each asset
+- Certification or rating (especially for fire doors and separations)
+
+**2. Inspection and testing log**
+- Dates of all inspections and tests
+- What was tested (specific alarm zones, door seals, sprinkler zones, etc.)
+- Who performed the work (name, qualifications, certifying body)
+- Findings (pass, fail, or conditional pass)
+- Any remedial actions required
+
+**3. Remedial action tracker**
+- What was found (e.g., "smoke detector not functional in hallway 3.2")
+- Action required
+- Assigned responsibility
+- Target completion date
+- Actual completion date
+- Evidence of completion (photo, certificate, report excerpt)
+
+**4. Non-compliance log**
+- Any gaps or delays in testing
+- Why the gap occurred
+- When testing will be completed
+- Approval from the committee (if the gap was deliberate and approved)
+
+**5. Compliance certification**
+- Annual sign-off from the committee that all mandatory testing has been completed
+- Statement that the scheme is compliant with AS 1851
+
+Use a spreadsheet, dedicated software, or even a physical binder - but make it structured and auditable. When a regulator asks "Show me evidence you tested fire doors in March 2026," you need to produce documentation in seconds, not hours.
+
+## The Cost Reality: How to Communicate This to Owners
+
+Most owners don't want to hear about fire safety compliance. They want to know: "What is this going to cost me?"
+
+Here's how to frame this conversation with honesty and clarity:
+
+**The audit phase (now):**
+"We're commissioning a professional fire safety audit. Cost: approximately [amount] per lot, one-time. This tells us exactly what needs to be fixed and in what order. It's an investment in clarity and defensible decision-making."
+
+**The remediation phase (ongoing):**
+"Based on the audit, we've identified three tiers of work. Tier 1 (immediate) will require a special levy of approximately [amount] per lot, spread over [timeframe]. This covers [fire doors / alarm system / signage]. Tier 2 will be addressed in [year]."
+
+**The ongoing maintenance phase:**
+"Annual testing and maintenance will add approximately [amount] per lot per year to service charges. This is a statutory requirement, not optional."
+
+The key is transparency about timing and cost. Owners are more likely to accept special levies when they understand the regulatory driver and have seen a professional assessment justifying the work.
+
+## Red Flags: What Non-Compliance Actually Looks Like
+
+If your scheme exhibits any of these, you likely have a compliance gap:
+
+- **No Fire Safety Register or incomplete documentation** - Worst case. You have no evidence of compliance.
+- **Fire doors that don't meet standards** - Common in 1990s apartment blocks. Original doors are often not rated for fire.
+- **No integrated fire alarm system** - Standalone detectors don't meet AS 1851 requirements.
+- **No fire wardens or fire warden training** - Compulsory for buildings over 25 residents.
+- **No record of annual testing** - Even if testing was done, if it's not documented, it didn't happen (from a compliance perspective).
+- **Outdated or unmaintained sprinkler systems** - If installed, they must be serviced per standard schedules.
+- **No emergency evacuation plan** - AS 1851 requires a documented plan, communicated to residents.
+
+If you're reading this and recognising your scheme, don't panic - but do act. Contact a fire safety consultant immediately. Non-compliance is a slow burn until it isn't, and the penalties (financial and reputational) are serious.
+
+## Working With Fire Safety Professionals: What You Need
+
+Don't try to manage fire safety compliance without expert help. You need:
+
+**1. A qualified fire safety auditor** (to assess your building)
+- Look for someone accredited under the NFPA, AFSA, or equivalent scheme
+- They should provide a prioritised remediation schedule, not just a list of issues
+
+**2. A licensed fire safety contractor** (to do the remediation work)
+- For major systems (alarms, sprinklers), certification and warranty matter
+- Get quotes; this isn't a simple commodity purchase, but price variation is real
+
+**3. An annual testing coordinator** (for ongoing compliance)
+- This might be a contractor or could be managed in-house if you have the expertise
+- They need to be organized - missing a testing window breaks your compliance
+
+**4. Legal/compliance advice** (to stay on top of regulatory changes)
+- Fire safety standards and regulations evolve. A good strata manager or legal advisor keeps you updated.
+
+## Conclusion
+
+The February 2026 fire safety reforms aren't going away. Schemes that ignored the deadline are now non-compliant and exposed. Schemes that are scrambling to catch up are at least moving in the right direction.
+
+The path forward is systematic: audit, prioritise, remediate, document, and maintain. It's not glamorous work, but it's essential. Your owners are paying you to keep the building safe. Compliance with AS 1851 is the baseline of that responsibility.
+
+If you haven't done so already, commission a fire safety audit this month. Get the roadmap in place. Start communicating with your committee and owners. The cost is real, but the cost of non-compliance - both financially and in terms of safety - is far higher.`,
+  },
+  {
     slug: 'capital-works-fund-reforms-april-2026',
     title: 'The April 2026 Capital Works Fund Reforms: Are Your 10-Year Plans Ready?',
     excerpt: 'NSW capital works fund plans must use new standard forms from April 1, 2026. Here\'s what you need to know and do now.',
