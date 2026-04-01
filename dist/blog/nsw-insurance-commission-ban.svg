@@ -1,0 +1,240 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Light sky — same as capital works SVG -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6F1FB"/>
+      <stop offset="55%" stop-color="#F0F7FF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <!-- Buildings — light variants -->
+    <linearGradient id="bldL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4E8FA"/>
+      <stop offset="100%" stop-color="#85B7EB"/>
+    </linearGradient>
+    <linearGradient id="bldR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B5D4F4"/>
+      <stop offset="100%" stop-color="#378ADD"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#2E5BFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coinG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00FFC2"/>
+      <stop offset="100%" stop-color="#0F6E56"/>
+    </linearGradient>
+    <linearGradient id="arrowG" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2E5BFF"/>
+      <stop offset="100%" stop-color="#00FFC2"/>
+    </linearGradient>
+    <linearGradient id="docG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E6F1FB"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B5D4F4"/>
+      <stop offset="100%" stop-color="#85B7EB"/>
+    </linearGradient>
+    <clipPath id="mainClip"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+
+  <!-- Sky -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- Grid -->
+  <g stroke="#2E5BFF" stroke-width="0.4" opacity="0.05">
+    <line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <ellipse cx="600" cy="200" rx="500" ry="300" fill="#2E5BFF" opacity="0.04"/>
+
+  <!-- Ground -->
+  <rect x="0" y="580" width="1200" height="50" fill="url(#ground)" opacity="0.3"/>
+  <line x1="0" y1="580" x2="1200" y2="580" stroke="#185FA5" stroke-width="0.8" opacity="0.18"/>
+
+  <!-- Distant buildings — same positions as source, light fill -->
+  <rect x="480" y="340" width="35" height="240" fill="#D4E8FA" opacity="0.7"/>
+  <rect x="530" y="310" width="50" height="270" fill="#B5D4F4" opacity="0.6"/>
+  <rect x="595" y="290" width="60" height="290" fill="#D4E8FA" opacity="0.65"/>
+  <rect x="665" y="300" width="40" height="280" fill="#B5D4F4" opacity="0.6"/>
+  <rect x="720" y="275" width="55" height="305" fill="#D4E8FA" opacity="0.65"/>
+  <rect x="790" y="320" width="35" height="260" fill="#B5D4F4" opacity="0.55"/>
+  <rect x="840" y="330" width="45" height="250" fill="#D4E8FA" opacity="0.55"/>
+
+  <!-- Left main building — same position, light palette + curtain wall -->
+  <rect x="-10" y="120" width="130" height="460" fill="url(#bldL)" rx="2"/>
+  <rect x="-10" y="120" width="130" height="460" fill="none" stroke="#378ADD" stroke-width="0.7" opacity="0.22"/>
+  <!-- Vertical facade lines -->
+  <line x1="32" y1="120" x2="32" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.18"/>
+  <line x1="74" y1="120" x2="74" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.18"/>
+  <!-- Window grid -->
+  <g opacity="0.38">
+    <rect x="4" y="136" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="34" y="136" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="80" y="136" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="4" y="160" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="34" y="160" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="80" y="160" width="22" height="14" rx="1" fill="#B5D4F4" opacity="0.3"/>
+    <rect x="4" y="184" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="34" y="184" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="80" y="184" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="4" y="208" width="22" height="14" rx="1" fill="#B5D4F4" opacity="0.3"/>
+    <rect x="34" y="208" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="80" y="208" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="4" y="232" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="34" y="232" width="22" height="14" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="80" y="232" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="4" y="256" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="34" y="256" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="80" y="256" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.12"/>
+    <rect x="4" y="280" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="34" y="280" width="22" height="14" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="80" y="280" width="22" height="14" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="4" y="304" width="22" height="14" rx="1" fill="#B5D4F4" opacity="0.3"/>
+    <rect x="34" y="304" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="80" y="304" width="22" height="14" rx="1" fill="#2E5BFF" opacity="0.13"/>
+  </g>
+
+  <!-- Right main building — same position, light palette + curtain wall -->
+  <rect x="1080" y="60" width="135" height="520" fill="url(#bldR)" rx="2"/>
+  <rect x="1080" y="60" width="135" height="520" fill="none" stroke="#378ADD" stroke-width="0.7" opacity="0.22"/>
+  <!-- Vertical facade lines -->
+  <line x1="1117" y1="60" x2="1117" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.18"/>
+  <line x1="1154" y1="60" x2="1154" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.18"/>
+  <!-- Horizontal floor lines -->
+  <g stroke="#378ADD" stroke-width="0.35" opacity="0.12">
+    <line x1="1080" y1="98" x2="1215" y2="98"/><line x1="1080" y1="136" x2="1215" y2="136"/>
+    <line x1="1080" y1="174" x2="1215" y2="174"/><line x1="1080" y1="212" x2="1215" y2="212"/>
+    <line x1="1080" y1="250" x2="1215" y2="250"/><line x1="1080" y1="288" x2="1215" y2="288"/>
+    <line x1="1080" y1="326" x2="1215" y2="326"/><line x1="1080" y1="364" x2="1215" y2="364"/>
+    <line x1="1080" y1="402" x2="1215" y2="402"/><line x1="1080" y1="440" x2="1215" y2="440"/>
+    <line x1="1080" y1="478" x2="1215" y2="478"/><line x1="1080" y1="516" x2="1215" y2="516"/>
+    <line x1="1080" y1="554" x2="1215" y2="554"/>
+  </g>
+  <!-- Window grid -->
+  <g opacity="0.38">
+    <rect x="1088" y="70" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1120" y="70" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.12"/>
+    <rect x="1162" y="70" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1088" y="102" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1120" y="102" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="1162" y="102" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.3"/>
+    <rect x="1088" y="134" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1120" y="134" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1162" y="134" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="1088" y="166" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1120" y="166" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1162" y="166" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1088" y="198" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="1120" y="198" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1162" y="198" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1088" y="230" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1120" y="230" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.18"/>
+    <rect x="1162" y="230" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.12"/>
+    <rect x="1088" y="262" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1120" y="262" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1162" y="262" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1088" y="294" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.3"/>
+    <rect x="1120" y="294" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1162" y="294" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="1088" y="326" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="1120" y="326" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1162" y="326" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1088" y="358" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1120" y="358" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1162" y="358" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1088" y="390" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1120" y="390" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1162" y="390" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.13"/>
+    <rect x="1088" y="422" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.12"/>
+    <rect x="1120" y="422" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+    <rect x="1162" y="422" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1088" y="454" width="22" height="18" rx="1" fill="#B5D4F4" opacity="0.28"/>
+    <rect x="1120" y="454" width="22" height="18" rx="1" fill="#2E5BFF" opacity="0.15"/>
+    <rect x="1162" y="454" width="22" height="18" rx="1" fill="#00FFC2" opacity="0.1"/>
+  </g>
+
+  <!-- Downward arrow — same position as source (cx ~910, converted to light) -->
+  <path d="M910 100 L910 280 L890 280 L920 330 L950 280 L930 280 L930 100 Z" fill="url(#arrowG)" opacity="0.75"/>
+  <path d="M910 100 L910 280 L890 280 L920 330 L950 280 L930 280 L930 100 Z" fill="none" stroke="rgba(0,255,194,0.3)" stroke-width="1.5"/>
+
+  <!-- Coin stack — same cx=840 as source -->
+  <ellipse cx="840" cy="530" rx="48" ry="13" fill="#0F6E56" opacity="0.7"/>
+  <rect x="792" y="500" width="96" height="30" fill="url(#coinG)" opacity="0.7"/>
+  <ellipse cx="840" cy="500" rx="48" ry="13" fill="#00FFC2" opacity="0.82"/>
+  <ellipse cx="840" cy="488" rx="48" ry="13" fill="url(#coinG)" opacity="0.75"/>
+  <rect x="792" y="455" width="96" height="33" fill="url(#coinG)" opacity="0.65"/>
+  <ellipse cx="840" cy="455" rx="48" ry="13" fill="#00FFC2" opacity="0.78"/>
+  <ellipse cx="840" cy="443" rx="48" ry="13" fill="url(#coinG)" opacity="0.72"/>
+  <rect x="792" y="408" width="96" height="35" fill="url(#coinG)" opacity="0.6"/>
+  <ellipse cx="840" cy="408" rx="48" ry="13" fill="#00FFC2" opacity="0.75"/>
+  <text x="840" y="415" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="700" fill="#042C53" opacity="0.7">$</text>
+  <!-- Floating coins — same positions as source -->
+  <ellipse cx="1010" cy="285" rx="22" ry="22" fill="url(#coinG)" opacity="0.65"/>
+  <text x="1010" y="293" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#042C53">$</text>
+  <ellipse cx="1055" cy="215" rx="14" ry="14" fill="url(#coinG)" opacity="0.48"/>
+  <text x="1055" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#042C53">$</text>
+  <ellipse cx="985" cy="170" rx="9" ry="9" fill="url(#coinG)" opacity="0.35"/>
+  <ellipse cx="1040" cy="130" rx="11" ry="11" fill="url(#coinG)" opacity="0.38"/>
+
+  <!-- Insurance document — same x=720/y=435 as source, light fill -->
+  <rect x="720" y="415" width="155" height="115" rx="5" fill="url(#docG)" opacity="0.96"/>
+  <rect x="720" y="415" width="155" height="115" rx="5" fill="none" stroke="#2E5BFF" stroke-width="1.2" opacity="0.35"/>
+  <rect x="720" y="415" width="155" height="25" rx="5" fill="#0C447C"/>
+  <rect x="720" y="430" width="155" height="10" fill="#0C447C"/>
+  <text x="797" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#85B7EB" letter-spacing="1.5">STRATA INSURANCE</text>
+  <line x1="735" y1="456" x2="862" y2="456" stroke="#378ADD" stroke-width="0.9" opacity="0.6"/>
+  <line x1="735" y1="469" x2="862" y2="469" stroke="#378ADD" stroke-width="0.9" opacity="0.5"/>
+  <line x1="735" y1="482" x2="845" y2="482" stroke="#378ADD" stroke-width="0.9" opacity="0.5"/>
+  <line x1="735" y1="495" x2="852" y2="495" stroke="#378ADD" stroke-width="0.9" opacity="0.4"/>
+  <line x1="735" y1="508" x2="830" y2="508" stroke="#378ADD" stroke-width="0.9" opacity="0.35"/>
+
+  <!-- Ban circle — same cx=780/cy=148 as source, dark fill reads on light bg -->
+  <circle cx="780" cy="148" r="58" fill="rgba(4,44,83,0.88)" stroke="#2E5BFF" stroke-width="3"/>
+  <path d="M758 134 Q766 126 774 134 L782 144 Q786 148 792 144 L800 134 Q808 126 814 134 L814 162 Q808 170 800 162 L792 152 Q786 148 782 152 L774 162 Q766 170 758 162 Z" fill="none" stroke="#85B7EB" stroke-width="2.5" opacity="0.75"/>
+  <line x1="735" y1="103" x2="825" y2="193" stroke="#2E5BFF" stroke-width="5" stroke-linecap="round" opacity="0.95"/>
+  <circle cx="780" cy="148" r="58" fill="none" stroke="rgba(46,91,255,0.35)" stroke-width="8"/>
+  <text x="780" y="175" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#00FFC2" letter-spacing="1.5">COMMISSIONS BANNED</text>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#accentV)"/>
+
+  <!-- Eyebrow — x=120, dark text for light bg -->
+  <text x="120" y="72" font-family="Inter,sans-serif" font-size="14" font-weight="400" fill="#64748B" letter-spacing="2.5">THE STRATA EDIT  &#xB7;  COMPLIANCE &amp; REGULATION</text>
+  <rect x="120" y="84" width="280" height="1" fill="url(#accentH)" opacity="0.4"/>
+
+  <!-- Headline — x=120, dark text for light bg -->
+  <text font-family="Inter,sans-serif" fill="#121C2D">
+    <tspan x="120" y="172" font-size="78" font-weight="300" letter-spacing="-1">The NSW</tspan>
+    <tspan x="120" dy="86" font-size="78" font-weight="300" letter-spacing="-1">Insurance</tspan>
+    <tspan x="120" dy="86" font-size="78" font-weight="300" letter-spacing="-1">Commission</tspan>
+    <tspan x="120" dy="86" font-size="78" font-weight="700" letter-spacing="-1" fill="#2E5BFF">Ban.</tspan>
+  </text>
+  <circle cx="295" cy="428" r="7" fill="#00FFC2"/>
+
+  <!-- Divider -->
+  <rect x="120" y="448" width="340" height="1.5" fill="url(#accentH)" opacity="0.7"/>
+
+  <!-- Subhead — dark text -->
+  <text x="120" y="478" font-family="Inter,sans-serif" font-size="17" font-weight="300" fill="#334155" letter-spacing="0.2">What every strata manager needs to know before 2026 ends.</text>
+
+  <!-- Stat pills — adjusted for light bg -->
+  <rect x="120" y="502" width="210" height="32" rx="16" fill="rgba(46,91,255,0.07)" stroke="rgba(46,91,255,0.35)" stroke-width="1"/>
+  <text x="225" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#2E5BFF">20&#x2013;30% of margin at risk</text>
+  <rect x="340" y="502" width="148" height="32" rx="16" fill="rgba(0,255,194,0.07)" stroke="rgba(15,110,86,0.35)" stroke-width="1"/>
+  <text x="414" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#0F6E56">Jan 1, 2026</text>
+  <rect x="498" y="502" width="132" height="32" rx="16" fill="rgba(46,91,255,0.06)" stroke="rgba(46,91,255,0.28)" stroke-width="1"/>
+  <text x="564" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#185FA5">$100K+ gap</text>
+
+  </g>
+</svg>
