@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 import SEO from '../components/SEO'
 import { ArrowRight, Calendar, Clock, Tag, CheckCircle, Mail } from 'lucide-react'
-import blogPosts from '../blogData'
+import { useInsights } from '../lib/useInsights'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -25,7 +25,17 @@ const formatDate = (dateStr) => {
   return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
-const pillars = ['All', 'Compliance & Regulation', 'Operational Efficiency', 'The Human Side', 'Technology & Innovation']
+// Canonical pillar order. Pills are filtered down at render time to those
+// that actually have at least one post; unknown categories from new posts
+// get appended alphabetically so nothing slips through.
+const PILLAR_ORDER = [
+  'Compliance & Regulation',
+  'Operational Efficiency',
+  'The Human Side',
+  'Technology & Innovation',
+  'Technology & the Future',
+  'Business Growth & Profitability',
+]
 
 const BlogPage = () => {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -57,7 +67,11 @@ const BlogPage = () => {
     }
   }
 
-  const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date))
+  const sortedPosts = useInsights()
+  const presentCategories = new Set(sortedPosts.map((p) => p.category).filter(Boolean))
+  const knownPillars = PILLAR_ORDER.filter((c) => presentCategories.has(c))
+  const extraPillars = [...presentCategories].filter((c) => !PILLAR_ORDER.includes(c)).sort()
+  const pillars = ['All', ...knownPillars, ...extraPillars]
   const filteredPosts = activeFilter === 'All'
     ? sortedPosts
     : sortedPosts.filter((p) => p.category === activeFilter)

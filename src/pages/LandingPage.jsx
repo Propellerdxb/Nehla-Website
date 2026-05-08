@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
-import blogPosts from '../blogData'
+import { useInsights } from '../lib/useInsights'
 import {
   ArrowRight,
   Shield,
@@ -793,8 +793,6 @@ const formatDate = (dateStr) => {
   return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
-const allInsightCards = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date))
-
 const InsightCard = ({ post, i }) => (
   <motion.article
     key={post.slug}
@@ -841,15 +839,17 @@ const InsightCard = ({ post, i }) => (
 
 const StrataEdit = () => {
   const [carouselPage, setCarouselPage] = useState(0)
-  const firstThree = allInsightCards.slice(0, 3)
-  const remaining = allInsightCards.slice(3)
-  const carouselPages = []
-  for (let i = 0; i < remaining.length; i += 3) {
-    carouselPages.push(remaining.slice(i, i + 3))
-  }
-  const totalDots = 1 + carouselPages.length // first page + carousel pages
-  const showingFirst = carouselPage === 0
-  const currentCards = showingFirst ? firstThree : carouselPages[carouselPage - 1] || []
+  // Always feature the four most recent insights: page 1 = posts 1-3,
+  // page 2 = post 4 alongside the More Insights tile.
+  const featured = useInsights().slice(0, 4)
+  const firstPage = featured.slice(0, 3)
+  const secondPage = featured.slice(3, 4)
+  const hasSecondPage = secondPage.length > 0
+  const totalDots = hasSecondPage ? 2 : 1
+  const currentCards = carouselPage === 0 ? firstPage : secondPage
+  const showMoreTile = carouselPage === totalDots - 1
+
+  if (featured.length === 0) return null
 
   return (
     <section className="bg-brand-offwhite">
@@ -885,8 +885,8 @@ const StrataEdit = () => {
                 <InsightCard key={post.slug} post={post} i={i} />
               ))}
 
-              {/* More Insights tile on last carousel page or if few posts */}
-              {(carouselPage === totalDots - 1 || currentCards.length < 3) && (
+              {/* More Insights tile fills the last carousel slot */}
+              {showMoreTile && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

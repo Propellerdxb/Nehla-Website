@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 import SEO from '../components/SEO'
 import { ArrowLeft, Calendar, Clock, Tag, CheckCircle, Mail } from 'lucide-react'
-import blogPosts from '../blogData'
+import { useInsightBySlug } from '../lib/useInsights'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -90,7 +90,7 @@ const renderInline = (text) => {
 
 const BlogPostPage = () => {
   const { slug } = useParams()
-  const post = blogPosts.find((p) => p.slug === slug)
+  const { post, loading } = useInsightBySlug(slug)
   const [subscribed, setSubscribed] = useState(false)
   const [subscribing, setSubscribing] = useState(false)
   const [optIn, setOptIn] = useState(false)
@@ -117,6 +117,10 @@ const BlogPostPage = () => {
     } finally {
       setSubscribing(false)
     }
+  }
+
+  if (loading) {
+    return <div className="pt-32 pb-20 text-center text-brand-slate">Loading…</div>
   }
 
   if (!post) {
