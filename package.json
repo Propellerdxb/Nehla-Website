@@ -4,8 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/setup-dev.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/setup-dev.mjs",
     "build": "vite build",
+    "postbuild": "node scripts/sync-build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
