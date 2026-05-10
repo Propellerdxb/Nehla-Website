@@ -82,7 +82,7 @@ const Hero = () => (
             to join our exclusive Early Adopter program. Secure your spot now to get your
             first{' '}
             <span className="text-brand-cobalt font-bold">6 months FREE</span>{' '}
-            when we pre-launch in April 2026.
+            when we pre-launch in July 2026.
           </p>
         </motion.div>
 

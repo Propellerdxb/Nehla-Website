@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import AlertBanner from './AlertBanner'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -46,7 +47,9 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <AlertBanner />
+      <nav className="bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" onClick={() => { setActiveHash(''); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className="flex items-center">
@@ -154,7 +157,8 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+      </nav>
+    </header>
   )
 }
 
