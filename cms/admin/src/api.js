@@ -1,5 +1,11 @@
 const TOKEN_KEY = 'nehla_cms_token'
 
+// Production builds set VITE_API_URL to the Railway API origin so the admin
+// (hosted at e.g. cms.nehla.com.au) can call the API cross-origin. In dev,
+// when API and admin run on different localhost ports, set VITE_API_URL in
+// .env.local. Empty string means same-origin (no prefix).
+const API_BASE = (import.meta.env?.VITE_API_URL || '').replace(/\/$/, '')
+
 export const tokenStore = {
   get: () => localStorage.getItem(TOKEN_KEY),
   set: (t) => localStorage.setItem(TOKEN_KEY, t),
@@ -12,7 +18,7 @@ async function request(path, { method = 'GET', body, isForm = false } = {}) {
   if (token) headers.Authorization = `Bearer ${token}`
   if (body && !isForm) headers['Content-Type'] = 'application/json'
 
-  const res = await fetch(path, {
+  const res = await fetch(`${API_BASE}${path}`, {
     method,
     headers,
     body: isForm ? body : body ? JSON.stringify(body) : undefined,
