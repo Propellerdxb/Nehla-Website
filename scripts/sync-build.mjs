@@ -18,7 +18,7 @@ if (!fs.existsSync(dist)) {
 
 // Directories that come straight from the build. --delete-after removes stale
 // hashed bundles + obsolete prerendered slugs.
-const dirs = ['assets', 'insights', 'about', 'privacy', 'terms']
+const dirs = ['assets', 'blog', 'insights', 'about', 'privacy', 'terms']
 // Top-level files to copy verbatim (no delete; we don't want to wipe other
 // public assets like favicons or sitemap).
 const files = ['index.html']

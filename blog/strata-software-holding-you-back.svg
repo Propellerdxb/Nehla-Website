@@ -1,0 +1,131 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020d1f"/><stop offset="40%" stop-color="#042C53"/><stop offset="75%" stop-color="#0C447C"/><stop offset="100%" stop-color="#185FA5"/></linearGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#021626"/><stop offset="100%" stop-color="#010a14"/></linearGradient>
+  <linearGradient id="bldA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0C447C"/><stop offset="100%" stop-color="#020d1f"/></linearGradient>
+  <linearGradient id="bldB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#185FA5"/><stop offset="100%" stop-color="#042C53"/></linearGradient>
+  <linearGradient id="bldC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#052e5c"/><stop offset="100%" stop-color="#020d1f"/></linearGradient>
+  <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2E5BFF"/><stop offset="100%" stop-color="#00FFC2"/></linearGradient>
+  <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00FFC2"/><stop offset="100%" stop-color="#00FFC2" stop-opacity="0"/></linearGradient>
+  <linearGradient id="timelineG" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2E5BFF"/><stop offset="100%" stop-color="#00FFC2"/></linearGradient>
+  <clipPath id="mainClip"><rect width="1200" height="630"/></clipPath>
+</defs>
+<g clip-path="url(#mainClip)">
+<rect width="1200" height="630" fill="url(#sky)"/>
+<g stroke="#2E5BFF" stroke-width="0.5" opacity="0.05"><line x1="0" y1="126" x2="1200" y2="126"/><line x1="0" y1="252" x2="1200" y2="252"/><line x1="0" y1="378" x2="1200" y2="378"/><line x1="0" y1="504" x2="1200" y2="504"/><line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/><line x1="1000" y1="0" x2="1000" y2="630"/></g>
+<ellipse cx="600" cy="200" rx="500" ry="300" fill="#2E5BFF" opacity="0.07"/>
+<rect x="0" y="580" width="1200" height="50" fill="url(#ground)"/>
+<line x1="0" y1="580" x2="1200" y2="580" stroke="#2E5BFF" stroke-width="0.8" opacity="0.3"/>
+<rect x="700" y="400" width="28" height="180" fill="#042C53" opacity="0.55"/><rect x="742" y="375" width="36" height="205" fill="#042C53" opacity="0.5"/><rect x="792" y="355" width="42" height="225" fill="#052e5c" opacity="0.55"/>
+<rect x="850" y="68" width="165" height="512" fill="url(#bldA)" rx="2"/><rect x="850" y="68" width="165" height="512" fill="none" stroke="#378ADD" stroke-width="0.7" opacity="0.2"/>
+<line x1="893" y1="68" x2="893" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/><line x1="936" y1="68" x2="936" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/><line x1="979" y1="68" x2="979" y2="580" stroke="#378ADD" stroke-width="0.5" opacity="0.18"/>
+<g stroke="#378ADD" stroke-width="0.4" opacity="0.12"><line x1="850" y1="106" x2="1015" y2="106"/><line x1="850" y1="144" x2="1015" y2="144"/><line x1="850" y1="182" x2="1015" y2="182"/><line x1="850" y1="220" x2="1015" y2="220"/><line x1="850" y1="258" x2="1015" y2="258"/><line x1="850" y1="296" x2="1015" y2="296"/><line x1="850" y1="334" x2="1015" y2="334"/><line x1="850" y1="372" x2="1015" y2="372"/><line x1="850" y1="410" x2="1015" y2="410"/><line x1="850" y1="448" x2="1015" y2="448"/><line x1="850" y1="486" x2="1015" y2="486"/></g>
+<g opacity="0.35"><rect x="856" y="76" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="898" y="76" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.15"/><rect x="941" y="76" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/><rect x="982" y="76" width="25" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/><rect x="856" y="114" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.1"/><rect x="898" y="114" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="941" y="114" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/><rect x="982" y="114" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/><rect x="856" y="152" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/><rect x="898" y="152" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/><rect x="941" y="152" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="982" y="152" width="25" height="24" rx="1" fill="#00FFC2" opacity="0.12"/><rect x="856" y="190" width="30" height="24" rx="1" fill="#00FFC2" opacity="0.12"/><rect x="898" y="190" width="30" height="24" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="941" y="190" width="30" height="24" rx="1" fill="#B5D4F4" opacity="0.12"/><rect x="982" y="190" width="25" height="24" rx="1" fill="#2E5BFF" opacity="0.18"/></g>
+<rect x="1030" y="160" width="105" height="420" fill="url(#bldB)" rx="2"/><rect x="1030" y="160" width="105" height="420" fill="none" stroke="#378ADD" stroke-width="0.6" opacity="0.18"/>
+<line x1="1063" y1="160" x2="1063" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.15"/><line x1="1100" y1="160" x2="1100" y2="580" stroke="#378ADD" stroke-width="0.4" opacity="0.15"/>
+<g opacity="0.28"><rect x="1036" y="170" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="1068" y="170" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.15"/><rect x="1106" y="170" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="1036" y="202" width="20" height="16" rx="1" fill="#00FFC2" opacity="0.12"/><rect x="1068" y="202" width="20" height="16" rx="1" fill="#2E5BFF" opacity="0.2"/><rect x="1106" y="202" width="20" height="16" rx="1" fill="#B5D4F4" opacity="0.15"/></g>
+<rect x="1148" y="225" width="75" height="355" fill="url(#bldC)" rx="2"/><rect x="1148" y="225" width="75" height="355" fill="none" stroke="#378ADD" stroke-width="0.5" opacity="0.15"/>
+
+<!-- ILLUSTRATION: TWO LAPTOP SCREENS — Legacy vs Modern -->
+<!-- Legacy screen — left, muted, cramped -->
+<rect x="656" y="108" width="168" height="118" rx="6" fill="#021626" stroke="#64748B" stroke-width="1.2" opacity="0.85"/>
+<!-- Screen bezel top -->
+<rect x="656" y="108" width="168" height="16" rx="6" fill="#042C53" opacity="0.9"/>
+<circle cx="669" cy="116" r="3" fill="#64748B" opacity="0.5"/>
+<circle cx="679" cy="116" r="3" fill="#64748B" opacity="0.4"/>
+<circle cx="689" cy="116" r="3" fill="#64748B" opacity="0.3"/>
+<text x="760" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#64748B">LEGACY 2010</text>
+<!-- Screen content — cramped nav -->
+<rect x="664" y="130" width="152" height="10" rx="1" fill="#0C447C" opacity="0.4"/>
+<rect x="664" y="144" width="40" height="70" rx="1" fill="#042C53" opacity="0.6"/><!-- sidebar -->
+<g fill="#378ADD" opacity="0.3"><rect x="667" y="147" width="34" height="5" rx="1"/><rect x="667" y="156" width="28" height="5" rx="1"/><rect x="667" y="165" width="32" height="5" rx="1"/><rect x="667" y="174" width="26" height="5" rx="1"/><rect x="667" y="183" width="30" height="5" rx="1"/><rect x="667" y="192" width="24" height="5" rx="1"/><rect x="667" y="201" width="34" height="5" rx="1"/></g>
+<!-- Main area — chaotic cells -->
+<g fill="#64748B" opacity="0.2"><rect x="708" y="144" width="104" height="8" rx="1"/><rect x="708" y="156" width="80" height="6" rx="1"/><rect x="708" y="166" width="96" height="6" rx="1"/><rect x="708" y="176" width="60" height="6" rx="1"/><rect x="708" y="186" width="88" height="6" rx="1"/><rect x="708" y="196" width="72" height="6" rx="1"/><rect x="708" y="206" width="95" height="6" rx="1"/></g>
+<!-- Laptop stand -->
+<path d="M660 226 L664 240 L816 240 L820 226 Z" fill="#042C53" stroke="#64748B" stroke-width="0.8" opacity="0.6"/>
+<path d="M720 240 L700 248 L820 248 L800 240 Z" fill="#042C53" opacity="0.5"/>
+<!-- Label -->
+<text x="740" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="300" fill="#64748B">5 screens · slow · no mobile</text>
+
+<!-- VS divider -->
+<text x="757" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#2E5BFF" opacity="0.6">VS</text>
+<line x1="710" y1="300" x2="737" y2="300" stroke="#2E5BFF" stroke-width="0.8" opacity="0.3"/>
+<line x1="777" y1="300" x2="804" y2="300" stroke="#2E5BFF" stroke-width="0.8" opacity="0.3"/>
+
+<!-- Modern screen — right, crisp, minimal -->
+<rect x="656" y="312" width="168" height="118" rx="6" fill="#021626" stroke="#2E5BFF" stroke-width="1.5" opacity="0.9"/>
+<rect x="656" y="312" width="168" height="16" rx="6" fill="#0C447C" opacity="0.95"/>
+<circle cx="669" cy="320" r="3" fill="#FF4D4D" opacity="0.7"/>
+<circle cx="679" cy="320" r="3" fill="#FF9500" opacity="0.6"/>
+<circle cx="689" cy="320" r="3" fill="#00FFC2" opacity="0.7"/>
+<text x="760" y="322" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#85B7EB">MODERN PLATFORM</text>
+<!-- Clean dashboard -->
+<rect x="664" y="334" width="70" height="40" rx="3" fill="#185FA5" fill-opacity="0.3" stroke="#2E5BFF" stroke-width="0.5"/>
+<text x="699" y="350" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#85B7EB">Compliance</text>
+<text x="699" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#00FFC2">94%</text>
+<rect x="742" y="334" width="70" height="40" rx="3" fill="#185FA5" fill-opacity="0.3" stroke="#2E5BFF" stroke-width="0.5"/>
+<text x="777" y="350" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#85B7EB">Invoices</text>
+<text x="777" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#2E5BFF">Auto</text>
+<rect x="664" y="380" width="148" height="6" rx="3" fill="#0C447C" opacity="0.5"/>
+<rect x="664" y="380" width="112" height="6" rx="3" fill="#00FFC2" opacity="0.6"/>
+<text x="664" y="400" font-family="Inter,sans-serif" font-size="7" fill="#64748B">3 clicks · mobile · real-time · integrated</text>
+<!-- Laptop stand -->
+<path d="M660 430 L664 444 L816 444 L820 430 Z" fill="#042C53" stroke="#2E5BFF" stroke-width="0.8" opacity="0.6"/>
+<path d="M720 444 L700 452 L820 452 L800 444 Z" fill="#042C53" opacity="0.5"/>
+
+<!-- Badge: 10-20% time on workarounds -->
+<circle cx="840" cy="320" r="40" fill="#042C53" opacity="0.9"/>
+<circle cx="840" cy="320" r="40" fill="none" stroke="url(#accentV)" stroke-width="2.5"/>
+<circle cx="840" cy="320" r="32" fill="none" stroke="rgba(46,91,255,0.18)" stroke-width="1"/>
+<text x="840" y="308" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="400" fill="#85B7EB" letter-spacing="1">WORKAROUNDS</text>
+<text x="840" y="326" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="700" fill="white">20%</text>
+<text x="840" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="300" fill="#00FFC2" letter-spacing="1">OF YOUR WEEK</text>
+
+<!-- Stat cards -->
+<rect x="656" y="462" width="148" height="52" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#2E5BFF" stroke-width="0.8" stroke-opacity="0.35"/>
+<rect x="656" y="462" width="3" height="52" fill="#2E5BFF"/>
+<text x="674" y="483" font-family="Inter,sans-serif" font-size="18" font-weight="600" fill="#E6F1FB">30% slower</text>
+<text x="674" y="498" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">on legacy = fewer buildings managed</text>
+<rect x="814" y="462" width="148" height="52" rx="5" fill="#0C447C" fill-opacity="0.4" stroke="#00FFC2" stroke-width="0.8" stroke-opacity="0.4"/>
+<rect x="814" y="462" width="3" height="52" fill="#00FFC2"/>
+<text x="832" y="483" font-family="Inter,sans-serif" font-size="18" font-weight="600" fill="#E6F1FB">10 criteria</text>
+<text x="832" y="498" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">to evaluate before you switch</text>
+
+<!-- Left accent bar -->
+<rect x="0" y="0" width="6" height="630" fill="url(#accentV)"/>
+<text x="72" y="58" font-family="Inter,sans-serif" font-size="13" font-weight="400" fill="rgba(133,183,235,0.75)" letter-spacing="2.5">THE STRATA EDIT  ·  TECHNOLOGY &amp; THE FUTURE</text>
+<rect x="72" y="70" width="280" height="1" fill="url(#accentH)" opacity="0.5"/>
+<text font-family="Inter,sans-serif" fill="#E6F1FB">
+  <tspan x="72" y="148" font-size="54" font-weight="300" letter-spacing="-1">Is Your Strata</tspan>
+  <tspan x="72" dy="64" font-size="54" font-weight="300" letter-spacing="-1">Software</tspan>
+  <tspan x="72" dy="64" font-size="54" font-weight="700" letter-spacing="-1" fill="#00FFC2">Holding You</tspan>
+  <tspan x="72" dy="64" font-size="54" font-weight="700" letter-spacing="-1" fill="#00FFC2">Back?</tspan>
+</text>
+<circle cx="72" cy="342" r="6" fill="#2E5BFF"/>
+<rect x="72" y="362" width="300" height="1.5" fill="url(#accentH)" opacity="0.7"/>
+<text x="72" y="390" font-family="Inter,sans-serif" font-size="15" font-weight="300" fill="rgba(181,212,244,0.85)">Legacy platforms limit growth.</text>
+<text x="72" y="410" font-family="Inter,sans-serif" font-size="15" font-weight="300" fill="rgba(181,212,244,0.85)">Here&#x2019;s what modern agencies need.</text>
+<rect x="72" y="434" width="175" height="28" rx="14" fill="rgba(46,91,255,0.18)" stroke="rgba(46,91,255,0.6)" stroke-width="1"/>
+<text x="159" y="453" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#85B7EB">Hidden cost of workarounds</text>
+<rect x="257" y="434" width="165" height="28" rx="14" fill="rgba(0,255,194,0.1)" stroke="rgba(0,255,194,0.5)" stroke-width="1"/>
+<text x="339" y="453" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#00FFC2">API · mobile · automation</text>
+<rect x="72" y="472" width="180" height="28" rx="14" fill="rgba(46,91,255,0.15)" stroke="rgba(46,91,255,0.5)" stroke-width="1"/>
+<text x="162" y="491" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#85B7EB">Migration: is it worth it?</text>
+<!-- Slim timeline -->
+<line x1="0" y1="518" x2="1200" y2="518" stroke="#0C447C" stroke-width="1" opacity="0.6"/>
+<rect x="72" y="532" width="1076" height="3" rx="1.5" fill="#0C447C" opacity="0.8"/>
+<rect x="72" y="532" width="1076" height="3" rx="1.5" fill="url(#timelineG)" opacity="0.65"/>
+<circle cx="72" cy="533" r="6" fill="#64748B"/>
+<text x="84" y="529" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">Legacy platform</text>
+<text x="84" y="544" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Complex · desktop · silos</text>
+<circle cx="360" cy="533" r="6" fill="#185FA5"/>
+<text x="372" y="529" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">Workaround accumulation</text>
+<text x="372" y="544" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Spreadsheets outside the system</text>
+<circle cx="680" cy="533" r="8" fill="url(#accentV)"/>
+<text x="694" y="529" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#2E5BFF">Evaluation decision &#x2014; 10 criteria</text>
+<text x="694" y="544" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Adoption · compliance · mobile · integration · cost</text>
+<circle cx="1010" cy="533" r="6" fill="#00FFC2"/>
+<text x="1000" y="529" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="600" fill="#B5D4F4">Modern platform</text>
+<text x="1000" y="544" text-anchor="end" font-family="Inter,sans-serif" font-size="9" font-weight="300" fill="#64748B">Competitive edge compounds</text>
+</g>
+</svg>
