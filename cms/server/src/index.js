@@ -10,16 +10,27 @@ import publicRoutes from './routes/public.js'
 
 const app = express()
 
-const allowedOrigins = (process.env.CORS_ORIGINS || '')
+// Each CORS_ORIGINS entry is either an exact origin (https://nehla.com.au) or
+// a glob with `*` (https://*.vercel.app) — useful for Vercel preview URLs
+// whose hash subdomain changes every deploy.
+const allowedOriginMatchers = (process.env.CORS_ORIGINS || '')
   .split(',')
   .map((s) => s.trim())
   .filter(Boolean)
+  .map((entry) => {
+    if (!entry.includes('*')) return (origin) => origin === entry
+    const regex = new RegExp(
+      '^' + entry.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '[^.]*') + '$'
+    )
+    return (origin) => regex.test(origin)
+  })
 
 app.use(
   cors({
     origin: (origin, cb) => {
       if (!origin) return cb(null, true)
-      if (allowedOrigins.length === 0 || allowedOrigins.includes(origin)) return cb(null, true)
+      if (allowedOriginMatchers.length === 0) return cb(null, true)
+      if (allowedOriginMatchers.some((match) => match(origin))) return cb(null, true)
       cb(new Error(`CORS: origin ${origin} not allowed`))
     },
   })
